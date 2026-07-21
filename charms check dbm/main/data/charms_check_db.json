@@ -1,8 +1,8 @@
 {
   "_database": {
     "schema_version": 1,
-    "database_version": "1.0",
-    "last_saved": "2026-07-20T23:25:32.298175+00:00"
+    "database_version": "v26.7.26.001",
+    "last_saved": "2026-07-21T00:06:00.718719+00:00"
   },
   "people": [],
   "schools": [],
