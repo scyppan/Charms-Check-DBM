@@ -1,5 +1,6 @@
 import tkinter as tk
 
+from runtime_theme import bind_theme
 from shared.widgets.controls import RoundedText
 from theme import SURFACE, TEXT_DARK
 
@@ -7,6 +8,7 @@ from theme import SURFACE, TEXT_DARK
 class MultilineField(tk.Frame):
     def __init__(self, parent, label_text, change_command, height):
         super().__init__(parent, bg=SURFACE)
+        bind_theme(self, background="SURFACE")
 
         self.change_command = change_command
         self.grid_columnconfigure(0, weight=1)
@@ -21,6 +23,11 @@ class MultilineField(tk.Frame):
             anchor="w",
         )
         self.label.grid(row=0, column=0, sticky="ew", pady=(0, 5))
+        bind_theme(
+            self.label,
+            background="SURFACE",
+            foreground="TEXT_DARK",
+        )
 
         self.control = RoundedText(
             self,

@@ -5,6 +5,7 @@ from core.section_loader import load_sections
 from database import JsonDatabase
 from database.paths import DATABASE_PATH
 from preferences import PREFERENCES_PATH, UserPreferences
+from runtime_theme import bind_theme
 from theme import APP_BACKGROUND
 from window.content_host import ContentHost
 from window.lifecycle import ApplicationLifecycle
@@ -52,6 +53,7 @@ class App(tk.Tk):
 
         self.minsize(800, 500)
         self.configure(bg=APP_BACKGROUND)
+        bind_theme(self, background="APP_BACKGROUND")
 
         self.grid_rowconfigure(0, weight=1)
         self.grid_columnconfigure(1, weight=1)

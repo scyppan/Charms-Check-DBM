@@ -4,6 +4,7 @@ from tkinter import messagebox
 from sections.settings_and_preferences.controller import SettingsController
 from sections.settings_and_preferences.general_view import GeneralSettingsView
 from sections.settings_and_preferences.theme_view import ThemeSettingsView
+from runtime_theme import bind_theme
 from shared.widgets import SoftButton
 from theme import (
     APP_BACKGROUND,
@@ -23,6 +24,7 @@ from theme import (
 class SettingsAndPreferencesPage(tk.Frame):
     def __init__(self, parent, database):
         super().__init__(parent, bg=APP_BACKGROUND)
+        bind_theme(self, background="APP_BACKGROUND")
 
         self.database = database
         self.controller = SettingsController(database)
@@ -39,6 +41,7 @@ class SettingsAndPreferencesPage(tk.Frame):
             height=62,
         )
         self.toolbar.grid(row=0, column=0, sticky="ew")
+        bind_theme(self.toolbar, background="PRIMARY_LIGHT")
         self.toolbar.grid_propagate(False)
 
         self.section_title = tk.Label(
@@ -50,6 +53,11 @@ class SettingsAndPreferencesPage(tk.Frame):
             padx=20,
         )
         self.section_title.pack(side="left", fill="y")
+        bind_theme(
+            self.section_title,
+            background="PRIMARY_LIGHT",
+            foreground="TEXT_DARK",
+        )
 
         self.general_button = SoftButton(
             self.toolbar,
@@ -58,6 +66,7 @@ class SettingsAndPreferencesPage(tk.Frame):
             background=PRIMARY_LIGHT,
             fill=BUTTON_SOFT,
             hover_fill=BUTTON_SOFT_HOVER,
+            background_role="PRIMARY_LIGHT",
             width=92,
             height=38,
         )
@@ -71,6 +80,7 @@ class SettingsAndPreferencesPage(tk.Frame):
             background=PRIMARY_LIGHT,
             fill=BUTTON_SOFT,
             hover_fill=BUTTON_SOFT_HOVER,
+            background_role="PRIMARY_LIGHT",
             width=86,
             height=38,
         )
@@ -84,6 +94,9 @@ class SettingsAndPreferencesPage(tk.Frame):
             background=PRIMARY_LIGHT,
             fill=PRIMARY,
             hover_fill=PRIMARY_DARK,
+            background_role="PRIMARY_LIGHT",
+            fill_role="PRIMARY",
+            hover_fill_role="PRIMARY_DARK",
             width=132,
             height=38,
         )
@@ -96,6 +109,7 @@ class SettingsAndPreferencesPage(tk.Frame):
             background=PRIMARY_LIGHT,
             fill=BUTTON_SOFT,
             hover_fill=BUTTON_SOFT_HOVER,
+            background_role="PRIMARY_LIGHT",
             width=92,
             height=38,
         )
@@ -116,6 +130,11 @@ class SettingsAndPreferencesPage(tk.Frame):
         )
         self.settings_card.grid_rowconfigure(0, weight=1)
         self.settings_card.grid_columnconfigure(0, weight=1)
+        bind_theme(
+            self.settings_card,
+            background="SURFACE",
+            highlightbackground="BORDER",
+        )
 
         self.views["general"] = GeneralSettingsView(
             self.settings_card,
@@ -143,6 +162,11 @@ class SettingsAndPreferencesPage(tk.Frame):
             pady=7,
         )
         self.status_bar.grid(row=2, column=0, sticky="ew")
+        bind_theme(
+            self.status_bar,
+            background="SURFACE_MUTED",
+            foreground="TEXT_MUTED",
+        )
 
         self.activate_view("general")
 
@@ -170,16 +194,16 @@ class SettingsAndPreferencesPage(tk.Frame):
 
         for navigation_name, navigation_button in self.navigation_buttons.items():
             if navigation_name == view_name:
-                navigation_button.set_colors(
-                    PRIMARY,
-                    PRIMARY_DARK,
-                    TEXT_DARK,
+                navigation_button.set_theme_roles(
+                    "PRIMARY",
+                    "PRIMARY_DARK",
+                    "TEXT_DARK",
                 )
             else:
-                navigation_button.set_colors(
-                    BUTTON_SOFT,
-                    BUTTON_SOFT_HOVER,
-                    TEXT_DARK,
+                navigation_button.set_theme_roles(
+                    "BUTTON_SOFT",
+                    "BUTTON_SOFT_HOVER",
+                    "TEXT_DARK",
                 )
 
         if view_name == "theme":

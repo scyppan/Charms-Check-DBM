@@ -1,6 +1,7 @@
 import tkinter as tk
 from functools import partial
 
+from runtime_theme import bind_theme
 from shared.widgets import RoundedEntry, RoundedSelect, SoftButton
 from theme import (
     BORDER,
@@ -22,6 +23,7 @@ class BonusRow(tk.Frame):
 
     def __init__(self, parent, change_command, remove_command):
         super().__init__(parent, bg=SURFACE)
+        bind_theme(self, background="SURFACE")
 
         self.change_command = change_command
         self.remove_command = remove_command
@@ -135,6 +137,7 @@ class BonusRow(tk.Frame):
 class BonusEditor(tk.Frame):
     def __init__(self, parent, change_command):
         super().__init__(parent, bg=SURFACE)
+        bind_theme(self, background="SURFACE")
 
         self.change_command = change_command
         self.bonus_rows = []
@@ -143,6 +146,7 @@ class BonusEditor(tk.Frame):
         self.grid_columnconfigure(0, weight=1)
 
         self.heading_bar = tk.Frame(self, bg=SURFACE)
+        bind_theme(self.heading_bar, background="SURFACE")
         self.heading_bar.grid(row=0, column=0, columnspan=2, sticky="ew")
         self.heading_bar.grid_columnconfigure(0, weight=1)
 
@@ -155,6 +159,11 @@ class BonusEditor(tk.Frame):
             anchor="w",
         )
         self.heading.grid(row=0, column=0, sticky="ew")
+        bind_theme(
+            self.heading,
+            background="SURFACE",
+            foreground="TEXT_DARK",
+        )
 
         self.add_button = SoftButton(
             self.heading_bar,
@@ -162,12 +171,15 @@ class BonusEditor(tk.Frame):
             command=self.add_bonus,
             background=SURFACE,
             fill=PRIMARY,
+            fill_role="PRIMARY",
+            hover_fill_role="PRIMARY_DARK",
             width=106,
             height=36,
         )
         self.add_button.grid(row=0, column=1)
 
         self.column_headers = tk.Frame(self, bg=SURFACE)
+        bind_theme(self.column_headers, background="SURFACE")
         self.column_headers.grid(
             row=1,
             column=0,
@@ -188,6 +200,11 @@ class BonusEditor(tk.Frame):
             anchor="w",
         )
         self.type_header.grid(row=0, column=0, sticky="ew")
+        bind_theme(
+            self.type_header,
+            background="SURFACE",
+            foreground="TEXT_MUTED",
+        )
 
         self.target_header = tk.Label(
             self.column_headers,
@@ -198,6 +215,11 @@ class BonusEditor(tk.Frame):
             anchor="w",
         )
         self.target_header.grid(row=0, column=1, sticky="ew", padx=12)
+        bind_theme(
+            self.target_header,
+            background="SURFACE",
+            foreground="TEXT_MUTED",
+        )
 
         self.amount_header = tk.Label(
             self.column_headers,
@@ -208,6 +230,11 @@ class BonusEditor(tk.Frame):
             anchor="center",
         )
         self.amount_header.grid(row=0, column=2, sticky="ew")
+        bind_theme(
+            self.amount_header,
+            background="SURFACE",
+            foreground="TEXT_MUTED",
+        )
 
         self.scroll_area = tk.Canvas(
             self,
@@ -219,6 +246,11 @@ class BonusEditor(tk.Frame):
         self.scroll_area.grid(row=2, column=0, sticky="nsew")
         self.scroll_area.bind("<Configure>", self.resize_rows_frame)
         self.scroll_area.bind("<MouseWheel>", self.scroll_with_mousewheel)
+        bind_theme(
+            self.scroll_area,
+            background="SURFACE",
+            highlightbackground="BORDER",
+        )
 
         self.scrollbar = tk.Scrollbar(
             self,
@@ -229,6 +261,7 @@ class BonusEditor(tk.Frame):
         self.scroll_area.configure(yscrollcommand=self.scrollbar.set)
 
         self.rows_frame = tk.Frame(self.scroll_area, bg=SURFACE)
+        bind_theme(self.rows_frame, background="SURFACE")
         self.rows_frame.bind("<Configure>", self.update_scroll_region)
         self.rows_frame.bind("<MouseWheel>", self.scroll_with_mousewheel)
         self.rows_window = self.scroll_area.create_window(

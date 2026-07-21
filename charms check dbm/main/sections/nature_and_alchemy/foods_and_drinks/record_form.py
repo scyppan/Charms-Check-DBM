@@ -1,5 +1,6 @@
 import tkinter as tk
 
+from runtime_theme import bind_theme
 from shared.widgets import MultilineField, RoundedEntry
 from theme import SURFACE, TEXT_DARK, TEXT_MUTED
 
@@ -7,6 +8,7 @@ from theme import SURFACE, TEXT_DARK, TEXT_MUTED
 class FoodAndDrinkForm(tk.Frame):
     def __init__(self, parent, change_command):
         super().__init__(parent, bg=SURFACE)
+        bind_theme(self, background="SURFACE")
 
         self.change_command = change_command
         self.loading_record = False
@@ -26,6 +28,7 @@ class FoodAndDrinkForm(tk.Frame):
         )
         self.left_column.grid_rowconfigure(1, weight=1)
         self.left_column.grid_columnconfigure(0, weight=1)
+        bind_theme(self.left_column, background="SURFACE")
 
         self.right_column = tk.Frame(self, bg=SURFACE)
         self.right_column.grid(
@@ -38,10 +41,12 @@ class FoodAndDrinkForm(tk.Frame):
         self.right_column.grid_rowconfigure(0, weight=1)
         self.right_column.grid_rowconfigure(1, weight=1)
         self.right_column.grid_columnconfigure(0, weight=1)
+        bind_theme(self.right_column, background="SURFACE")
 
         self.name_panel = tk.Frame(self.left_column, bg=SURFACE)
         self.name_panel.grid(row=0, column=0, sticky="ew", pady=(0, 12))
         self.name_panel.grid_columnconfigure(0, weight=1)
+        bind_theme(self.name_panel, background="SURFACE")
 
         self.name_label = tk.Label(
             self.name_panel,
@@ -52,6 +57,11 @@ class FoodAndDrinkForm(tk.Frame):
             anchor="w",
         )
         self.name_label.grid(row=0, column=0, sticky="ew")
+        bind_theme(
+            self.name_label,
+            background="SURFACE",
+            foreground="TEXT_DARK",
+        )
 
         self.name_value = tk.StringVar()
         self.name_value.trace_add("write", self.handle_name_change)
@@ -84,6 +94,11 @@ class FoodAndDrinkForm(tk.Frame):
             column=0,
             sticky="ew",
             pady=(12, 0),
+        )
+        bind_theme(
+            self.last_updated_label,
+            background="SURFACE",
+            foreground="TEXT_MUTED",
         )
 
         self.description_field = MultilineField(

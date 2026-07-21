@@ -4,6 +4,7 @@ from tkinter import messagebox
 from sections.wands.wand_woods.controller import WandWoodController
 from sections.wands.wand_woods.record_form import WandWoodForm
 from sections.wands.wand_woods.record_list import WandWoodList
+from runtime_theme import bind_theme
 from shared.widgets import RecordToolbar
 from theme import (
     APP_BACKGROUND,
@@ -17,6 +18,7 @@ from theme import (
 class WandWoodsPage(tk.Frame):
     def __init__(self, parent, database):
         super().__init__(parent, bg=APP_BACKGROUND)
+        bind_theme(self, background="APP_BACKGROUND")
 
         self.database = database
         self.controller = WandWoodController(database)
@@ -53,6 +55,7 @@ class WandWoodsPage(tk.Frame):
             padx=25,
             pady=25,
         )
+        bind_theme(self.content_panes, background="BORDER")
 
         self.list_card = tk.Frame(
             self.content_panes,
@@ -62,6 +65,11 @@ class WandWoodsPage(tk.Frame):
         )
         self.list_card.grid_rowconfigure(0, weight=1)
         self.list_card.grid_columnconfigure(0, weight=1)
+        bind_theme(
+            self.list_card,
+            background="SURFACE",
+            highlightbackground="BORDER",
+        )
 
         self.record_list = WandWoodList(
             self.list_card,
@@ -77,6 +85,11 @@ class WandWoodsPage(tk.Frame):
         )
         self.form_card.grid_rowconfigure(0, weight=1)
         self.form_card.grid_columnconfigure(0, weight=1)
+        bind_theme(
+            self.form_card,
+            background="SURFACE",
+            highlightbackground="BORDER",
+        )
 
         self.record_form = WandWoodForm(
             self.form_card,
@@ -112,6 +125,11 @@ class WandWoodsPage(tk.Frame):
             pady=7,
         )
         self.status_bar.grid(row=2, column=0, sticky="ew")
+        bind_theme(
+            self.status_bar,
+            background="SURFACE_MUTED",
+            foreground="TEXT_MUTED",
+        )
 
         self.refresh_records()
 

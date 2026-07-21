@@ -1,6 +1,7 @@
 import tkinter as tk
 from functools import partial
 
+from runtime_theme import runtime_theme
 from theme import (
     BORDER,
     BUTTON_DISABLED,
@@ -69,6 +70,8 @@ class RoundedEntry(tk.Frame):
         font=("Segoe UI", 11),
         justify="left",
         show=None,
+        background_role="SURFACE",
+        fill_role="FIELD_BACKGROUND",
     ):
         super().__init__(
             parent,
@@ -83,6 +86,14 @@ class RoundedEntry(tk.Frame):
         self.radius = radius
         self.has_focus = False
         self.is_enabled = True
+        self.background_role = background_role
+        self.fill_role = fill_role
+        self.hover_fill = FIELD_HOVER
+        self.focus_outline = FIELD_FOCUS
+        self.border_outline = BORDER
+        self.disabled_fill = FIELD_DISABLED
+        self.text_color = TEXT_DARK
+        self.disabled_text_color = TEXT_DISABLED
 
         self.grid_propagate(False)
         self.pack_propagate(False)
@@ -139,6 +150,7 @@ class RoundedEntry(tk.Frame):
         self.entry.bind("<FocusOut>", self.handle_focus_out)
         self.entry.bind("<Enter>", self.handle_enter)
         self.entry.bind("<Leave>", self.handle_leave)
+        runtime_theme.register(self)
 
     def handle_resize(self, event):
         width = max(2, event.width)
@@ -160,23 +172,25 @@ class RoundedEntry(tk.Frame):
 
     def handle_focus_in(self, event):
         self.has_focus = True
+        self.set_fill(self.normal_fill)
         self.canvas.itemconfigure(
             self.shape,
-            outline=FIELD_FOCUS,
+            outline=self.focus_outline,
             width=2,
         )
 
     def handle_focus_out(self, event):
         self.has_focus = False
+        self.set_fill(self.normal_fill)
         self.canvas.itemconfigure(
             self.shape,
-            outline=BORDER,
+            outline=self.border_outline,
             width=1,
         )
 
     def handle_enter(self, event):
         if self.is_enabled and not self.has_focus:
-            self.set_fill(FIELD_HOVER)
+            self.set_fill(self.hover_fill)
 
     def handle_leave(self, event):
         if self.is_enabled and not self.has_focus:
@@ -190,7 +204,45 @@ class RoundedEntry(tk.Frame):
     def set_enabled(self, enabled):
         self.is_enabled = enabled
         self.entry.configure(state="normal" if enabled else "disabled")
-        self.set_fill(self.normal_fill if enabled else FIELD_DISABLED)
+        self.set_fill(self.normal_fill if enabled else self.disabled_fill)
+
+    def apply_theme(self, theme_values):
+        self.background = theme_values[self.background_role]
+        self.normal_fill = theme_values[self.fill_role]
+        self.hover_fill = theme_values["FIELD_HOVER"]
+        self.focus_outline = theme_values["FIELD_FOCUS"]
+        self.border_outline = theme_values["BORDER"]
+        self.disabled_fill = theme_values["FIELD_DISABLED"]
+        self.text_color = theme_values["TEXT_DARK"]
+        self.disabled_text_color = theme_values["TEXT_DISABLED"]
+        self.configure(bg=self.background)
+        self.canvas.configure(bg=self.background)
+        self.entry.configure(
+            fg=self.text_color,
+            insertbackground=self.text_color,
+            disabledbackground=self.disabled_fill,
+            disabledforeground=self.disabled_text_color,
+        )
+
+        if not self.is_enabled:
+            fill = self.disabled_fill
+        elif self.has_focus:
+            fill = self.normal_fill
+        else:
+            fill = self.current_fill
+
+            if fill not in (self.normal_fill, self.hover_fill):
+                fill = self.normal_fill
+
+        self.set_fill(fill)
+        self.canvas.itemconfigure(
+            self.shape,
+            outline=(
+                self.focus_outline
+                if self.has_focus
+                else self.border_outline
+            ),
+        )
 
     def focus_set(self):
         self.entry.focus_set()
@@ -213,6 +265,8 @@ class RoundedText(tk.Frame):
         height=6,
         radius=CONTROL_RADIUS,
         font=("Segoe UI", 11),
+        background_role="SURFACE",
+        fill_role="FIELD_BACKGROUND",
     ):
         super().__init__(parent, bg=background)
 
@@ -220,6 +274,12 @@ class RoundedText(tk.Frame):
         self.normal_fill = fill
         self.radius = radius
         self.has_focus = False
+        self.background_role = background_role
+        self.fill_role = fill_role
+        self.hover_fill = FIELD_HOVER
+        self.focus_outline = FIELD_FOCUS
+        self.border_outline = BORDER
+        self.text_color = TEXT_DARK
 
         self.grid_rowconfigure(0, weight=1)
         self.grid_columnconfigure(0, weight=1)
@@ -282,6 +342,7 @@ class RoundedText(tk.Frame):
         self.text.bind("<FocusOut>", self.handle_focus_out)
         self.text.bind("<Enter>", self.handle_enter)
         self.text.bind("<Leave>", self.handle_leave)
+        runtime_theme.register(self)
 
     def handle_resize(self, event):
         width = max(2, event.width)
@@ -301,23 +362,25 @@ class RoundedText(tk.Frame):
 
     def handle_focus_in(self, event):
         self.has_focus = True
+        self.set_fill(self.normal_fill)
         self.canvas.itemconfigure(
             self.shape,
-            outline=FIELD_FOCUS,
+            outline=self.focus_outline,
             width=2,
         )
 
     def handle_focus_out(self, event):
         self.has_focus = False
+        self.set_fill(self.normal_fill)
         self.canvas.itemconfigure(
             self.shape,
-            outline=BORDER,
+            outline=self.border_outline,
             width=1,
         )
 
     def handle_enter(self, event):
         if not self.has_focus:
-            self.set_fill(FIELD_HOVER)
+            self.set_fill(self.hover_fill)
 
     def handle_leave(self, event):
         if not self.has_focus:
@@ -326,6 +389,29 @@ class RoundedText(tk.Frame):
     def set_fill(self, fill):
         self.canvas.itemconfigure(self.shape, fill=fill)
         self.text.configure(bg=fill)
+
+    def apply_theme(self, theme_values):
+        self.background = theme_values[self.background_role]
+        self.normal_fill = theme_values[self.fill_role]
+        self.hover_fill = theme_values["FIELD_HOVER"]
+        self.focus_outline = theme_values["FIELD_FOCUS"]
+        self.border_outline = theme_values["BORDER"]
+        self.text_color = theme_values["TEXT_DARK"]
+        self.configure(bg=self.background)
+        self.canvas.configure(bg=self.background)
+        self.text.configure(
+            fg=self.text_color,
+            insertbackground=self.text_color,
+        )
+        self.set_fill(self.normal_fill)
+        self.canvas.itemconfigure(
+            self.shape,
+            outline=(
+                self.focus_outline
+                if self.has_focus
+                else self.border_outline
+            ),
+        )
 
 
 class SoftButton(tk.Canvas):
@@ -346,6 +432,12 @@ class SoftButton(tk.Canvas):
         font=("Segoe UI", 10, "bold"),
         anchor="center",
         padx=16,
+        background_role="SURFACE",
+        fill_role="BUTTON_SOFT",
+        hover_fill_role="BUTTON_SOFT_HOVER",
+        foreground_role="TEXT_DARK",
+        disabled_fill_role="BUTTON_DISABLED",
+        disabled_foreground_role="TEXT_DISABLED",
     ):
         calculated_width = width or max(80, len(text) * 9 + padx * 2)
 
@@ -372,6 +464,12 @@ class SoftButton(tk.Canvas):
         self.padx = padx
         self.is_enabled = True
         self.is_hovered = False
+        self.background_role = background_role
+        self.fill_role = fill_role
+        self.hover_fill_role = hover_fill_role
+        self.foreground_role = foreground_role
+        self.disabled_fill_role = disabled_fill_role
+        self.disabled_foreground_role = disabled_foreground_role
 
         self.shape = self.create_polygon(
             rounded_points(calculated_width, height, radius),
@@ -395,6 +493,7 @@ class SoftButton(tk.Canvas):
         self.bind("<Button-1>", self.handle_click)
         self.bind("<Return>", self.handle_click)
         self.bind("<space>", self.handle_click)
+        runtime_theme.register(self)
 
     def handle_resize(self, event):
         width = max(2, event.width)
@@ -455,6 +554,29 @@ class SoftButton(tk.Canvas):
             )
             self.itemconfigure(self.label, fill=self.foreground)
 
+    def set_theme_roles(
+        self,
+        fill_role,
+        hover_fill_role,
+        foreground_role="TEXT_DARK",
+    ):
+        self.fill_role = fill_role
+        self.hover_fill_role = hover_fill_role
+        self.foreground_role = foreground_role
+        self.apply_theme(runtime_theme.get_values())
+
+    def apply_theme(self, theme_values):
+        background = theme_values[self.background_role]
+        self.normal_fill = theme_values[self.fill_role]
+        self.hover_fill = theme_values[self.hover_fill_role]
+        self.foreground = theme_values[self.foreground_role]
+        self.disabled_fill = theme_values[self.disabled_fill_role]
+        self.disabled_foreground = theme_values[
+            self.disabled_foreground_role
+        ]
+        self.configure(bg=background)
+        self.set_enabled(self.is_enabled)
+
     def set_text(self, text):
         self.button_text = text
         self.itemconfigure(self.label, text=text)
@@ -475,6 +597,8 @@ class RoundedSelect(tk.Frame):
         height=38,
         radius=CONTROL_RADIUS,
         font=("Segoe UI", 10),
+        background_role="SURFACE",
+        fill_role="FIELD_BACKGROUND",
     ):
         super().__init__(
             parent,
@@ -488,6 +612,11 @@ class RoundedSelect(tk.Frame):
         self.normal_fill = fill
         self.radius = radius
         self.font = font
+        self.background_role = background_role
+        self.fill_role = fill_role
+        self.hover_fill = FIELD_HOVER
+        self.border_outline = BORDER
+        self.text_color = TEXT_DARK
 
         self.grid_propagate(False)
         self.pack_propagate(False)
@@ -549,6 +678,7 @@ class RoundedSelect(tk.Frame):
         self.canvas.bind("<Button-1>", self.open_menu)
         self.canvas.bind("<Enter>", self.handle_enter)
         self.canvas.bind("<Leave>", self.handle_leave)
+        runtime_theme.register(self)
 
     def display_value(self):
         return self.variable.get() or "Select type"
@@ -576,7 +706,7 @@ class RoundedSelect(tk.Frame):
         self.canvas.itemconfigure(self.label, text=self.display_value())
 
     def handle_enter(self, event):
-        self.canvas.itemconfigure(self.shape, fill=FIELD_HOVER)
+        self.canvas.itemconfigure(self.shape, fill=self.hover_fill)
 
     def handle_leave(self, event):
         self.canvas.itemconfigure(self.shape, fill=self.normal_fill)
@@ -584,3 +714,25 @@ class RoundedSelect(tk.Frame):
     def bind_mousewheel(self, command):
         self.bind("<MouseWheel>", command)
         self.canvas.bind("<MouseWheel>", command)
+
+    def apply_theme(self, theme_values):
+        background = theme_values[self.background_role]
+        self.normal_fill = theme_values[self.fill_role]
+        self.hover_fill = theme_values["FIELD_HOVER"]
+        self.border_outline = theme_values["BORDER"]
+        self.text_color = theme_values["TEXT_DARK"]
+        self.configure(bg=background)
+        self.canvas.configure(bg=background)
+        self.canvas.itemconfigure(
+            self.shape,
+            fill=self.normal_fill,
+            outline=self.border_outline,
+        )
+        self.canvas.itemconfigure(self.label, fill=self.text_color)
+        self.canvas.itemconfigure(self.arrow, fill=self.text_color)
+        self.menu.configure(
+            bg=self.normal_fill,
+            fg=self.text_color,
+            activebackground=self.hover_fill,
+            activeforeground=self.text_color,
+        )

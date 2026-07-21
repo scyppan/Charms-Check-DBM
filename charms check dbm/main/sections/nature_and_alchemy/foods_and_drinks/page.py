@@ -8,6 +8,7 @@ from sections.nature_and_alchemy.foods_and_drinks.record_form import (
     FoodAndDrinkForm,
 )
 from sections.nature_and_alchemy.foods_and_drinks.record_list import RecordList
+from runtime_theme import bind_theme
 from shared.widgets import RecordToolbar
 from theme import (
     APP_BACKGROUND,
@@ -21,6 +22,7 @@ from theme import (
 class FoodsAndDrinksPage(tk.Frame):
     def __init__(self, parent, database):
         super().__init__(parent, bg=APP_BACKGROUND)
+        bind_theme(self, background="APP_BACKGROUND")
 
         self.database = database
         self.controller = FoodAndDrinkController(database)
@@ -57,6 +59,7 @@ class FoodsAndDrinksPage(tk.Frame):
             padx=25,
             pady=25,
         )
+        bind_theme(self.content_panes, background="BORDER")
 
         self.list_card = tk.Frame(
             self.content_panes,
@@ -66,6 +69,11 @@ class FoodsAndDrinksPage(tk.Frame):
         )
         self.list_card.grid_rowconfigure(0, weight=1)
         self.list_card.grid_columnconfigure(0, weight=1)
+        bind_theme(
+            self.list_card,
+            background="SURFACE",
+            highlightbackground="BORDER",
+        )
 
         self.record_list = RecordList(
             self.list_card,
@@ -81,6 +89,11 @@ class FoodsAndDrinksPage(tk.Frame):
         )
         self.form_card.grid_rowconfigure(0, weight=1)
         self.form_card.grid_columnconfigure(0, weight=1)
+        bind_theme(
+            self.form_card,
+            background="SURFACE",
+            highlightbackground="BORDER",
+        )
 
         self.record_form = FoodAndDrinkForm(
             self.form_card,
@@ -116,6 +129,11 @@ class FoodsAndDrinksPage(tk.Frame):
             pady=7,
         )
         self.status_bar.grid(row=2, column=0, sticky="ew")
+        bind_theme(
+            self.status_bar,
+            background="SURFACE_MUTED",
+            foreground="TEXT_MUTED",
+        )
 
         self.refresh_records()
 

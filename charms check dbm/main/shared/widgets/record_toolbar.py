@@ -1,5 +1,6 @@
 import tkinter as tk
 
+from runtime_theme import bind_theme
 from shared.widgets.controls import SoftButton
 from theme import (
     BUTTON_SOFT,
@@ -24,6 +25,7 @@ class RecordToolbar(tk.Frame):
         save_command,
     ):
         super().__init__(parent, bg=PRIMARY_LIGHT, height=64)
+        bind_theme(self, background="PRIMARY_LIGHT")
 
         self.grid_propagate(False)
         self.pack_propagate(False)
@@ -37,6 +39,11 @@ class RecordToolbar(tk.Frame):
             padx=20,
         )
         self.title_label.pack(side="left", fill="y")
+        bind_theme(
+            self.title_label,
+            background="PRIMARY_LIGHT",
+            foreground="TEXT_DARK",
+        )
 
         self.save_button = SoftButton(
             self,
@@ -45,6 +52,9 @@ class RecordToolbar(tk.Frame):
             background=PRIMARY_LIGHT,
             fill=PRIMARY,
             hover_fill=PRIMARY_DARK,
+            background_role="PRIMARY_LIGHT",
+            fill_role="PRIMARY",
+            hover_fill_role="PRIMARY_DARK",
             width=92,
         )
         self.save_button.pack(side="right", padx=(4, 16), pady=12)
@@ -56,6 +66,7 @@ class RecordToolbar(tk.Frame):
             background=PRIMARY_LIGHT,
             fill=BUTTON_SOFT,
             hover_fill=BUTTON_SOFT_HOVER,
+            background_role="PRIMARY_LIGHT",
             width=92,
         )
         self.revert_button.pack(side="right", padx=4, pady=12)
@@ -67,6 +78,9 @@ class RecordToolbar(tk.Frame):
             background=PRIMARY_LIGHT,
             fill=DELETE_SOFT,
             hover_fill=DELETE_HOVER,
+            background_role="PRIMARY_LIGHT",
+            fill_role="DELETE_SOFT",
+            hover_fill_role="DELETE_HOVER",
             width=92,
         )
         self.delete_button.pack(side="right", padx=4, pady=12)
@@ -78,6 +92,7 @@ class RecordToolbar(tk.Frame):
             background=PRIMARY_LIGHT,
             fill=BUTTON_SOFT,
             hover_fill=BUTTON_SOFT_HOVER,
+            background_role="PRIMARY_LIGHT",
             width=82,
         )
         self.new_button.pack(side="right", padx=4, pady=12)

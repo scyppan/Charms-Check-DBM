@@ -1,5 +1,6 @@
 import tkinter as tk
 
+from runtime_theme import bind_theme
 from sections.wands.wand_woods.bonus_editor import BonusEditor
 from shared.widgets import MultilineField, RoundedEntry
 from theme import SURFACE, TEXT_DARK, TEXT_MUTED
@@ -8,6 +9,7 @@ from theme import SURFACE, TEXT_DARK, TEXT_MUTED
 class WandWoodForm(tk.Frame):
     def __init__(self, parent, change_command):
         super().__init__(parent, bg=SURFACE)
+        bind_theme(self, background="SURFACE")
 
         self.change_command = change_command
         self.loading_record = False
@@ -26,6 +28,7 @@ class WandWoodForm(tk.Frame):
         )
         self.identity_panel.grid_columnconfigure(0, weight=3)
         self.identity_panel.grid_columnconfigure(1, weight=1)
+        bind_theme(self.identity_panel, background="SURFACE")
 
         self.name_label = tk.Label(
             self.identity_panel,
@@ -36,6 +39,11 @@ class WandWoodForm(tk.Frame):
             anchor="w",
         )
         self.name_label.grid(row=0, column=0, sticky="ew", padx=(0, 8))
+        bind_theme(
+            self.name_label,
+            background="SURFACE",
+            foreground="TEXT_DARK",
+        )
 
         self.base_knuts_label = tk.Label(
             self.identity_panel,
@@ -46,6 +54,11 @@ class WandWoodForm(tk.Frame):
             anchor="w",
         )
         self.base_knuts_label.grid(row=0, column=1, sticky="ew", padx=(8, 0))
+        bind_theme(
+            self.base_knuts_label,
+            background="SURFACE",
+            foreground="TEXT_DARK",
+        )
 
         self.name_value = tk.StringVar()
         self.name_value.trace_add("write", self.handle_identity_change)
@@ -95,6 +108,11 @@ class WandWoodForm(tk.Frame):
             columnspan=2,
             sticky="ew",
             pady=(9, 0),
+        )
+        bind_theme(
+            self.last_updated_label,
+            background="SURFACE",
+            foreground="TEXT_MUTED",
         )
 
         self.description_field = MultilineField(

@@ -1,6 +1,7 @@
 import tkinter as tk
 from functools import partial
 
+from runtime_theme import bind_theme
 from shared.widgets import SoftButton
 from theme import (
     APP_BACKGROUND,
@@ -20,6 +21,7 @@ class StandardSectionPage(tk.Frame):
 
     def __init__(self, parent, database):
         super().__init__(parent, bg=APP_BACKGROUND)
+        bind_theme(self, background="APP_BACKGROUND")
 
         self.database = database
         self.grid_rowconfigure(1, weight=1)
@@ -31,6 +33,7 @@ class StandardSectionPage(tk.Frame):
             height=55,
         )
         self.top_menu.grid(row=0, column=0, sticky="ew")
+        bind_theme(self.top_menu, background="PRIMARY_LIGHT")
         self.top_menu.grid_propagate(False)
 
         for menu_name in self.menu_names:
@@ -41,6 +44,9 @@ class StandardSectionPage(tk.Frame):
                 background=PRIMARY_LIGHT,
                 fill=PRIMARY_LIGHT,
                 hover_fill=PRIMARY,
+                background_role="PRIMARY_LIGHT",
+                fill_role="PRIMARY_LIGHT",
+                hover_fill_role="PRIMARY",
                 font=("Segoe UI", 10),
                 height=38,
             )
@@ -58,6 +64,11 @@ class StandardSectionPage(tk.Frame):
             sticky="nsew",
             padx=25,
             pady=25,
+        )
+        bind_theme(
+            self.content_area,
+            background="SURFACE",
+            highlightbackground="BORDER",
         )
         self.content_area.grid_rowconfigure(1, weight=1)
         self.content_area.grid_columnconfigure(0, weight=1)
@@ -77,6 +88,11 @@ class StandardSectionPage(tk.Frame):
             padx=30,
             pady=(30, 10),
         )
+        bind_theme(
+            self.page_title,
+            background="SURFACE",
+            foreground="TEXT_DARK",
+        )
 
         self.page_content = tk.Label(
             self.content_area,
@@ -94,6 +110,11 @@ class StandardSectionPage(tk.Frame):
             padx=30,
             pady=10,
         )
+        bind_theme(
+            self.page_content,
+            background="SURFACE",
+            foreground="TEXT_MUTED",
+        )
 
         self.status_bar = tk.Label(
             self,
@@ -106,6 +127,11 @@ class StandardSectionPage(tk.Frame):
             pady=7,
         )
         self.status_bar.grid(row=2, column=0, sticky="ew")
+        bind_theme(
+            self.status_bar,
+            background="SURFACE_MUTED",
+            foreground="TEXT_MUTED",
+        )
 
     def show_menu(self, menu_name):
         self.page_content.config(

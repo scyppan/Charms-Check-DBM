@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import messagebox
 
+from runtime_theme import bind_theme
 from shared.widgets import RoundedEntry
 from theme import SURFACE, SURFACE_MUTED, TEXT_DARK, TEXT_MUTED
 
@@ -8,6 +9,7 @@ from theme import SURFACE, SURFACE_MUTED, TEXT_DARK, TEXT_MUTED
 class GeneralSettingsView(tk.Frame):
     def __init__(self, parent, controller, dirty_command):
         super().__init__(parent, bg=SURFACE)
+        bind_theme(self, background="SURFACE")
 
         self.controller = controller
         self.dirty_command = dirty_command
@@ -32,6 +34,11 @@ class GeneralSettingsView(tk.Frame):
             padx=30,
             pady=(30, 18),
         )
+        bind_theme(
+            self.database_heading,
+            background="SURFACE",
+            foreground="TEXT_DARK",
+        )
 
         self.database_version_label = tk.Label(
             self,
@@ -47,6 +54,11 @@ class GeneralSettingsView(tk.Frame):
             sticky="w",
             padx=(30, 20),
             pady=8,
+        )
+        bind_theme(
+            self.database_version_label,
+            background="SURFACE",
+            foreground="TEXT_DARK",
         )
 
         self.database_version_value = tk.StringVar()
@@ -85,6 +97,11 @@ class GeneralSettingsView(tk.Frame):
             padx=30,
             pady=(30, 18),
         )
+        bind_theme(
+            self.window_heading,
+            background="SURFACE",
+            foreground="TEXT_DARK",
+        )
 
         self.start_maximized_value = tk.BooleanVar()
         self.start_maximized_check = tk.Checkbutton(
@@ -108,6 +125,14 @@ class GeneralSettingsView(tk.Frame):
             padx=30,
             pady=8,
         )
+        bind_theme(
+            self.start_maximized_check,
+            background="SURFACE",
+            foreground="TEXT_DARK",
+            activebackground="SURFACE",
+            activeforeground="TEXT_DARK",
+            selectcolor="SURFACE_MUTED",
+        )
 
         self.sidebar_width_label = tk.Label(
             self,
@@ -123,6 +148,11 @@ class GeneralSettingsView(tk.Frame):
             sticky="w",
             padx=(30, 20),
             pady=8,
+        )
+        bind_theme(
+            self.sidebar_width_label,
+            background="SURFACE",
+            foreground="TEXT_DARK",
         )
 
         self.sidebar_width_value = tk.StringVar()
@@ -166,6 +196,11 @@ class GeneralSettingsView(tk.Frame):
             sticky="ew",
             padx=30,
             pady=(25, 30),
+        )
+        bind_theme(
+            self.layout_note,
+            background="SURFACE",
+            foreground="TEXT_MUTED",
         )
 
         self.load_values()

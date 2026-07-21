@@ -1,9 +1,7 @@
-from preferences import PREFERENCES_PATH, UserPreferences
+from runtime_theme import runtime_theme
 
 
-_preferences = UserPreferences(PREFERENCES_PATH)
-_preferences.load()
-_theme = _preferences.get_theme_preferences()
+_theme = runtime_theme.get_values()
 
 APP_BACKGROUND = _theme["APP_BACKGROUND"]
 SURFACE = _theme["SURFACE"]

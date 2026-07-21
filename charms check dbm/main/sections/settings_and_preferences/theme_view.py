@@ -1,14 +1,13 @@
 import re
 import tkinter as tk
 from functools import partial
-from tkinter import messagebox
+from tkinter import colorchooser, messagebox
 
 from preferences.defaults import THEME_COLOR_FIELDS
-from shared.widgets import RoundedEntry
+from runtime_theme import bind_theme, runtime_theme
 from shared.widgets.controls import rounded_points
 from theme import (
     BORDER,
-    FIELD_FOCUS,
     SURFACE,
     TEXT_DARK,
     TEXT_MUTED,
@@ -19,18 +18,26 @@ HEX_COLOR_PATTERN = re.compile(r"^#[0-9A-Fa-f]{6}$")
 
 
 class ColorSwatch(tk.Canvas):
-    def __init__(self, parent, color):
+    def __init__(self, parent, color, command):
         super().__init__(
             parent,
             bg=SURFACE,
-            width=52,
-            height=34,
+            width=130,
+            height=42,
             highlightthickness=0,
             borderwidth=0,
+            cursor="hand2",
+            takefocus=1,
         )
 
+        self.command = command
+        self.current_color = color
+        self.color_is_valid = True
+        self.surface_color = SURFACE
+        self.border_color = BORDER
+        self.focus_color = TEXT_DARK
         self.shape = self.create_polygon(
-            rounded_points(52, 34, 8),
+            rounded_points(130, 42, 10),
             smooth=True,
             splinesteps=24,
             fill=color,
@@ -38,41 +45,71 @@ class ColorSwatch(tk.Canvas):
             width=1,
         )
         self.bind("<Configure>", self.handle_resize)
+        self.bind("<Button-1>", self.handle_click)
+        self.bind("<Return>", self.handle_click)
+        self.bind("<space>", self.handle_click)
+        self.bind("<Enter>", self.handle_enter)
+        self.bind("<Leave>", self.handle_leave)
+        runtime_theme.register(self)
 
     def handle_resize(self, event):
         self.coords(
             self.shape,
-            *rounded_points(event.width, event.height, 8),
+            *rounded_points(event.width, event.height, 10),
         )
 
+    def handle_click(self, event=None):
+        self.command()
+
+    def handle_enter(self, event):
+        self.itemconfigure(
+            self.shape,
+            outline=self.focus_color,
+            width=3,
+        )
+
+    def handle_leave(self, event):
+        self.set_color(self.current_color, self.color_is_valid)
+
     def set_color(self, color, valid):
+        self.current_color = color
+        self.color_is_valid = valid
+
         if valid:
             self.itemconfigure(
                 self.shape,
                 fill=color,
-                outline=BORDER,
+                outline=self.border_color,
                 width=1,
             )
         else:
             self.itemconfigure(
                 self.shape,
-                fill=SURFACE,
+                fill=self.surface_color,
                 outline="#A04C3F",
                 width=2,
             )
+
+    def apply_theme(self, theme_values):
+        self.surface_color = theme_values["SURFACE"]
+        self.border_color = theme_values["BORDER"]
+        self.focus_color = theme_values["FIELD_FOCUS"]
+        self.configure(bg=self.surface_color)
+        self.set_color(self.current_color, self.color_is_valid)
 
 
 class ThemeSettingsView(tk.Frame):
     def __init__(self, parent, controller, dirty_command):
         super().__init__(parent, bg=SURFACE)
+        bind_theme(self, background="SURFACE")
 
         self.controller = controller
         self.dirty_command = dirty_command
         self.loading_settings = False
         self.form_dirty = False
         self.color_values = {}
-        self.color_entries = {}
         self.color_swatches = {}
+        self.color_value_labels = {}
 
         self.grid_rowconfigure(1, weight=1)
         self.grid_columnconfigure(0, weight=1)
@@ -80,8 +117,9 @@ class ThemeSettingsView(tk.Frame):
         self.introduction = tk.Label(
             self,
             text=(
-                "Edit any palette color using a six-digit hex value. "
-                "Saved colors apply the next time the application starts."
+                "Click any color swatch to open the color picker. Your "
+                "selection previews across the app immediately; Save Theme "
+                "makes it permanent."
             ),
             bg=SURFACE,
             fg=TEXT_MUTED,
@@ -96,6 +134,11 @@ class ThemeSettingsView(tk.Frame):
             padx=30,
             pady=(24, 12),
         )
+        bind_theme(
+            self.introduction,
+            background="SURFACE",
+            foreground="TEXT_MUTED",
+        )
 
         self.scroll_area = tk.Canvas(
             self,
@@ -106,6 +149,7 @@ class ThemeSettingsView(tk.Frame):
         self.scroll_area.grid(row=1, column=0, sticky="nsew")
         self.scroll_area.bind("<Configure>", self.resize_fields_frame)
         self.scroll_area.bind("<MouseWheel>", self.scroll_with_mousewheel)
+        bind_theme(self.scroll_area, background="SURFACE")
 
         self.scrollbar = tk.Scrollbar(
             self,
@@ -118,7 +162,8 @@ class ThemeSettingsView(tk.Frame):
         self.scroll_area.configure(yscrollcommand=self.scrollbar.set)
 
         self.fields_frame = tk.Frame(self.scroll_area, bg=SURFACE)
-        self.fields_frame.grid_columnconfigure(1, weight=1)
+        bind_theme(self.fields_frame, background="SURFACE")
+        self.fields_frame.grid_columnconfigure(0, weight=1)
         self.fields_frame.bind("<Configure>", self.update_scroll_region)
         self.fields_frame.bind("<MouseWheel>", self.scroll_with_mousewheel)
         self.fields_window = self.scroll_area.create_window(
@@ -156,6 +201,11 @@ class ThemeSettingsView(tk.Frame):
                     "<MouseWheel>",
                     self.scroll_with_mousewheel,
                 )
+                bind_theme(
+                    category_label,
+                    background="SURFACE",
+                    foreground="TEXT_DARK",
+                )
                 current_category = category
                 row_index += 1
 
@@ -178,37 +228,27 @@ class ThemeSettingsView(tk.Frame):
                 "<MouseWheel>",
                 self.scroll_with_mousewheel,
             )
+            bind_theme(
+                field_label,
+                background="SURFACE",
+                foreground="TEXT_DARK",
+            )
 
             color_value = tk.StringVar(value=default_value)
             color_value.trace_add(
                 "write",
                 partial(self.handle_color_change, field_key),
             )
-            color_entry = RoundedEntry(
-                self.fields_frame,
-                textvariable=color_value,
-                background=SURFACE,
-                width=190,
-                height=38,
-                font=("Consolas", 11),
-            )
-            color_entry.grid(
-                row=row_index,
-                column=1,
-                sticky="ew",
-                padx=(0, 12),
-                pady=5,
-            )
-            color_entry.bind_input(
-                "<MouseWheel>",
-                self.scroll_with_mousewheel,
-            )
 
-            color_swatch = ColorSwatch(self.fields_frame, default_value)
+            color_swatch = ColorSwatch(
+                self.fields_frame,
+                default_value,
+                command=partial(self.choose_color, field_key),
+            )
             color_swatch.grid(
                 row=row_index,
-                column=2,
-                padx=(0, 30),
+                column=1,
+                padx=(0, 14),
                 pady=5,
             )
             color_swatch.bind(
@@ -216,9 +256,39 @@ class ThemeSettingsView(tk.Frame):
                 self.scroll_with_mousewheel,
             )
 
+            color_value_label = tk.Label(
+                self.fields_frame,
+                textvariable=color_value,
+                bg=SURFACE,
+                fg=TEXT_MUTED,
+                font=("Consolas", 10),
+                width=9,
+                anchor="w",
+                cursor="hand2",
+            )
+            color_value_label.grid(
+                row=row_index,
+                column=2,
+                padx=(0, 30),
+                pady=5,
+            )
+            color_value_label.bind(
+                "<Button-1>",
+                partial(self.open_picker_from_label, field_key),
+            )
+            color_value_label.bind(
+                "<MouseWheel>",
+                self.scroll_with_mousewheel
+            )
+            bind_theme(
+                color_value_label,
+                background="SURFACE",
+                foreground="TEXT_MUTED",
+            )
+
             self.color_values[field_key] = color_value
-            self.color_entries[field_key] = color_entry
             self.color_swatches[field_key] = color_swatch
+            self.color_value_labels[field_key] = color_value_label
             row_index += 1
 
         self.bottom_spacer = tk.Frame(
@@ -232,6 +302,7 @@ class ThemeSettingsView(tk.Frame):
             columnspan=3,
             sticky="ew",
         )
+        bind_theme(self.bottom_spacer, background="SURFACE")
 
     def load_values(self):
         theme_values = self.controller.load_theme_settings()
@@ -245,6 +316,7 @@ class ThemeSettingsView(tk.Frame):
 
         self.loading_settings = False
         self.form_dirty = False
+        runtime_theme.update_theme(theme_values)
 
         return "Theme colors loaded"
 
@@ -280,8 +352,9 @@ class ThemeSettingsView(tk.Frame):
 
         self.loading_settings = False
         self.form_dirty = False
+        runtime_theme.update_theme(theme_values)
 
-        return "Theme saved. Restart the application to apply the colors."
+        return "Theme saved. The current colors are now permanent."
 
     def handle_color_change(self, field_key, *arguments):
         color_value = self.color_values[field_key].get().strip()
@@ -291,8 +364,32 @@ class ThemeSettingsView(tk.Frame):
         if self.loading_settings:
             return
 
+        if is_valid:
+            runtime_theme.update_color(field_key, color_value.upper())
+            self.winfo_toplevel().update_idletasks()
+
         self.form_dirty = True
         self.dirty_command()
+
+    def choose_color(self, field_key):
+        current_color = self.color_values[field_key].get().strip()
+
+        if HEX_COLOR_PATTERN.fullmatch(current_color) is None:
+            current_color = "#D4C6A1"
+
+        selected_color = colorchooser.askcolor(
+            color=current_color,
+            title=f"Choose {field_key}",
+            parent=self,
+        )[1]
+
+        if selected_color is None:
+            return
+
+        self.color_values[field_key].set(selected_color.upper())
+
+    def open_picker_from_label(self, field_key, event=None):
+        self.choose_color(field_key)
 
     def has_unsaved_changes(self):
         return self.form_dirty

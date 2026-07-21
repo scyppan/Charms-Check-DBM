@@ -1,11 +1,13 @@
 import tkinter as tk
 
+from runtime_theme import bind_theme
 from theme import APP_BACKGROUND
 
 
 class ContentHost(tk.Frame):
     def __init__(self, parent, sections, database):
         super().__init__(parent, bg=APP_BACKGROUND)
+        bind_theme(self, background="APP_BACKGROUND")
 
         self.database = database
         self.section_definitions = {

@@ -1,6 +1,7 @@
 import tkinter as tk
 from collections import Counter
 
+from runtime_theme import bind_theme, runtime_theme
 from shared.widgets.controls import RoundedEntry
 from theme import (
     BORDER_SOFT,
@@ -23,6 +24,7 @@ class SearchableRecordList(tk.Frame):
         unnamed_label,
     ):
         super().__init__(parent, bg=SURFACE)
+        bind_theme(self, background="SURFACE")
 
         self.selection_command = selection_command
         self.heading_text = heading_text
@@ -53,6 +55,11 @@ class SearchableRecordList(tk.Frame):
             sticky="ew",
             padx=16,
             pady=(16, 10),
+        )
+        bind_theme(
+            self.heading,
+            background="SURFACE",
+            foreground="TEXT_DARK",
         )
 
         self.search_value = tk.StringVar()
@@ -98,6 +105,15 @@ class SearchableRecordList(tk.Frame):
         self.listbox.bind("<<ListboxSelect>>", self.handle_selection)
         self.listbox.bind("<Motion>", self.handle_hover)
         self.listbox.bind("<Leave>", self.clear_hover)
+        bind_theme(
+            self.listbox,
+            background="FIELD_BACKGROUND",
+            foreground="TEXT_DARK",
+            selectbackground="SIDEBAR_TILE_SELECTED",
+            selectforeground="TEXT_DARK",
+            highlightbackground="BORDER_SOFT",
+            highlightcolor="BORDER_SOFT",
+        )
 
         self.scrollbar = tk.Scrollbar(
             self,
@@ -129,6 +145,11 @@ class SearchableRecordList(tk.Frame):
             sticky="ew",
             padx=16,
             pady=(8, 14),
+        )
+        bind_theme(
+            self.count_label,
+            background="SURFACE",
+            foreground="TEXT_MUTED",
         )
 
     def set_records(self, records, selected_record_id=None):
@@ -250,13 +271,18 @@ class SearchableRecordList(tk.Frame):
 
         self.clear_hover()
         self.hovered_index = hovered_index
-        self.listbox.itemconfigure(hovered_index, background=LIST_HOVER)
+        theme_values = runtime_theme.get_values()
+        self.listbox.itemconfigure(
+            hovered_index,
+            background=theme_values["LIST_HOVER"],
+        )
 
     def clear_hover(self, event=None):
         if self.hovered_index is not None:
+            theme_values = runtime_theme.get_values()
             self.listbox.itemconfigure(
                 self.hovered_index,
-                background=FIELD_BACKGROUND,
+                background=theme_values["FIELD_BACKGROUND"],
             )
 
         self.hovered_index = None

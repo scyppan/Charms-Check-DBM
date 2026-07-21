@@ -1,6 +1,7 @@
 import tkinter as tk
 from functools import partial
 
+from runtime_theme import bind_theme
 from shared.widgets import SoftButton
 from theme import (
     PRIMARY_LIGHT,
@@ -26,6 +27,7 @@ class Sidebar(tk.Frame):
             width=sidebar_width,
             bg=SIDEBAR_BACKGROUND,
         )
+        bind_theme(self, background="SIDEBAR_BACKGROUND")
 
         self.sections = sections
         self.section_command = section_command
@@ -44,6 +46,11 @@ class Sidebar(tk.Frame):
             pady=20,
         )
         self.title_label.grid(row=0, column=0, sticky="ew")
+        bind_theme(
+            self.title_label,
+            background="SIDEBAR_BACKGROUND",
+            foreground="TEXT_LIGHT",
+        )
         self.title_label.bind("<MouseWheel>", self.scroll_with_mousewheel)
 
         self.scroll_area = tk.Canvas(
@@ -52,6 +59,7 @@ class Sidebar(tk.Frame):
             highlightthickness=0,
         )
         self.scroll_area.grid(row=1, column=0, sticky="nsew")
+        bind_theme(self.scroll_area, background="SIDEBAR_BACKGROUND")
         self.scroll_area.bind("<MouseWheel>", self.scroll_with_mousewheel)
 
         self.scrollbar = tk.Scrollbar(
@@ -73,6 +81,7 @@ class Sidebar(tk.Frame):
             "<MouseWheel>",
             self.scroll_with_mousewheel,
         )
+        bind_theme(self.tile_container, background="SIDEBAR_BACKGROUND")
 
         self.tile_window = self.scroll_area.create_window(
             (0, 0),
@@ -98,6 +107,10 @@ class Sidebar(tk.Frame):
                 fill=SIDEBAR_TILE,
                 hover_fill=SIDEBAR_TILE_HOVER,
                 foreground=TEXT_LIGHT,
+                background_role="SIDEBAR_BACKGROUND",
+                fill_role="SIDEBAR_TILE",
+                hover_fill_role="SIDEBAR_TILE_HOVER",
+                foreground_role="TEXT_LIGHT",
                 height=46,
                 radius=10,
                 anchor="w",
@@ -116,16 +129,16 @@ class Sidebar(tk.Frame):
 
         for tile_key, tile_button in self.tile_buttons.items():
             if tile_key == section_key:
-                tile_button.set_colors(
-                    SIDEBAR_TILE_SELECTED,
-                    PRIMARY_LIGHT,
-                    TEXT_DARK,
+                tile_button.set_theme_roles(
+                    "SIDEBAR_TILE_SELECTED",
+                    "PRIMARY_LIGHT",
+                    "TEXT_DARK",
                 )
             else:
-                tile_button.set_colors(
-                    SIDEBAR_TILE,
-                    SIDEBAR_TILE_HOVER,
-                    TEXT_LIGHT,
+                tile_button.set_theme_roles(
+                    "SIDEBAR_TILE",
+                    "SIDEBAR_TILE_HOVER",
+                    "TEXT_LIGHT",
                 )
 
         return True
