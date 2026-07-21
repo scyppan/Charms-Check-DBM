@@ -1,0 +1,37 @@
+{
+  "settings_version": 1,
+  "window": {
+    "start_maximized": true,
+    "sidebar_width": 250
+  },
+  "layouts": {},
+  "theme": {
+    "APP_BACKGROUND": "#E9E2D0",
+    "SURFACE": "#F3EFE0",
+    "SURFACE_MUTED": "#F3EDDD",
+    "FIELD_BACKGROUND": "#D0C29D",
+    "FIELD_HOVER": "#D2C49F",
+    "FIELD_FOCUS": "#8F8469",
+    "FIELD_DISABLED": "#D8CFB6",
+    "PRIMARY": "#D4C6A1",
+    "PRIMARY_LIGHT": "#E8DDBF",
+    "PRIMARY_DARK": "#A99D7E",
+    "PRIMARY_HOVER": "#C7B88F",
+    "BUTTON_SOFT": "#DDD2B4",
+    "BUTTON_SOFT_HOVER": "#CFC09A",
+    "BUTTON_DISABLED": "#E6DECA",
+    "DELETE_SOFT": "#D4BDB1",
+    "DELETE_HOVER": "#C6A397",
+    "SIDEBAR_BACKGROUND": "#625E50",
+    "SIDEBAR_TILE": "#817A67",
+    "SIDEBAR_TILE_HOVER": "#958C75",
+    "SIDEBAR_TILE_SELECTED": "#D4C6A1",
+    "TEXT_DARK": "#302D26",
+    "TEXT_MUTED": "#686255",
+    "TEXT_LIGHT": "#FFFDF6",
+    "TEXT_DISABLED": "#8C8576",
+    "BORDER": "#C8B993",
+    "BORDER_SOFT": "#D8CCAD",
+    "LIST_HOVER": "#DED2B4"
+  }
+}

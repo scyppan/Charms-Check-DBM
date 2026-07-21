@@ -1,0 +1,1978 @@
+{
+  "_database": {
+    "schema_version": 1,
+    "database_version": "1.0",
+    "last_saved": "2026-07-20T23:25:32.298175+00:00"
+  },
+  "people": [],
+  "schools": [],
+  "wand_woods": [
+    {
+      "record_id": "wand_wood_12877",
+      "name": "Holly",
+      "base_knuts": 1225,
+      "description": "+1 to Defense checks",
+      "bonuses": [
+        {
+          "type": "Skill",
+          "target": "Defense Against the Dark Arts",
+          "amount": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:58:33"
+    },
+    {
+      "record_id": "wand_wood_12879",
+      "name": "Ebony",
+      "base_knuts": 1225,
+      "description": "+1 to Transfiguration checks",
+      "bonuses": [
+        {
+          "type": "Skill",
+          "target": "Transfiguration",
+          "amount": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:55:47"
+    },
+    {
+      "record_id": "wand_wood_12881",
+      "name": "Elm",
+      "base_knuts": 1225,
+      "description": "+1 to Charms checks",
+      "bonuses": [
+        {
+          "type": "Skill",
+          "target": "Charms",
+          "amount": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:56:06"
+    },
+    {
+      "record_id": "wand_wood_12883",
+      "name": "Yew",
+      "base_knuts": 1225,
+      "description": "+1 to Dark Arts checks",
+      "bonuses": [
+        {
+          "type": "Skill",
+          "target": "Dark Arts",
+          "amount": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:56:14"
+    },
+    {
+      "record_id": "wand_wood_12885",
+      "name": "Rowan",
+      "base_knuts": 15454,
+      "description": "Defense +3",
+      "bonuses": [
+        {
+          "type": "Skill",
+          "target": "Defense Against the Dark Arts",
+          "amount": 3
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:56:23"
+    },
+    {
+      "record_id": "wand_wood_12886",
+      "name": "Acacia",
+      "base_knuts": 3100,
+      "description": "Dark Arts +2",
+      "bonuses": [
+        {
+          "type": "Skill",
+          "target": "Dark Arts",
+          "amount": 2
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2026-07-20T23:25:32.298150+00:00"
+    },
+    {
+      "record_id": "wand_wood_12888",
+      "name": "Fir",
+      "base_knuts": 10212,
+      "description": "Transfiguration +3",
+      "bonuses": [
+        {
+          "type": "Skill",
+          "target": "Transfiguration",
+          "amount": 3
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:56:42"
+    },
+    {
+      "record_id": "wand_wood_12889",
+      "name": "Willow",
+      "base_knuts": 9000,
+      "description": "Can heal one heavy wound of any type by physically touching the target (once per day)",
+      "bonuses": [],
+      "dbnotes": "",
+      "last_updated": "2023-08-11T23:26:00"
+    },
+    {
+      "record_id": "wand_wood_12891",
+      "name": "Silver Lime",
+      "base_knuts": 1845,
+      "description": "Charms +2",
+      "bonuses": [
+        {
+          "type": "Skill",
+          "target": "Charms",
+          "amount": 2
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:57:02"
+    },
+    {
+      "record_id": "wand_wood_12893",
+      "name": "Dogwood",
+      "base_knuts": 3200,
+      "description": "Transfiguration +2",
+      "bonuses": [
+        {
+          "type": "Skill",
+          "target": "Transfiguration",
+          "amount": 2
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:57:10"
+    },
+    {
+      "record_id": "wand_wood_12895",
+      "name": "Cedarwood",
+      "base_knuts": 5500,
+      "description": "Defense +1, Charms +1, Transfiguration -1, Dark Arts -1",
+      "bonuses": [
+        {
+          "type": "Skill",
+          "target": "Defense Against the Dark Arts",
+          "amount": 1
+        },
+        {
+          "type": "Skill",
+          "target": "Charms",
+          "amount": 1
+        },
+        {
+          "type": "Skill",
+          "target": "Transfiguration",
+          "amount": -1
+        },
+        {
+          "type": "Skill",
+          "target": "Dark Arts",
+          "amount": -1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:57:39"
+    },
+    {
+      "record_id": "wand_wood_12897",
+      "name": "Apple",
+      "base_knuts": 12000,
+      "description": "Can calm (render non-aggressive) any beast under size 3 by physically touching it with one's wand (once per day; You may have to perform an agility check against one of the creatures movement abilities).",
+      "bonuses": [
+        {
+          "type": "Ability",
+          "target": "",
+          "amount": null
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:58:15"
+    },
+    {
+      "record_id": "wand_wood_12900",
+      "name": "Ash",
+      "base_knuts": 10513,
+      "description": "Defense +1, Dark Arts +1, Transfiguration -1, Charms -1",
+      "bonuses": [
+        {
+          "type": "Skill",
+          "target": "Defense Against the Dark Arts",
+          "amount": 1
+        },
+        {
+          "type": "Skill",
+          "target": "Dark Arts",
+          "amount": 1
+        },
+        {
+          "type": "Skill",
+          "target": "Transfiguration",
+          "amount": -1
+        },
+        {
+          "type": "Skill",
+          "target": "Charms",
+          "amount": -1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:55:37"
+    },
+    {
+      "record_id": "wand_wood_12902",
+      "name": "Aspen",
+      "base_knuts": 22545,
+      "description": "Transfiguration +4",
+      "bonuses": [
+        {
+          "type": "Skill",
+          "target": "Transfiguration",
+          "amount": 4
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:55:06"
+    },
+    {
+      "record_id": "wand_wood_12905",
+      "name": "Beech",
+      "base_knuts": 3849,
+      "description": "Charms +1, Transfiguration +1, Dark Arts -1, Defense -1",
+      "bonuses": [
+        {
+          "type": "Skill",
+          "target": "Charms",
+          "amount": 1
+        },
+        {
+          "type": "Skill",
+          "target": "Transfiguration",
+          "amount": 1
+        },
+        {
+          "type": "Skill",
+          "target": "Dark Arts",
+          "amount": -1
+        },
+        {
+          "type": "Skill",
+          "target": "Defense Against the Dark Arts",
+          "amount": -1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:52:05"
+    },
+    {
+      "record_id": "wand_wood_12908",
+      "name": "Blackthorn",
+      "base_knuts": 15642,
+      "description": "Dark Arts +3",
+      "bonuses": [
+        {
+          "type": "Skill",
+          "target": "Dark Arts",
+          "amount": 3
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:52:14"
+    },
+    {
+      "record_id": "wand_wood_12910",
+      "name": "Black Walnut",
+      "base_knuts": 32454,
+      "description": "Power +2",
+      "bonuses": [
+        {
+          "type": "Ability",
+          "target": "Power",
+          "amount": 2
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:52:24"
+    },
+    {
+      "record_id": "wand_wood_12911",
+      "name": "Cherry",
+      "base_knuts": 46757,
+      "description": "Charms +4",
+      "bonuses": [
+        {
+          "type": "Skill",
+          "target": "Charms",
+          "amount": 4
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:52:32"
+    },
+    {
+      "record_id": "wand_wood_12913",
+      "name": "Chestnut",
+      "base_knuts": 7781,
+      "description": "Transfiguration +1, Defense +1, Dark Arts -1, Charms -1",
+      "bonuses": [
+        {
+          "type": "Skill",
+          "target": "Transfiguration",
+          "amount": 1
+        },
+        {
+          "type": "Skill",
+          "target": "Defense Against the Dark Arts",
+          "amount": 1
+        },
+        {
+          "type": "Skill",
+          "target": "Dark Arts",
+          "amount": -1
+        },
+        {
+          "type": "Skill",
+          "target": "Charms",
+          "amount": -1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:53:06"
+    },
+    {
+      "record_id": "wand_wood_12915",
+      "name": "Cypress",
+      "base_knuts": 11144,
+      "description": "Charms +3",
+      "bonuses": [
+        {
+          "type": "Skill",
+          "target": "Charms",
+          "amount": 3
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:53:16"
+    },
+    {
+      "record_id": "wand_wood_12917",
+      "name": "Elder",
+      "base_knuts": 100151,
+      "description": "Dark Arts +4",
+      "bonuses": [
+        {
+          "type": "Skill",
+          "target": "Dark Arts",
+          "amount": 4
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:53:36"
+    },
+    {
+      "record_id": "wand_wood_12918",
+      "name": "Spruce",
+      "base_knuts": 1612,
+      "description": "Defense +2",
+      "bonuses": [
+        {
+          "type": "Skill",
+          "target": "Defense Against the Dark Arts",
+          "amount": 2
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:53:49"
+    },
+    {
+      "record_id": "wand_wood_12920",
+      "name": "Sycamore",
+      "base_knuts": 6611,
+      "description": "Charms +1, Dark Arts +1, Defense -1, Transfiguration -1",
+      "bonuses": [
+        {
+          "type": "Skill",
+          "target": "Charms",
+          "amount": 1
+        },
+        {
+          "type": "Skill",
+          "target": "Dark Arts",
+          "amount": 1
+        },
+        {
+          "type": "Skill",
+          "target": "Defense Against the Dark Arts",
+          "amount": -1
+        },
+        {
+          "type": "Skill",
+          "target": "Transfiguration",
+          "amount": -1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:54:19"
+    },
+    {
+      "record_id": "wand_wood_12922",
+      "name": "Vine",
+      "base_knuts": 13151,
+      "description": "Power +1",
+      "bonuses": [
+        {
+          "type": "Ability",
+          "target": "Power",
+          "amount": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:54:27"
+    },
+    {
+      "record_id": "wand_wood_12926",
+      "name": "Walnut",
+      "base_knuts": 8888,
+      "description": "Transfiguration +1, Dark Arts +1, Charms -1, Defense -1",
+      "bonuses": [
+        {
+          "type": "Skill",
+          "target": "Transfiguration",
+          "amount": 1
+        },
+        {
+          "type": "Skill",
+          "target": "Dark Arts",
+          "amount": 1
+        },
+        {
+          "type": "Skill",
+          "target": "Charms",
+          "amount": -1
+        },
+        {
+          "type": "Skill",
+          "target": "Defense Against the Dark Arts",
+          "amount": -1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:54:57"
+    },
+    {
+      "record_id": "wand_wood_12928",
+      "name": "Mahogany",
+      "base_knuts": 78989,
+      "description": "Defense +4",
+      "bonuses": [
+        {
+          "type": "Skill",
+          "target": "Defense Against the Dark Arts",
+          "amount": 4
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:51:31"
+    }
+  ],
+  "wand_cores": [],
+  "wand_makers": [],
+  "wand_qualities": [],
+  "wands": [],
+  "holdable_items": [],
+  "accessories": [],
+  "general_items": [],
+  "creatures": [],
+  "creature_parts": [],
+  "plants": [],
+  "plant_parts": [],
+  "preparations": [],
+  "potions": [],
+  "foods_and_drinks": [
+    {
+      "record_id": "food_drink_7190",
+      "name": "Vinegar",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7191",
+      "name": "Syrup",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7192",
+      "name": "Honey",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7193",
+      "name": "Alcohol",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7194",
+      "name": "Rotted Dirty Cheese Curds",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7195",
+      "name": "Grains",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7196",
+      "name": "Hops",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7197",
+      "name": "Yeast",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7198",
+      "name": "Ice Pop",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7199",
+      "name": "Pumpkin Juice",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7200",
+      "name": "Fried Eggs and a Gammon of Bacon",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7201",
+      "name": "Double Chocolate Ice Cream Cone",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7202",
+      "name": "Triple Power Icy Lemon Pops",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7203",
+      "name": "Knickerbocker Glory",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7204",
+      "name": "Chocolate Buttermilk Sheet Cake",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7205",
+      "name": "Nutty Fruitcake",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7206",
+      "name": "Tender Roast Loin of Pork",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7207",
+      "name": "English Strawberry Trifle",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7208",
+      "name": "Lemon Meringue Pie",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7209",
+      "name": "Mulligataway Soup",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7210",
+      "name": "Meat Pie",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7211",
+      "name": "Poached Salmon",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7212",
+      "name": "Raspberry Ice Cream",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7213",
+      "name": "Hamburger",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7214",
+      "name": "Peanut Butter Ice Cream",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7215",
+      "name": "Crumpets",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7216",
+      "name": "Chocolate Pudding",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7217",
+      "name": "Ice Cream Sundae",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7218",
+      "name": "Pumpkin Pasties",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7219",
+      "name": "Pancakes",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7220",
+      "name": "Roast Pheasant",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7221",
+      "name": "Rock Cake",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7222",
+      "name": "Bath Buns",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7223",
+      "name": "Treacle Fudge",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7224",
+      "name": "Dundee Cakes",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7225",
+      "name": "Treacle Tart",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7226",
+      "name": "French Onion Soup",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7227",
+      "name": "Beef Stew and Dumplings",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7228",
+      "name": "Hot Rolls",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7229",
+      "name": "Beef Casserole",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7230",
+      "name": "Fudge",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7231",
+      "name": "Soda Bread",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7232",
+      "name": "Hot Cocholate",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7233",
+      "name": "Blueberry Muffins",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7234",
+      "name": "Rhubarb Crumble",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7235",
+      "name": "Meatballs with Onion Sauce",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7236",
+      "name": "Brussel Sprouts",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7237",
+      "name": "Strawberry Ice Cream",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7238",
+      "name": "Apple Tart",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7239",
+      "name": "Herby Roast Chicken",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7240",
+      "name": "Onion-Garlic Mashed Potatoes",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7241",
+      "name": "Mashed Parsnips",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7242",
+      "name": "Beef Stew",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7243",
+      "name": "Canapés",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7244",
+      "name": "Vol-au-Vents",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7245",
+      "name": "Fried Sausage Patties",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7246",
+      "name": "Fried Tomatoes",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7247",
+      "name": "Scrambled Eggs and Bacon",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7248",
+      "name": "Sweet Orange Marmalade",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7249",
+      "name": "Thick Porridge",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7250",
+      "name": "Crispy Fried Bacon",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7251",
+      "name": "Cheese, Chivy, Scrambled Eggs",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7252",
+      "name": "Cinnamon Buns",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7253",
+      "name": "Kippers",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7254",
+      "name": "Roast Beef",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7255",
+      "name": "Yorkshire Pudding",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7256",
+      "name": "Breaded Pork Chop",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7257",
+      "name": "Braised Lamb Chop",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7258",
+      "name": "Roast Chicken",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7259",
+      "name": "Boiled Potatoes",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7260",
+      "name": "Roast Potatoes",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7261",
+      "name": "Fluffy Mashed Potatoes",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:17"
+    },
+    {
+      "record_id": "food_drink_7262",
+      "name": "Baked Potato",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7263",
+      "name": "Glazed Carrots",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7264",
+      "name": "Shepherd's Pie",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7265",
+      "name": "Banger's and Mash",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7266",
+      "name": "Chiddingly Hotpot",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7267",
+      "name": "Scotch Collops",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7268",
+      "name": "Bouillabaisse",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7269",
+      "name": "Broiled Drumsticks",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7270",
+      "name": "Cornish Pasties",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7271",
+      "name": "Haggis",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7272",
+      "name": "Lemon Drops",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7273",
+      "name": "Peppermint Humbugs",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7274",
+      "name": "Vanilla Ice Cream",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7275",
+      "name": "Brown Bread",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7276",
+      "name": "Apple Crumble",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7277",
+      "name": "Jam Doughnuts",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7278",
+      "name": "Apple Pie",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7279",
+      "name": "Banana Fritters",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7280",
+      "name": "Rice Puddings",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7281",
+      "name": "Blancmange",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7282",
+      "name": "Ginger Biscuits",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7283",
+      "name": "Meringues",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7284",
+      "name": "English Muffins",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7285",
+      "name": "Pumkin Delights",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7286",
+      "name": "Roast Turkey",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7287",
+      "name": "Cranberry Sauce",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7288",
+      "name": "Eggnog",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7289",
+      "name": "Goulash",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7290",
+      "name": "Nougat",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7291",
+      "name": "Sherbet",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7292",
+      "name": "Bonbons",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7293",
+      "name": "Butter Beer",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7294",
+      "name": "Pea Soup",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7295",
+      "name": "Wine",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7296",
+      "name": "Hog's Head Brew",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7297",
+      "name": "Mead",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7298",
+      "name": "Cuppa",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7299",
+      "name": "Fishy Green Ale",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7300",
+      "name": "Gillywater",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7301",
+      "name": "Coffee",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7302",
+      "name": "Rice",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7303",
+      "name": "Milk",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7304",
+      "name": "Cereal",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7305",
+      "name": "Apple",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7306",
+      "name": "Orange",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7307",
+      "name": "Kiwi",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7308",
+      "name": "Bananas",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7309",
+      "name": "Grapefruit",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7310",
+      "name": "Lemon",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7311",
+      "name": "Pear",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7312",
+      "name": "Melon",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7313",
+      "name": "Strawberries",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7314",
+      "name": "Peach",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7315",
+      "name": "Raspberries",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7316",
+      "name": "Blueberries",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7317",
+      "name": "Blackberries",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7318",
+      "name": "Grapes",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7319",
+      "name": "Potato",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7320",
+      "name": "Tomato",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7321",
+      "name": "Peas",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7322",
+      "name": "Pepper",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7323",
+      "name": "Broccoli",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7324",
+      "name": "Onion",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7325",
+      "name": "Head of Garlic",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7326",
+      "name": "Carrots",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7327",
+      "name": "Cucumbers",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7328",
+      "name": "Celery",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7329",
+      "name": "Rhubarb",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_20224",
+      "name": "Syrup",
+      "description": "Taste sap from a tree!",
+      "raw_effects": "None",
+      "effects_in_potions": "input",
+      "dbnotes": "",
+      "last_updated": "2024-01-06T18:33:02"
+    },
+    {
+      "record_id": "food_drink_12072",
+      "name": "Tea from an Infusion of Wormwood",
+      "description": "This tea is known to completely kill mild to moderate parasitic infections.",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2023-03-02T16:01:55"
+    },
+    {
+      "record_id": "food_drink_12101",
+      "name": "Sneezewort Tea",
+      "description": "Sneezewort tea allows the drinker to stay awake for 24 hours continuously without feeling fatigued.",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2023-03-05T16:39:42"
+    },
+    {
+      "record_id": "food_drink_14156",
+      "name": "Balché",
+      "description": "A fermented drink that provides a +7 Bonus to divination attempts for 20 minutes.",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2023-08-15T03:51:39"
+    },
+    {
+      "record_id": "food_drink_12112",
+      "name": "Tea from a Silverweed Decoction",
+      "description": "This tea cures scurvy, toothaches, and relieves 2L wounds of vital damage. It also serves as a haemostatic (stopping or reducing bleeding).",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2023-03-05T17:22:59"
+    },
+    {
+      "record_id": "food_drink_12114",
+      "name": "Rose Tea",
+      "description": "Rose Tea is tasty and romantic. The drinker will be more susceptible to romantic advances and more successful in their own romantic advances.",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2023-03-05T17:39:53"
+    },
+    {
+      "record_id": "food_drink_12116",
+      "name": "Peppermint Tea",
+      "description": "Heals 2L wounds of any type of non-psychological damage (once per injury).",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2023-03-05T18:53:28"
+    },
+    {
+      "record_id": "food_drink_14164",
+      "name": "Pulque",
+      "description": "A fermented drink that serves as a substantial anxiolytic and sedative. It will heal all anxiety-related damage. It also renders the drinker non-reactive to even life-threatening dangers.",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2023-08-15T03:57:59"
+    },
+    {
+      "record_id": "food_drink_12131",
+      "name": "Lavender Tea",
+      "description": "Lavender Tea is a mild anxiolytic (curing or preventing anxiety type damage). If ingested prior to taking anxiety damage, this tea will prevent up to 2H wounds of anxiety damage for 6 hours after ingestion.",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2023-03-08T14:56:24"
+    },
+    {
+      "record_id": "food_drink_7330",
+      "name": "Mushrooms",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_7331",
+      "name": "Edible Dark Marks",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-13T15:43:18"
+    },
+    {
+      "record_id": "food_drink_12226",
+      "name": "Coffee",
+      "description": "Coffee is tasty and highly desirable to many non-English folks. Water is poured over ground beans to produce a bitter but satisfying drink!",
+      "raw_effects": "input",
+      "effects_in_potions": "input",
+      "dbnotes": "",
+      "last_updated": "2023-12-28T18:35:35"
+    },
+    {
+      "record_id": "food_drink_20162",
+      "name": "Alcohol",
+      "description": "Vodka, typically",
+      "raw_effects": "Will inebriate leading to roll penalties but social benefits: \r\n\r\n-1 to all rolls when consumed at all\r\n-2 to all rolls when significant amounts are consumed\r\n-3 to all rolls when consumed in copious amounts",
+      "effects_in_potions": "Varied.",
+      "dbnotes": "",
+      "last_updated": "2024-01-06T17:35:09"
+    },
+    {
+      "record_id": "food_drink_20186",
+      "name": "Honeywater",
+      "description": "A delicate balance of honey and water to ensure a delicious taste in meals.",
+      "raw_effects": "None",
+      "effects_in_potions": "No significant magical effects.",
+      "dbnotes": "",
+      "last_updated": "2024-01-06T18:02:08"
+    },
+    {
+      "record_id": "food_drink_20188",
+      "name": "Hops",
+      "description": "Often found in beers.",
+      "raw_effects": "None",
+      "effects_in_potions": "None",
+      "dbnotes": "",
+      "last_updated": "2024-01-06T18:03:22"
+    },
+    {
+      "record_id": "food_drink_20189",
+      "name": "Ice Pop",
+      "description": "Tasty!",
+      "raw_effects": "Children under 11 can take +1 to any rolls for a half hour.",
+      "effects_in_potions": "None",
+      "dbnotes": "",
+      "last_updated": "2024-01-06T18:03:55"
+    },
+    {
+      "record_id": "food_drink_7395",
+      "name": "Fire Whiskey",
+      "description": "",
+      "raw_effects": "",
+      "effects_in_potions": "",
+      "dbnotes": "",
+      "last_updated": "2022-12-14T17:54:20"
+    },
+    {
+      "record_id": "food_drink_20198",
+      "name": "Onion Juice",
+      "description": "A disgusting juice made of purely squeeze onions.",
+      "raw_effects": "It's just gross.",
+      "effects_in_potions": "input",
+      "dbnotes": "",
+      "last_updated": "2024-01-06T18:10:37"
+    },
+    {
+      "record_id": "food_drink_20202",
+      "name": "Pumpkin Juice",
+      "description": "A popular sweet drink in the magical world.",
+      "raw_effects": "None",
+      "effects_in_potions": "input",
+      "dbnotes": "",
+      "last_updated": "2024-01-06T18:12:19"
+    },
+    {
+      "record_id": "food_drink_20204",
+      "name": "Rosewater",
+      "description": "A delicious water with faint traces of rose.",
+      "raw_effects": "None",
+      "effects_in_potions": "Often thought to be a critical component of love potions",
+      "dbnotes": "",
+      "last_updated": "2024-01-06T18:15:49"
+    },
+    {
+      "record_id": "food_drink_20226",
+      "name": "Vinegar",
+      "description": "input",
+      "raw_effects": "input",
+      "effects_in_potions": "input",
+      "dbnotes": "",
+      "last_updated": "2024-01-06T18:33:55"
+    },
+    {
+      "record_id": "food_drink_20227",
+      "name": "Yeast",
+      "description": "input",
+      "raw_effects": "input",
+      "effects_in_potions": "input",
+      "dbnotes": "",
+      "last_updated": "2024-01-06T18:34:03"
+    },
+    {
+      "record_id": "food_drink_22190",
+      "name": "Cheese Curds",
+      "description": "Tasty Cheese Curds",
+      "raw_effects": ".",
+      "effects_in_potions": ".",
+      "dbnotes": "",
+      "last_updated": "2024-01-10T17:11:47"
+    }
+  ],
+  "books": [],
+  "bookshelves": [],
+  "proficiencies": [],
+  "spells": [],
+  "preferences": {
+    "window": {
+      "start_maximized": true,
+      "sidebar_width": 250
+    },
+    "layouts": {}
+  }
+}
