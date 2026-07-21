@@ -94,18 +94,13 @@ class CreatureTests(unittest.TestCase):
             ),
         )
 
-    def test_conversion_preserves_all_creatures_and_nested_data(self):
+    def test_all_creature_parts_are_children_of_their_creatures(self):
         database = JsonDatabase(DATABASE_PATH)
         database.load()
         records = database.get_collection("creatures")
-        catalog_records = database.get_collection("creature_parts")
         records_by_name = {
             record["name"]: record
             for record in records
-        }
-        catalog_by_name = {
-            record["name"]: record
-            for record in catalog_records
         }
         required_fields = {
             "record_id",
@@ -134,12 +129,25 @@ class CreatureTests(unittest.TestCase):
             "dbnotes",
             "last_updated",
         }
+        required_part_fields = {
+            "name",
+            "required_proficiency",
+            "description",
+            "raw_effects",
+            "effect_in_potions",
+        }
+        creature_parts = [
+            part
+            for record in records
+            for part in record["parts"]
+        ]
 
-        self.assertEqual(len(records), 242)
-        self.assertEqual(len(records_by_name), 242)
+        self.assertFalse(database.has_container("creature_parts"))
+        self.assertEqual(len(records), 245)
+        self.assertEqual(len(records_by_name), 245)
         self.assertEqual(
             len({record["record_id"] for record in records}),
-            242,
+            245,
         )
         self.assertTrue(
             all(set(record) == required_fields for record in records)
@@ -193,50 +201,29 @@ class CreatureTests(unittest.TestCase):
         )
         self.assertEqual(
             sum(len(record["parts"]) for record in records),
-            547,
-        )
-        self.assertEqual(len(catalog_records), 439)
-        self.assertEqual(len(catalog_by_name), 439)
-        self.assertEqual(
-            len({record["record_id"] for record in catalog_records}),
-            439,
+            578,
         )
         self.assertEqual(
-            set(catalog_records[0]),
-            {
-                "record_id",
-                "name",
-                "description",
-                "raw_effects",
-                "effect_in_potions",
-                "dbnotes",
-                "last_updated",
-            },
+            len({part["name"].casefold() for part in creature_parts}),
+            440,
         )
         self.assertTrue(
             all(
-                set(part)
-                == {
-                    "catalog_record_id",
-                    "name",
-                    "required_proficiency",
-                    "description",
-                    "raw_effects",
-                    "effect_in_potions",
-                }
-                for record in records
-                for part in record["parts"]
+                set(part) == required_part_fields
+                for part in creature_parts
             )
         )
-        self.assertEqual(
-            len(
-                {
-                    part["catalog_record_id"]
-                    for record in records
-                    for part in record["parts"]
-                }
-            ),
-            409,
+        self.assertTrue(
+            all(
+                len(record["parts"])
+                == len(
+                    {
+                        part["name"].casefold()
+                        for part in record["parts"]
+                    }
+                )
+                for record in records
+            )
         )
         self.assertEqual(
             sum(
@@ -295,7 +282,6 @@ class CreatureTests(unittest.TestCase):
         self.assertEqual(
             records_by_name["Very Small Acromantula"]["parts"][0],
             {
-                "catalog_record_id": "creature_part_6924",
                 "name": "Acromantula Venom",
                 "required_proficiency": "No",
                 "description": (
@@ -307,26 +293,38 @@ class CreatureTests(unittest.TestCase):
             },
         )
         self.assertEqual(
-            catalog_by_name["Phoenix Feathers"]["record_id"],
-            "creature_part_16404",
+            [part["name"] for part in records_by_name["Krup"]["parts"]],
+            ["Cropped Krup Tail"],
         )
-        self.assertTrue(
-            all(
-                "<" not in record[field_name]
-                and ">" not in record[field_name]
-                for record in catalog_records
-                for field_name in (
-                    "description",
-                    "raw_effects",
-                    "effect_in_potions",
-                )
-            )
+        self.assertEqual(
+            [part["name"] for part in records_by_name["Demon"]["parts"]],
+            ["Demonic Milk"],
+        )
+        self.assertEqual(
+            [part["name"] for part in records_by_name["Skeleton"]["parts"]],
+            ["Bonemeal"],
+        )
+        self.assertIn(
+            "Foul Feathers",
+            [part["name"] for part in records_by_name["Pheasant"]["parts"]],
         )
         self.assertTrue(
             all(
                 "<" not in record["description"]
                 and ">" not in record["description"]
                 for record in records
+            )
+        )
+        self.assertTrue(
+            all(
+                "<" not in part[field_name]
+                and ">" not in part[field_name]
+                for part in creature_parts
+                for field_name in (
+                    "description",
+                    "raw_effects",
+                    "effect_in_potions",
+                )
             )
         )
 

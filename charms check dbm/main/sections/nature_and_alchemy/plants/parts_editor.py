@@ -20,7 +20,7 @@ from theme import (
 )
 
 
-class PartsEditor(tk.Frame):
+class PlantPartsEditor(tk.Frame):
     def __init__(self, parent, database, change_command):
         super().__init__(parent, bg=SURFACE)
         bind_theme(self, background="SURFACE")
@@ -41,7 +41,7 @@ class PartsEditor(tk.Frame):
 
         self.title = tk.Label(
             self.header,
-            text="Creature Parts",
+            text="Plant Parts",
             bg=SURFACE,
             fg=TEXT_DARK,
             font=app_font(12),
@@ -80,7 +80,7 @@ class PartsEditor(tk.Frame):
 
         self.listbox = StripedListbox(
             self.body,
-            width=26,
+            width=27,
             bg=FIELD_BACKGROUND,
             fg=TEXT_DARK,
             selectbackground=SIDEBAR_TILE_SELECTED,
@@ -95,14 +95,15 @@ class PartsEditor(tk.Frame):
             exportselection=False,
             selectmode="browse",
         )
-        self.listbox.grid(row=0, column=0, sticky="nsew", padx=(0, 10))
+        self.listbox.grid(row=0, column=0, sticky="nsew", padx=(0, 12))
         self.listbox.bind("<<ListboxSelect>>", self.select_part)
+
         self.detail = tk.Frame(self.body, bg=SURFACE)
         self.detail.grid(row=0, column=1, sticky="nsew")
         self.detail.grid_columnconfigure(0, weight=1)
         self.detail.grid_columnconfigure(1, weight=1)
-        self.detail.grid_rowconfigure(1, weight=1)
-        self.detail.grid_rowconfigure(2, weight=1)
+        self.detail.grid_rowconfigure(1, weight=1, minsize=180)
+        self.detail.grid_rowconfigure(2, weight=1, minsize=180)
         bind_theme(self.detail, background="SURFACE")
 
         self.name_field = LabeledEntry(
@@ -134,42 +135,42 @@ class PartsEditor(tk.Frame):
             self.detail,
             "Description",
             self.handle_field_change,
-            height=5,
+            height=7,
         )
         self.description_field.grid(
             row=1,
             column=0,
             columnspan=2,
             sticky="nsew",
-            pady=(10, 0),
+            pady=(12, 0),
         )
 
         self.raw_effects_field = MultilineField(
             self.detail,
             "Raw Effects",
             self.handle_field_change,
-            height=4,
+            height=7,
         )
         self.raw_effects_field.grid(
             row=2,
             column=0,
             sticky="nsew",
             padx=(0, 8),
-            pady=(10, 0),
+            pady=(12, 0),
         )
 
         self.potion_effects_field = MultilineField(
             self.detail,
             "Effect in Potions",
             self.handle_field_change,
-            height=4,
+            height=7,
         )
         self.potion_effects_field.grid(
             row=2,
             column=1,
             sticky="nsew",
             padx=(8, 0),
-            pady=(10, 0),
+            pady=(12, 0),
         )
 
         self.set_detail_enabled(False)
@@ -191,18 +192,17 @@ class PartsEditor(tk.Frame):
             part_name = str(part.get("name", "")).strip()
 
             if not part_name:
-                raise ValueError("Every creature part must have a name")
+                raise ValueError("Every plant part must have a name")
 
             normalized_name = " ".join(part_name.split()).casefold()
 
             if normalized_name in normalized_names:
-                raise ValueError(f"Duplicate creature part: {part_name}")
+                raise ValueError(f"Duplicate plant part: {part_name}")
 
             normalized_names.add(normalized_name)
             required_proficiency = str(
                 part.get("required_proficiency", "No")
             ).strip() or "No"
-
             converted_parts.append(
                 {
                     "name": part_name,
@@ -227,7 +227,7 @@ class PartsEditor(tk.Frame):
 
         self.parts.append(
             {
-                "name": "New Creature Part",
+                "name": "New Plant Part",
                 "required_proficiency": "No",
                 "description": "",
                 "raw_effects": "",
@@ -273,6 +273,7 @@ class PartsEditor(tk.Frame):
 
     def refresh_list(self):
         self.listbox.delete(0, "end")
+
         for part in self.parts:
             self.listbox.insert("end", part.get("name", "") or "Unnamed")
 
@@ -285,7 +286,6 @@ class PartsEditor(tk.Frame):
 
     def load_selected_part(self):
         self.loading_part = True
-        self.set_detail_enabled(True)
 
         if self.selected_index is None:
             part = {}

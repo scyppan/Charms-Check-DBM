@@ -372,16 +372,6 @@ class CreatureController:
                         f"{part_name} {field_label} must be text"
                     )
 
-            catalog_record_id = part.get("catalog_record_id")
-
-            if catalog_record_id is not None and not isinstance(
-                catalog_record_id,
-                str,
-            ):
-                raise TypeError(
-                    f"{part_name} catalog record ID must be text"
-                )
-
     def validate_tags(self, tags):
         if not isinstance(tags, list):
             raise TypeError("Tags must be a list")
