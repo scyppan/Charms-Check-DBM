@@ -6,7 +6,7 @@ from database import JsonDatabase
 from database.paths import DATABASE_PATH
 from preferences import PREFERENCES_PATH, UserPreferences
 from runtime_theme import bind_theme
-from theme import APP_BACKGROUND
+from theme import APP_BACKGROUND, configure_tk_fonts
 from window.content_host import ContentHost
 from window.lifecycle import ApplicationLifecycle
 from window.sidebar import Sidebar
@@ -15,6 +15,7 @@ from window.sidebar import Sidebar
 class App(tk.Tk):
     def __init__(self):
         super().__init__()
+        configure_tk_fonts(self)
 
         icon_path = Path(__file__).parent / "assets" / "House Icon.png"
 

@@ -38,7 +38,13 @@ class ContentHost(tk.Frame):
             section_page.grid(row=0, column=0, sticky="nsew")
             self.section_pages[section_key] = section_page
 
-        self.section_pages[section_key].tkraise()
+        section_page = self.section_pages[section_key]
+        on_show = getattr(section_page, "on_show", None)
+
+        if on_show is not None:
+            on_show()
+
+        section_page.tkraise()
         self.active_section_key = section_key
 
         return True

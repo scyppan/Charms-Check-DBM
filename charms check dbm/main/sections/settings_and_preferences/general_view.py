@@ -3,7 +3,7 @@ from tkinter import messagebox
 
 from runtime_theme import bind_theme
 from shared.widgets import RoundedEntry
-from theme import SURFACE, SURFACE_MUTED, TEXT_DARK, TEXT_MUTED
+from theme import SURFACE, SURFACE_MUTED, TEXT_DARK, TEXT_MUTED, app_font
 
 
 class GeneralSettingsView(tk.Frame):
@@ -23,7 +23,7 @@ class GeneralSettingsView(tk.Frame):
             text="Database",
             bg=SURFACE,
             fg=TEXT_DARK,
-            font=("Segoe UI", 18, "bold"),
+            font=app_font(18),
             anchor="w",
         )
         self.database_heading.grid(
@@ -45,7 +45,7 @@ class GeneralSettingsView(tk.Frame):
             text="Database version",
             bg=SURFACE,
             fg=TEXT_DARK,
-            font=("Segoe UI", 10, "bold"),
+            font=app_font(10),
             anchor="w",
         )
         self.database_version_label.grid(
@@ -71,7 +71,7 @@ class GeneralSettingsView(tk.Frame):
             textvariable=self.database_version_value,
             background=SURFACE,
             height=40,
-            font=("Segoe UI", 11),
+            font=app_font(11),
         )
         self.database_version_entry.grid(
             row=1,
@@ -86,7 +86,7 @@ class GeneralSettingsView(tk.Frame):
             text="Window and Layout",
             bg=SURFACE,
             fg=TEXT_DARK,
-            font=("Segoe UI", 18, "bold"),
+            font=app_font(18),
             anchor="w",
         )
         self.window_heading.grid(
@@ -114,7 +114,7 @@ class GeneralSettingsView(tk.Frame):
             activebackground=SURFACE,
             activeforeground=TEXT_DARK,
             selectcolor=SURFACE_MUTED,
-            font=("Segoe UI", 10),
+            font=app_font(10),
             anchor="w",
         )
         self.start_maximized_check.grid(
@@ -139,7 +139,7 @@ class GeneralSettingsView(tk.Frame):
             text="Sidebar width",
             bg=SURFACE,
             fg=TEXT_DARK,
-            font=("Segoe UI", 10, "bold"),
+            font=app_font(10),
             anchor="w",
         )
         self.sidebar_width_label.grid(
@@ -165,7 +165,7 @@ class GeneralSettingsView(tk.Frame):
             textvariable=self.sidebar_width_value,
             background=SURFACE,
             height=40,
-            font=("Segoe UI", 11),
+            font=app_font(11),
         )
         self.sidebar_width_entry.grid(
             row=4,
@@ -184,7 +184,7 @@ class GeneralSettingsView(tk.Frame):
             ),
             bg=SURFACE,
             fg=TEXT_MUTED,
-            font=("Segoe UI", 10),
+            font=app_font(10),
             justify="left",
             wraplength=650,
             anchor="nw",

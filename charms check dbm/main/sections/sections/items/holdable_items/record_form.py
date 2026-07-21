@@ -1,12 +1,12 @@
 import tkinter as tk
 
 from runtime_theme import bind_theme
-from sections.wands.wand_woods.bonus_editor import BonusEditor
+from sections.items.holdable_items.bonus_editor import BonusEditor
 from shared.widgets import MultilineField, RoundedEntry
 from theme import SURFACE, TEXT_DARK, TEXT_MUTED, app_font
 
 
-class WandWoodForm(tk.Frame):
+class HoldableItemForm(tk.Frame):
     def __init__(self, parent, change_command):
         super().__init__(parent, bg=SURFACE)
         bind_theme(self, background="SURFACE")
@@ -26,8 +26,7 @@ class WandWoodForm(tk.Frame):
             sticky="ew",
             pady=(0, 12),
         )
-        self.identity_panel.grid_columnconfigure(0, weight=3)
-        self.identity_panel.grid_columnconfigure(1, weight=1)
+        self.identity_panel.grid_columnconfigure(0, weight=1)
         bind_theme(self.identity_panel, background="SURFACE")
 
         self.name_label = tk.Label(
@@ -38,30 +37,15 @@ class WandWoodForm(tk.Frame):
             font=app_font(10),
             anchor="w",
         )
-        self.name_label.grid(row=0, column=0, sticky="ew", padx=(0, 8))
+        self.name_label.grid(row=0, column=0, sticky="ew")
         bind_theme(
             self.name_label,
             background="SURFACE",
             foreground="TEXT_DARK",
         )
 
-        self.base_knuts_label = tk.Label(
-            self.identity_panel,
-            text="Base Knuts",
-            bg=SURFACE,
-            fg=TEXT_DARK,
-            font=app_font(10),
-            anchor="w",
-        )
-        self.base_knuts_label.grid(row=0, column=1, sticky="ew", padx=(8, 0))
-        bind_theme(
-            self.base_knuts_label,
-            background="SURFACE",
-            foreground="TEXT_DARK",
-        )
-
         self.name_value = tk.StringVar()
-        self.name_value.trace_add("write", self.handle_identity_change)
+        self.name_value.trace_add("write", self.handle_name_change)
         self.name_entry = RoundedEntry(
             self.identity_panel,
             textvariable=self.name_value,
@@ -69,31 +53,11 @@ class WandWoodForm(tk.Frame):
             height=42,
             font=app_font(12),
         )
-        self.name_entry.grid(
-            row=1,
-            column=0,
-            sticky="ew",
-            padx=(0, 8),
-        )
+        self.name_entry.grid(row=1, column=0, sticky="ew", pady=(5, 0))
 
-        self.base_knuts_value = tk.StringVar()
-        self.base_knuts_value.trace_add("write", self.handle_identity_change)
-        self.base_knuts_entry = RoundedEntry(
-            self.identity_panel,
-            textvariable=self.base_knuts_value,
-            background=SURFACE,
-            height=42,
-            justify="right",
-            font=app_font(12),
+        self.last_updated_value = tk.StringVar(
+            value="Last updated: Not yet saved"
         )
-        self.base_knuts_entry.grid(
-            row=1,
-            column=1,
-            sticky="ew",
-            padx=(8, 0),
-        )
-
-        self.last_updated_value = tk.StringVar(value="Last updated: Not yet saved")
         self.last_updated_label = tk.Label(
             self.identity_panel,
             textvariable=self.last_updated_value,
@@ -105,7 +69,6 @@ class WandWoodForm(tk.Frame):
         self.last_updated_label.grid(
             row=2,
             column=0,
-            columnspan=2,
             sticky="ew",
             pady=(9, 0),
         )
@@ -156,14 +119,16 @@ class WandWoodForm(tk.Frame):
         self.loading_record = True
 
         self.name_value.set(record.get("name", ""))
-        base_knuts = record.get("base_knuts")
-        self.base_knuts_value.set("" if base_knuts is None else str(base_knuts))
         self.description_field.set_value(record.get("description", ""))
         self.bonus_editor.set_bonuses(record.get("bonuses", []))
         self.dbnotes_field.set_value(record.get("dbnotes", ""))
 
         last_updated = record.get("last_updated", "")
-        display_date = last_updated.replace("T", " ") if last_updated else "Unknown"
+        display_date = (
+            last_updated.replace("T", " ")
+            if last_updated
+            else "Unknown"
+        )
         self.last_updated_value.set(f"Last updated: {display_date}")
 
         self.loading_record = False
@@ -174,28 +139,18 @@ class WandWoodForm(tk.Frame):
         self.name_entry.focus_set()
 
     def get_values(self):
-        base_knuts_text = self.base_knuts_value.get().strip()
-
-        if not base_knuts_text:
-            raise ValueError("Base Knuts is required")
-
-        base_knuts = int(base_knuts_text)
-
-        if base_knuts < 0:
-            raise ValueError("Base Knuts cannot be negative")
-
         return {
             "name": self.name_value.get().strip(),
-            "base_knuts": base_knuts,
             "description": self.description_field.get_value(),
             "bonuses": self.bonus_editor.get_bonuses(),
             "dbnotes": self.dbnotes_field.get_value(),
         }
 
-    def handle_identity_change(self, *arguments):
+    def handle_name_change(self, *arguments):
         if not self.loading_record:
             self.change_command()
 
     def handle_field_change(self):
         if not self.loading_record:
             self.change_command()
+

@@ -1,12 +1,12 @@
 import tkinter as tk
 
 from runtime_theme import bind_theme
-from sections.wands.wand_woods.bonus_editor import BonusEditor
+from sections.wands.wand_cores.bonus_editor import BonusEditor
 from shared.widgets import MultilineField, RoundedEntry
 from theme import SURFACE, TEXT_DARK, TEXT_MUTED, app_font
 
 
-class WandWoodForm(tk.Frame):
+class WandCoreForm(tk.Frame):
     def __init__(self, parent, change_command):
         super().__init__(parent, bg=SURFACE)
         bind_theme(self, background="SURFACE")

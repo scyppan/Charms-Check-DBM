@@ -5,6 +5,6 @@ from .page import WandQualitiesPage
 SECTION = SectionDefinition(
     key="wand_qualities",
     title="Wand Qualities",
-    order=60,
+    order=50,
     page_class=WandQualitiesPage,
 )

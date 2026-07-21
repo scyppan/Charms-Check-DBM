@@ -3,6 +3,7 @@ import tkinter as tk
 from runtime_theme import bind_theme
 from shared.widgets.controls import SoftButton
 from theme import (
+    app_font,
     BUTTON_SOFT,
     BUTTON_SOFT_HOVER,
     DELETE_HOVER,
@@ -35,7 +36,7 @@ class RecordToolbar(tk.Frame):
             text=title,
             bg=PRIMARY_LIGHT,
             fg=TEXT_DARK,
-            font=("Segoe UI", 17, "bold"),
+            font=app_font(17),
             padx=20,
         )
         self.title_label.pack(side="left", fill="y")

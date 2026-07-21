@@ -2,7 +2,7 @@ import tkinter as tk
 
 from runtime_theme import bind_theme
 from shared.widgets.controls import RoundedText
-from theme import SURFACE, TEXT_DARK
+from theme import SURFACE, TEXT_DARK, app_font
 
 
 class MultilineField(tk.Frame):
@@ -19,7 +19,7 @@ class MultilineField(tk.Frame):
             text=label_text,
             bg=SURFACE,
             fg=TEXT_DARK,
-            font=("Segoe UI", 10, "bold"),
+            font=app_font(10),
             anchor="w",
         )
         self.label.grid(row=0, column=0, sticky="ew", pady=(0, 5))

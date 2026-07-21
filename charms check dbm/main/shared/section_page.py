@@ -4,6 +4,7 @@ from functools import partial
 from runtime_theme import bind_theme
 from shared.widgets import SoftButton
 from theme import (
+    app_font,
     APP_BACKGROUND,
     BORDER,
     PRIMARY,
@@ -47,7 +48,7 @@ class StandardSectionPage(tk.Frame):
                 background_role="PRIMARY_LIGHT",
                 fill_role="PRIMARY_LIGHT",
                 hover_fill_role="PRIMARY",
-                font=("Segoe UI", 10),
+                font=app_font(10),
                 height=38,
             )
             menu_button.pack(side="left", padx=(8, 0), pady=8)
@@ -78,7 +79,7 @@ class StandardSectionPage(tk.Frame):
             text=self.section_title,
             bg=SURFACE,
             fg=TEXT_DARK,
-            font=("Segoe UI", 26, "bold"),
+            font=app_font(26),
             anchor="w",
         )
         self.page_title.grid(
@@ -99,7 +100,7 @@ class StandardSectionPage(tk.Frame):
             text=f"The {self.section_title} section is ready to be built.",
             bg=SURFACE,
             fg=TEXT_MUTED,
-            font=("Segoe UI", 13),
+            font=app_font(13),
             justify="left",
             anchor="nw",
         )
@@ -121,7 +122,7 @@ class StandardSectionPage(tk.Frame):
             text="Ready",
             bg=SURFACE_MUTED,
             fg=TEXT_MUTED,
-            font=("Segoe UI", 9),
+            font=app_font(9),
             anchor="w",
             padx=12,
             pady=7,

@@ -1,8 +1,8 @@
 {
   "_database": {
     "schema_version": 1,
-    "database_version": "v26.7.26.001",
-    "last_saved": "2026-07-21T00:06:00.718719+00:00"
+    "database_version": "1.0",
+    "last_saved": "2026-07-21T04:49:30.979817+00:00"
   },
   "people": [],
   "schools": [],
@@ -95,7 +95,7 @@
         }
       ],
       "dbnotes": "",
-      "last_updated": "2026-07-20T23:25:32.298150+00:00"
+      "last_updated": "2024-01-03T18:56:33"
     },
     {
       "record_id": "wand_wood_12888",
@@ -482,10 +482,2850 @@
       "last_updated": "2024-01-03T18:51:31"
     }
   ],
-  "wand_cores": [],
-  "wand_makers": [],
-  "wand_qualities": [],
-  "wands": [],
+  "wand_cores": [
+    {
+      "record_id": "wand_core_6669",
+      "name": "Unicorn Horn",
+      "base_knuts": 2216,
+      "description": "Dark Arts +1",
+      "bonuses": [
+        {
+          "type": "Skill",
+          "target": "Dark Arts",
+          "amount": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:51:05"
+    },
+    {
+      "record_id": "wand_core_6671",
+      "name": "Dragon Heartstring",
+      "base_knuts": 2216,
+      "description": "Defense +1",
+      "bonuses": [
+        {
+          "type": "Skill",
+          "target": "Defense Against the Dark Arts",
+          "amount": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:47:46"
+    },
+    {
+      "record_id": "wand_core_6673",
+      "name": "Phoenix Feather",
+      "base_knuts": 2216,
+      "description": "Charms +1",
+      "bonuses": [
+        {
+          "type": "Skill",
+          "target": "Charms",
+          "amount": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:47:56"
+    },
+    {
+      "record_id": "wand_core_6675",
+      "name": "Chimera Whisker",
+      "base_knuts": 2216,
+      "description": "Transfiguration +1",
+      "bonuses": [
+        {
+          "type": "Skill",
+          "target": "Transfiguration",
+          "amount": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:48:04"
+    },
+    {
+      "record_id": "wand_core_6677",
+      "name": "Kelpie Hair",
+      "base_knuts": 5465,
+      "description": "Runes +1, Power -2",
+      "bonuses": [
+        {
+          "type": "Skill",
+          "target": "Runes",
+          "amount": 1
+        },
+        {
+          "type": "Ability",
+          "target": "Power",
+          "amount": -2
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:48:20"
+    },
+    {
+      "record_id": "wand_core_6679",
+      "name": "Tebo Tusk",
+      "base_knuts": 6648,
+      "description": "Charms +2",
+      "bonuses": [
+        {
+          "type": "Skill",
+          "target": "Charms",
+          "amount": 2
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:48:37"
+    },
+    {
+      "record_id": "wand_core_6681",
+      "name": "Cockatrice Beak",
+      "base_knuts": 8849,
+      "description": "Transfiguration +2",
+      "bonuses": [
+        {
+          "type": "Skill",
+          "target": "Transfiguration",
+          "amount": 2
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:48:51"
+    },
+    {
+      "record_id": "wand_core_6683",
+      "name": "Selma Fang Core",
+      "base_knuts": 7578,
+      "description": "Dark Arts +2",
+      "bonuses": [
+        {
+          "type": "Skill",
+          "target": "Dark Arts",
+          "amount": 2
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:49:02"
+    },
+    {
+      "record_id": "wand_core_6685",
+      "name": "Griffin Claw",
+      "base_knuts": 6658,
+      "description": "Runes +2, Power -2",
+      "bonuses": [
+        {
+          "type": "Skill",
+          "target": "Runes",
+          "amount": 2
+        },
+        {
+          "type": "Ability",
+          "target": "Power",
+          "amount": -2
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:49:19"
+    },
+    {
+      "record_id": "wand_core_6687",
+      "name": "Thestral Tail Hair",
+      "base_knuts": 33265,
+      "description": "Defense +2",
+      "bonuses": [
+        {
+          "type": "Skill",
+          "target": "Defense Against the Dark Arts",
+          "amount": 2
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:47:37"
+    },
+    {
+      "record_id": "wand_core_6689",
+      "name": "Troll Whisker",
+      "base_knuts": 11000,
+      "description": "Transfiguration +3, Runes -5",
+      "bonuses": [
+        {
+          "type": "Skill",
+          "target": "Transfiguration",
+          "amount": 3
+        },
+        {
+          "type": "Skill",
+          "target": "Runes",
+          "amount": -5
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:47:17"
+    },
+    {
+      "record_id": "wand_core_6691",
+      "name": "Kneazle Whisker",
+      "base_knuts": 9994,
+      "description": "Runes +3, Power -3",
+      "bonuses": [
+        {
+          "type": "Skill",
+          "target": "Runes",
+          "amount": 3
+        },
+        {
+          "type": "Ability",
+          "target": "Power",
+          "amount": -3
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:46:40"
+    },
+    {
+      "record_id": "wand_core_6692",
+      "name": "Veela Hair",
+      "base_knuts": 1051,
+      "description": "Charms +3",
+      "bonuses": [
+        {
+          "type": "Skill",
+          "target": "Charms",
+          "amount": 3
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:44:02"
+    },
+    {
+      "record_id": "wand_core_6693",
+      "name": "Coral",
+      "base_knuts": 1789,
+      "description": "Power +1",
+      "bonuses": [
+        {
+          "type": "Ability",
+          "target": "Power",
+          "amount": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:44:09"
+    },
+    {
+      "record_id": "wand_core_6695",
+      "name": "Thunderbird Feather",
+      "base_knuts": 9121,
+      "description": "Defense +3",
+      "bonuses": [
+        {
+          "type": "Skill",
+          "target": "Defense Against the Dark Arts",
+          "amount": 3
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:44:20"
+    },
+    {
+      "record_id": "wand_core_6697",
+      "name": "Wampus Cat Hair",
+      "base_knuts": 16010,
+      "description": "Power +3",
+      "bonuses": [
+        {
+          "type": "Ability",
+          "target": "Power",
+          "amount": 3
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:44:32"
+    },
+    {
+      "record_id": "wand_core_6699",
+      "name": "White River Monster Spine",
+      "base_knuts": 18446,
+      "description": "Transfiguration +3",
+      "bonuses": [
+        {
+          "type": "Skill",
+          "target": "Transfiguration",
+          "amount": 3
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:44:43"
+    },
+    {
+      "record_id": "wand_core_6701",
+      "name": "Rougarou Hair",
+      "base_knuts": 330203,
+      "description": "Dark Arts +3",
+      "bonuses": [
+        {
+          "type": "Skill",
+          "target": "Dark Arts",
+          "amount": 3
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:44:54"
+    },
+    {
+      "record_id": "wand_core_6702",
+      "name": "Horned Serpent Horn",
+      "base_knuts": 15141,
+      "description": "Power +4, Runes -3",
+      "bonuses": [
+        {
+          "type": "Ability",
+          "target": "Power",
+          "amount": 4
+        },
+        {
+          "type": "Skill",
+          "target": "Runes",
+          "amount": -3
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:45:23"
+    },
+    {
+      "record_id": "wand_core_6704",
+      "name": "Snallygaster Heartstring",
+      "base_knuts": 19181,
+      "description": "Dark Arts +2, Defense +2, Charms -2, Transfiguration -2",
+      "bonuses": [
+        {
+          "type": "Skill",
+          "target": "Dark Arts",
+          "amount": 2
+        },
+        {
+          "type": "Skill",
+          "target": "Defense Against the Dark Arts",
+          "amount": 2
+        },
+        {
+          "type": "Skill",
+          "target": "Charms",
+          "amount": -2
+        },
+        {
+          "type": "Skill",
+          "target": "Transfiguration",
+          "amount": -2
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:45:56"
+    },
+    {
+      "record_id": "wand_core_6706",
+      "name": "Jackalope Antler",
+      "base_knuts": 4549,
+      "description": "Runes +5",
+      "bonuses": [
+        {
+          "type": "Skill",
+          "target": "Runes",
+          "amount": 5
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:46:21"
+    },
+    {
+      "record_id": "wand_core_6708",
+      "name": "Wiggentree Leaf Stem",
+      "base_knuts": 6424,
+      "description": "Power +4",
+      "bonuses": [
+        {
+          "type": "Ability",
+          "target": "Power",
+          "amount": 4
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:43:51"
+    }
+  ],
+  "wand_makers": [
+    {
+      "record_id": "wand_maker_12929",
+      "name": "Garrick Ollivander",
+      "multiplier": 0.6,
+      "allowed_quality_names": [],
+      "allowed_wood_names": [],
+      "allowed_core_names": [],
+      "notes": "",
+      "last_updated": "2023-08-02T04:09:09"
+    },
+    {
+      "record_id": "wand_maker_12930",
+      "name": "Eldist Rancor",
+      "multiplier": 1.1,
+      "allowed_quality_names": [],
+      "allowed_wood_names": [],
+      "allowed_core_names": [],
+      "notes": "",
+      "last_updated": "2023-08-02T04:08:59"
+    },
+    {
+      "record_id": "wand_maker_12931",
+      "name": "Jimmy Kiddell",
+      "multiplier": 1.0,
+      "allowed_quality_names": [],
+      "allowed_wood_names": [],
+      "allowed_core_names": [],
+      "notes": "",
+      "last_updated": "2023-08-02T04:08:37"
+    },
+    {
+      "record_id": "wand_maker_12932",
+      "name": "Mykew Gregorovitch",
+      "multiplier": 1.2,
+      "allowed_quality_names": [],
+      "allowed_wood_names": [],
+      "allowed_core_names": [],
+      "notes": "",
+      "last_updated": "2023-08-02T04:08:25"
+    },
+    {
+      "record_id": "wand_maker_12933",
+      "name": "Arturo Cephalopos",
+      "multiplier": 0.1,
+      "allowed_quality_names": [],
+      "allowed_wood_names": [],
+      "allowed_core_names": [],
+      "notes": "",
+      "last_updated": "2023-08-02T04:08:13"
+    }
+  ],
+  "wand_qualities": [
+    {
+      "record_id": "wand_quality_12934",
+      "name": "Superior",
+      "base_knuts": 5000,
+      "effect": "No Effect",
+      "casting_effect": 0,
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:59:09"
+    },
+    {
+      "record_id": "wand_quality_12935",
+      "name": "Standard",
+      "base_knuts": 1000,
+      "effect": "-1 to all casting checks",
+      "casting_effect": -1,
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:59:22"
+    },
+    {
+      "record_id": "wand_quality_12936",
+      "name": "Shoddy",
+      "base_knuts": 500,
+      "effect": "-2 to all casting checks",
+      "casting_effect": -2,
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:59:16"
+    },
+    {
+      "record_id": "wand_quality_12937",
+      "name": "Inferior",
+      "base_knuts": 100,
+      "effect": "-3 to all casting checks",
+      "casting_effect": -1,
+      "dbnotes": "",
+      "last_updated": "2024-01-03T18:59:01"
+    }
+  ],
+  "wands": [
+  {
+    "record_id": "wand_28935",
+    "name": "Superior Black Walnut wand with a Wiggentree Leaf Stem core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "Wiggentree Leaf Stem",
+    "wood_name": "Black Walnut",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2025-05-03T13:44:40"
+  },
+  {
+    "record_id": "wand_24074",
+    "name": "Standard Spruce wand with a Thunderbird Feather core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "Thunderbird Feather",
+    "wood_name": "Spruce",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2024-07-08T20:41:50"
+  },
+  {
+    "record_id": "wand_24082",
+    "name": "Superior Yew wand with a Dragon Heartstring core (crafted by Garrick Ollivander)",
+    "maker_name": "Garrick Ollivander",
+    "core_name": "Dragon Heartstring",
+    "wood_name": "Yew",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2024-07-08T20:56:29"
+  },
+  {
+    "record_id": "wand_23840",
+    "name": "Superior Holly wand with a Phoenix Feather core (crafted by Garrick Ollivander)",
+    "maker_name": "Garrick Ollivander",
+    "core_name": "Phoenix Feather",
+    "wood_name": "Holly",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2024-07-02T22:30:57"
+  },
+  {
+    "record_id": "wand_31276",
+    "name": "Superior Holly wand with a Chimera Whisker core (crafted by Garrick Ollivander)",
+    "maker_name": "Garrick Ollivander",
+    "core_name": "Chimera Whisker",
+    "wood_name": "Holly",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-18T02:25:29"
+  },
+  {
+    "record_id": "wand_24401",
+    "name": "Superior Elder wand with a Horned Serpent Horn core (crafted by Mykew Gregorovitch)",
+    "maker_name": "Mykew Gregorovitch",
+    "core_name": "Horned Serpent Horn",
+    "wood_name": "Elder",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2024-07-21T23:37:07"
+  },
+  {
+    "record_id": "wand_23906",
+    "name": "Superior Vine wand with a Thunderbird Feather core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "Thunderbird Feather",
+    "wood_name": "Vine",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2024-07-03T19:08:37"
+  },
+  {
+    "record_id": "wand_13949",
+    "name": "Superior Fir wand with a White River Monster Spine core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "White River Monster Spine",
+    "wood_name": "Fir",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2023-08-11T23:05:32"
+  },
+  {
+    "record_id": "wand_13978",
+    "name": "Standard Silver Lime wand with a Tebo Tusk core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Tebo Tusk",
+    "wood_name": "Silver Lime",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2023-08-12T00:18:34"
+  },
+  {
+    "record_id": "wand_13980",
+    "name": "Superior Cedarwood wand with a Dragon Heartstring core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "Dragon Heartstring",
+    "wood_name": "Cedarwood",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2023-08-12T00:21:17"
+  },
+  {
+    "record_id": "wand_13981",
+    "name": "Superior Rowan wand with a Thestral Tail Hair core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "Thestral Tail Hair",
+    "wood_name": "Rowan",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2023-08-12T00:23:46"
+  },
+  {
+    "record_id": "wand_13983",
+    "name": "Standard Spruce wand with a Dragon Heartstring core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Dragon Heartstring",
+    "wood_name": "Spruce",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2023-08-12T00:25:23"
+  },
+  {
+    "record_id": "wand_13986",
+    "name": "Superior Yew wand with a Unicorn Horn core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "Unicorn Horn",
+    "wood_name": "Yew",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2023-08-12T00:31:04"
+  },
+  {
+    "record_id": "wand_13987",
+    "name": "Superior Holly wand with a Unicorn Horn core (crafted by Garrick Ollivander)",
+    "maker_name": "Garrick Ollivander",
+    "core_name": "Unicorn Horn",
+    "wood_name": "Holly",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2023-08-12T00:31:17"
+  },
+  {
+    "record_id": "wand_13991",
+    "name": "Superior Holly wand with a Unicorn Horn core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "Unicorn Horn",
+    "wood_name": "Holly",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2023-08-12T00:37:16"
+  },
+  {
+    "record_id": "wand_13996",
+    "name": "Shoddy Yew wand with a Unicorn Horn core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Unicorn Horn",
+    "wood_name": "Yew",
+    "quality_name": "Shoddy",
+    "dbnotes": "",
+    "last_updated": "2023-08-12T00:44:24"
+  },
+  {
+    "record_id": "wand_14001",
+    "name": "Standard Willow wand with a Tebo Tusk core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Tebo Tusk",
+    "wood_name": "Willow",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2023-08-12T00:48:05"
+  },
+  {
+    "record_id": "wand_14007",
+    "name": "Superior Spruce wand with a Wampus Cat Hair core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "Wampus Cat Hair",
+    "wood_name": "Spruce",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2023-08-12T00:58:02"
+  },
+  {
+    "record_id": "wand_16604",
+    "name": "Superior Cedarwood wand with a Coral core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "Coral",
+    "wood_name": "Cedarwood",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2023-08-26T23:58:13"
+  },
+  {
+    "record_id": "wand_24575",
+    "name": "Superior Silver Lime wand with a Wampus Cat Hair core (crafted by Mykew Gregorovitch)",
+    "maker_name": "Mykew Gregorovitch",
+    "core_name": "Wampus Cat Hair",
+    "wood_name": "Silver Lime",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2024-11-18T02:54:09"
+  },
+  {
+    "record_id": "wand_31277",
+    "name": "Superior Ebony wand with a Chimera Whisker core (crafted by Garrick Ollivander)",
+    "maker_name": "Garrick Ollivander",
+    "core_name": "Chimera Whisker",
+    "wood_name": "Ebony",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-18T02:28:23"
+  },
+  {
+    "record_id": "wand_31278",
+    "name": "Superior Elm wand with a Chimera Whisker core (crafted by Garrick Ollivander)",
+    "maker_name": "Garrick Ollivander",
+    "core_name": "Chimera Whisker",
+    "wood_name": "Elm",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-18T02:32:18"
+  },
+  {
+    "record_id": "wand_31279",
+    "name": "Superior Ebony wand with a Dragon Heartstring core (crafted by Garrick Ollivander)",
+    "maker_name": "Garrick Ollivander",
+    "core_name": "Dragon Heartstring",
+    "wood_name": "Ebony",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-18T02:53:34"
+  },
+  {
+    "record_id": "wand_31280",
+    "name": "Superior Elm wand with a Dragon Heartstring core (crafted by Garrick Ollivander)",
+    "maker_name": "Garrick Ollivander",
+    "core_name": "Dragon Heartstring",
+    "wood_name": "Elm",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-18T02:55:48"
+  },
+  {
+    "record_id": "wand_31281",
+    "name": "Superior Ebony wand with a Phoenix Feather core (crafted by Garrick Ollivander)",
+    "maker_name": "Garrick Ollivander",
+    "core_name": "Phoenix Feather",
+    "wood_name": "Ebony",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-18T03:01:30"
+  },
+  {
+    "record_id": "wand_31282",
+    "name": "Superior Elm wand with a Phoenix Feather core (crafted by Garrick Ollivander)",
+    "maker_name": "Garrick Ollivander",
+    "core_name": "Phoenix Feather",
+    "wood_name": "Elm",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-18T03:03:18"
+  },
+  {
+    "record_id": "wand_31283",
+    "name": "Superior Yew wand with a Phoenix Feather core (crafted by Garrick Ollivander)",
+    "maker_name": "Garrick Ollivander",
+    "core_name": "Phoenix Feather",
+    "wood_name": "Yew",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-18T03:05:20"
+  },
+  {
+    "record_id": "wand_31284",
+    "name": "Superior Ebony wand with a Unicorn Horn core (crafted by Garrick Ollivander)",
+    "maker_name": "Garrick Ollivander",
+    "core_name": "Unicorn Horn",
+    "wood_name": "Ebony",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-18T03:11:27"
+  },
+  {
+    "record_id": "wand_31285",
+    "name": "Superior Elm wand with a Unicorn Horn core (crafted by Garrick Ollivander)",
+    "maker_name": "Garrick Ollivander",
+    "core_name": "Unicorn Horn",
+    "wood_name": "Elm",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-18T03:13:38"
+  },
+  {
+    "record_id": "wand_31286",
+    "name": "Superior Yew wand with a Unicorn Horn core (crafted by Garrick Ollivander)",
+    "maker_name": "Garrick Ollivander",
+    "core_name": "Unicorn Horn",
+    "wood_name": "Yew",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-18T03:16:21"
+  },
+  {
+    "record_id": "wand_31287",
+    "name": "Superior Yew wand with a Chimera Whisker core (crafted by Garrick Ollivander)",
+    "maker_name": "Garrick Ollivander",
+    "core_name": "Chimera Whisker",
+    "wood_name": "Yew",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-18T03:22:32"
+  },
+  {
+    "record_id": "wand_31288",
+    "name": "Superior Holly wand with a Dragon Heartstring core (crafted by Garrick Ollivander)",
+    "maker_name": "Garrick Ollivander",
+    "core_name": "Dragon Heartstring",
+    "wood_name": "Holly",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-18T04:16:46"
+  },
+  {
+    "record_id": "wand_31289",
+    "name": "Standard Acacia wand with a Chimera Whisker core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "Chimera Whisker",
+    "wood_name": "Acacia",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-18T04:24:46"
+  },
+  {
+    "record_id": "wand_31290",
+    "name": "Superior Apple wand with a Chimera Whisker core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "Chimera Whisker",
+    "wood_name": "Apple",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-18T04:37:55"
+  },
+  {
+    "record_id": "wand_31291",
+    "name": "Standard Ash wand with a Chimera Whisker core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "Chimera Whisker",
+    "wood_name": "Ash",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-18T04:43:23"
+  },
+  {
+    "record_id": "wand_31292",
+    "name": "Superior Aspen wand with a Chimera Whisker core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "Chimera Whisker",
+    "wood_name": "Aspen",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-18T04:45:12"
+  },
+  {
+    "record_id": "wand_31293",
+    "name": "Standard Acacia wand with a Cockatrice Beak core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "Cockatrice Beak",
+    "wood_name": "Acacia",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-18T04:47:52"
+  },
+  {
+    "record_id": "wand_31294",
+    "name": "Superior Apple wand with a Cockatrice Beak core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "Cockatrice Beak",
+    "wood_name": "Apple",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-18T04:50:46"
+  },
+  {
+    "record_id": "wand_31295",
+    "name": "Standard Ash wand with a Cockatrice Beak core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "Cockatrice Beak",
+    "wood_name": "Ash",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-18T04:53:18"
+  },
+  {
+    "record_id": "wand_31296",
+    "name": "Superior Aspen wand with a Cockatrice Beak core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "Cockatrice Beak",
+    "wood_name": "Aspen",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-18T05:00:06"
+  },
+  {
+    "record_id": "wand_31297",
+    "name": "Standard Acacia wand with a Coral core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "Coral",
+    "wood_name": "Acacia",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-18T05:06:46"
+  },
+  {
+    "record_id": "wand_31298",
+    "name": "Superior Apple wand with a Coral core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "Coral",
+    "wood_name": "Apple",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-18T05:10:52"
+  },
+  {
+    "record_id": "wand_31299",
+    "name": "Standard Ash wand with a Coral core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "Coral",
+    "wood_name": "Ash",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-18T05:15:54"
+  },
+  {
+    "record_id": "wand_31300",
+    "name": "Superior Aspen wand with a Coral core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "Coral",
+    "wood_name": "Aspen",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-18T05:22:20"
+  },
+  {
+    "record_id": "wand_31301",
+    "name": "Standard Acacia wand with a Griffin Claw core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "Griffin Claw",
+    "wood_name": "Acacia",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-18T05:29:28"
+  },
+  {
+    "record_id": "wand_31302",
+    "name": "Standard Beech wand with a Kelpie Hair core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "Kelpie Hair",
+    "wood_name": "Beech",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-18T05:37:48"
+  },
+  {
+    "record_id": "wand_31303",
+    "name": "Superior Black Walnut wand with a Kelpie Hair core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "Kelpie Hair",
+    "wood_name": "Black Walnut",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-18T05:41:07"
+  },
+  {
+    "record_id": "wand_31304",
+    "name": "Standard Cedarwood wand with a Kelpie Hair core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "Kelpie Hair",
+    "wood_name": "Cedarwood",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-18T05:45:43"
+  },
+  {
+    "record_id": "wand_31305",
+    "name": "Superior Cherry wand with a Kelpie Hair core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "Kelpie Hair",
+    "wood_name": "Cherry",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-18T06:29:31"
+  },
+  {
+    "record_id": "wand_31306",
+    "name": "Standard Beech wand with a Kneazle Whisker core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "Kneazle Whisker",
+    "wood_name": "Beech",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-18T06:31:15"
+  },
+  {
+    "record_id": "wand_31307",
+    "name": "Superior Black Walnut wand with a Kneazle Whisker core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "Kneazle Whisker",
+    "wood_name": "Black Walnut",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-18T06:33:18"
+  },
+  {
+    "record_id": "wand_31308",
+    "name": "Standard Cedarwood wand with a Kneazle Whisker core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "Kneazle Whisker",
+    "wood_name": "Cedarwood",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-18T06:37:24"
+  },
+  {
+    "record_id": "wand_31309",
+    "name": "Superior Cherry wand with a Kneazle Whisker core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "Kneazle Whisker",
+    "wood_name": "Cherry",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-18T06:38:36"
+  },
+  {
+    "record_id": "wand_31310",
+    "name": "Standard Beech wand with a Rougarou Hair core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "Rougarou Hair",
+    "wood_name": "Beech",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-18T06:42:42"
+  },
+  {
+    "record_id": "wand_31311",
+    "name": "Standard Mahogany wand with a Dragon Heartstring core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "Dragon Heartstring",
+    "wood_name": "Mahogany",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-20T04:55:00"
+  },
+  {
+    "record_id": "wand_31312",
+    "name": "Superior Ebony wand with a Phoenix Feather core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "Phoenix Feather",
+    "wood_name": "Ebony",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-20T04:55:44"
+  },
+  {
+    "record_id": "wand_31313",
+    "name": "Standard Yew wand with a Unicorn Horn core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "Unicorn Horn",
+    "wood_name": "Yew",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-20T04:56:49"
+  },
+  {
+    "record_id": "wand_31314",
+    "name": "Superior Rowan wand with a Jackalope Antler core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "Jackalope Antler",
+    "wood_name": "Rowan",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-20T04:58:01"
+  },
+  {
+    "record_id": "wand_31315",
+    "name": "Standard Silver Lime wand with a Horned Serpent Horn core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "Horned Serpent Horn",
+    "wood_name": "Silver Lime",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-20T04:59:38"
+  },
+  {
+    "record_id": "wand_31316",
+    "name": "Superior Elm wand with a Griffin Claw core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "Griffin Claw",
+    "wood_name": "Elm",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-20T05:00:33"
+  },
+  {
+    "record_id": "wand_31317",
+    "name": "Standard Walnut wand with a Selma Fang Core core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "Selma Fang Core",
+    "wood_name": "Walnut",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-20T05:01:31"
+  },
+  {
+    "record_id": "wand_31318",
+    "name": "Superior Holly wand with a Snallygaster Heartstring core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "Snallygaster Heartstring",
+    "wood_name": "Holly",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-20T05:02:25"
+  },
+  {
+    "record_id": "wand_31319",
+    "name": "Standard Spruce wand with a Tebo Tusk core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "Tebo Tusk",
+    "wood_name": "Spruce",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-20T05:03:33"
+  },
+  {
+    "record_id": "wand_31320",
+    "name": "Superior Vine wand with a Chimera Whisker core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "Chimera Whisker",
+    "wood_name": "Vine",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-20T05:04:50"
+  },
+  {
+    "record_id": "wand_31321",
+    "name": "Standard Cypress wand with a Cockatrice Beak core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "Cockatrice Beak",
+    "wood_name": "Cypress",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-20T05:05:30"
+  },
+  {
+    "record_id": "wand_31322",
+    "name": "Superior Elder wand with a Thestral Tail Hair core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "Thestral Tail Hair",
+    "wood_name": "Elder",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-20T05:06:10"
+  },
+  {
+    "record_id": "wand_31323",
+    "name": "Standard Willow wand with a Thunderbird Feather core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "Thunderbird Feather",
+    "wood_name": "Willow",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-20T05:07:02"
+  },
+  {
+    "record_id": "wand_31324",
+    "name": "Superior Sycamore wand with a Troll Whisker core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "Troll Whisker",
+    "wood_name": "Sycamore",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-20T05:08:49"
+  },
+  {
+    "record_id": "wand_31325",
+    "name": "Standard Fir wand with a Veela Hair core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "Veela Hair",
+    "wood_name": "Fir",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-20T05:09:37"
+  },
+  {
+    "record_id": "wand_31326",
+    "name": "Superior Chestnut wand with a Wampus Cat Hair core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "Wampus Cat Hair",
+    "wood_name": "Chestnut",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-20T05:10:32"
+  },
+  {
+    "record_id": "wand_31327",
+    "name": "Standard Dogwood wand with a White River Monster Spine core (crafted by Eldist Rancor)",
+    "maker_name": "Eldist Rancor",
+    "core_name": "White River Monster Spine",
+    "wood_name": "Dogwood",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-20T05:11:29"
+  },
+  {
+    "record_id": "wand_31328",
+    "name": "Superior Acacia wand with a Chimera Whisker core (crafted by Mykew Gregorovitch)",
+    "maker_name": "Mykew Gregorovitch",
+    "core_name": "Chimera Whisker",
+    "wood_name": "Acacia",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-22T01:28:18"
+  },
+  {
+    "record_id": "wand_31329",
+    "name": "Superior Apple wand with a Cockatrice Beak core (crafted by Mykew Gregorovitch)",
+    "maker_name": "Mykew Gregorovitch",
+    "core_name": "Cockatrice Beak",
+    "wood_name": "Apple",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-22T01:29:00"
+  },
+  {
+    "record_id": "wand_31330",
+    "name": "Superior Aspen wand with a Dragon Heartstring core (crafted by Mykew Gregorovitch)",
+    "maker_name": "Mykew Gregorovitch",
+    "core_name": "Dragon Heartstring",
+    "wood_name": "Aspen",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-22T01:30:08"
+  },
+  {
+    "record_id": "wand_31331",
+    "name": "Superior Black Walnut wand with a Griffin Claw core (crafted by Mykew Gregorovitch)",
+    "maker_name": "Mykew Gregorovitch",
+    "core_name": "Griffin Claw",
+    "wood_name": "Black Walnut",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-22T01:31:49"
+  },
+  {
+    "record_id": "wand_31332",
+    "name": "Superior Blackthorn wand with a Horned Serpent Horn core (crafted by Mykew Gregorovitch)",
+    "maker_name": "Mykew Gregorovitch",
+    "core_name": "Horned Serpent Horn",
+    "wood_name": "Blackthorn",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-22T01:34:14"
+  },
+  {
+    "record_id": "wand_31333",
+    "name": "Superior Cedarwood wand with a Jackalope Antler core (crafted by Mykew Gregorovitch)",
+    "maker_name": "Mykew Gregorovitch",
+    "core_name": "Jackalope Antler",
+    "wood_name": "Cedarwood",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-22T01:40:03"
+  },
+  {
+    "record_id": "wand_31334",
+    "name": "Superior Cypress wand with a Kelpie Hair core (crafted by Mykew Gregorovitch)",
+    "maker_name": "Mykew Gregorovitch",
+    "core_name": "Kelpie Hair",
+    "wood_name": "Cypress",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-22T01:42:11"
+  },
+  {
+    "record_id": "wand_31335",
+    "name": "Superior Dogwood wand with a Kneazle Whisker core (crafted by Mykew Gregorovitch)",
+    "maker_name": "Mykew Gregorovitch",
+    "core_name": "Kneazle Whisker",
+    "wood_name": "Dogwood",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-22T01:43:59"
+  },
+  {
+    "record_id": "wand_31336",
+    "name": "Superior Elm wand with a Phoenix Feather core (crafted by Mykew Gregorovitch)",
+    "maker_name": "Mykew Gregorovitch",
+    "core_name": "Phoenix Feather",
+    "wood_name": "Elm",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-22T01:45:46"
+  },
+  {
+    "record_id": "wand_31337",
+    "name": "Superior Holly wand with a Rougarou Hair core (crafted by Mykew Gregorovitch)",
+    "maker_name": "Mykew Gregorovitch",
+    "core_name": "Rougarou Hair",
+    "wood_name": "Holly",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-22T01:47:46"
+  },
+  {
+    "record_id": "wand_31338",
+    "name": "Superior Vine wand with a Selma Fang Core core (crafted by Mykew Gregorovitch)",
+    "maker_name": "Mykew Gregorovitch",
+    "core_name": "Selma Fang Core",
+    "wood_name": "Vine",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-22T01:51:57"
+  },
+  {
+    "record_id": "wand_31339",
+    "name": "Superior Silver Lime wand with a Snallygaster Heartstring core (crafted by Mykew Gregorovitch)",
+    "maker_name": "Mykew Gregorovitch",
+    "core_name": "Snallygaster Heartstring",
+    "wood_name": "Silver Lime",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-22T01:53:39"
+  },
+  {
+    "record_id": "wand_31340",
+    "name": "Superior Walnut wand with a Tebo Tusk core (crafted by Mykew Gregorovitch)",
+    "maker_name": "Mykew Gregorovitch",
+    "core_name": "Tebo Tusk",
+    "wood_name": "Walnut",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-22T01:55:23"
+  },
+  {
+    "record_id": "wand_31341",
+    "name": "Superior Yew wand with a Thestral Tail Hair core (crafted by Mykew Gregorovitch)",
+    "maker_name": "Mykew Gregorovitch",
+    "core_name": "Thestral Tail Hair",
+    "wood_name": "Yew",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-22T01:56:52"
+  },
+  {
+    "record_id": "wand_31342",
+    "name": "Superior Mahogany wand with a Thunderbird Feather core (crafted by Mykew Gregorovitch)",
+    "maker_name": "Mykew Gregorovitch",
+    "core_name": "Thunderbird Feather",
+    "wood_name": "Mahogany",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-22T01:58:30"
+  },
+  {
+    "record_id": "wand_31343",
+    "name": "Superior Apple wand with a Troll Whisker core (crafted by Mykew Gregorovitch)",
+    "maker_name": "Mykew Gregorovitch",
+    "core_name": "Troll Whisker",
+    "wood_name": "Apple",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-22T02:00:12"
+  },
+  {
+    "record_id": "wand_31344",
+    "name": "Superior Spruce wand with a Unicorn Horn core (crafted by Mykew Gregorovitch)",
+    "maker_name": "Mykew Gregorovitch",
+    "core_name": "Unicorn Horn",
+    "wood_name": "Spruce",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-22T02:01:32"
+  },
+  {
+    "record_id": "wand_31345",
+    "name": "Superior Ash wand with a Veela Hair core (crafted by Mykew Gregorovitch)",
+    "maker_name": "Mykew Gregorovitch",
+    "core_name": "Veela Hair",
+    "wood_name": "Ash",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-22T02:03:08"
+  },
+  {
+    "record_id": "wand_31346",
+    "name": "Superior Rowan wand with a Wampus Cat Hair core (crafted by Mykew Gregorovitch)",
+    "maker_name": "Mykew Gregorovitch",
+    "core_name": "Wampus Cat Hair",
+    "wood_name": "Rowan",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-22T02:05:36"
+  },
+  {
+    "record_id": "wand_31347",
+    "name": "Superior Cedarwood wand with a White River Monster Spine core (crafted by Mykew Gregorovitch)",
+    "maker_name": "Mykew Gregorovitch",
+    "core_name": "White River Monster Spine",
+    "wood_name": "Cedarwood",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-04-22T05:10:04"
+  },
+  {
+    "record_id": "wand_31348",
+    "name": "Standard Ebony wand with a Chimera Whisker core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Chimera Whisker",
+    "wood_name": "Ebony",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-23T01:18:39"
+  },
+  {
+    "record_id": "wand_31349",
+    "name": "Standard Holly wand with a Chimera Whisker core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Chimera Whisker",
+    "wood_name": "Holly",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-23T01:21:41"
+  },
+  {
+    "record_id": "wand_31350",
+    "name": "Standard Fir wand with a Chimera Whisker core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Chimera Whisker",
+    "wood_name": "Fir",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-23T01:30:44"
+  },
+  {
+    "record_id": "wand_31351",
+    "name": "Standard Acacia wand with a Cockatrice Beak core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Cockatrice Beak",
+    "wood_name": "Acacia",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-23T01:39:07"
+  },
+  {
+    "record_id": "wand_31352",
+    "name": "Standard Ebony wand with a Coral core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Coral",
+    "wood_name": "Ebony",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-23T01:40:56"
+  },
+  {
+    "record_id": "wand_31353",
+    "name": "Standard Ebony wand with a Dragon Heartstring core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Dragon Heartstring",
+    "wood_name": "Ebony",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-23T01:43:12"
+  },
+  {
+    "record_id": "wand_31354",
+    "name": "Standard Ebony wand with a Griffin Claw core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Griffin Claw",
+    "wood_name": "Ebony",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-23T01:46:00"
+  },
+  {
+    "record_id": "wand_31355",
+    "name": "Standard Ebony wand with a Horned Serpent Horn core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Horned Serpent Horn",
+    "wood_name": "Ebony",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-23T01:50:04"
+  },
+  {
+    "record_id": "wand_31356",
+    "name": "Standard Cherry wand with a Jackalope Antler core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Jackalope Antler",
+    "wood_name": "Cherry",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-23T01:51:48"
+  },
+  {
+    "record_id": "wand_31357",
+    "name": "Standard Chestnut wand with a Jackalope Antler core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Jackalope Antler",
+    "wood_name": "Chestnut",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-23T01:53:57"
+  },
+  {
+    "record_id": "wand_31358",
+    "name": "Standard Holly wand with a Kneazle Whisker core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Kneazle Whisker",
+    "wood_name": "Holly",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-23T01:56:48"
+  },
+  {
+    "record_id": "wand_31359",
+    "name": "Shoddy Elm wand with a Kelpie Hair core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Kelpie Hair",
+    "wood_name": "Elm",
+    "quality_name": "Shoddy",
+    "dbnotes": "",
+    "last_updated": "2026-04-23T01:59:47"
+  },
+  {
+    "record_id": "wand_31360",
+    "name": "Standard Fir wand with a Kelpie Hair core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Kelpie Hair",
+    "wood_name": "Fir",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-23T02:01:15"
+  },
+  {
+    "record_id": "wand_31361",
+    "name": "Shoddy Mahogany wand with a Kneazle Whisker core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Kneazle Whisker",
+    "wood_name": "Mahogany",
+    "quality_name": "Shoddy",
+    "dbnotes": "",
+    "last_updated": "2026-04-23T02:03:09"
+  },
+  {
+    "record_id": "wand_31362",
+    "name": "Standard Willow wand with a Phoenix Feather core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Phoenix Feather",
+    "wood_name": "Willow",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-23T02:05:39"
+  },
+  {
+    "record_id": "wand_31363",
+    "name": "Standard Mahogany wand with a Rougarou Hair core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Rougarou Hair",
+    "wood_name": "Mahogany",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-23T04:17:01"
+  },
+  {
+    "record_id": "wand_31364",
+    "name": "Inferior Cedarwood wand with a Rougarou Hair core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Rougarou Hair",
+    "wood_name": "Cedarwood",
+    "quality_name": "Inferior",
+    "dbnotes": "",
+    "last_updated": "2026-04-23T04:20:46"
+  },
+  {
+    "record_id": "wand_31365",
+    "name": "Standard Black Walnut wand with a Selma Fang Core core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Selma Fang Core",
+    "wood_name": "Black Walnut",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-23T04:23:02"
+  },
+  {
+    "record_id": "wand_31366",
+    "name": "Inferior Cherry wand with a Snallygaster Heartstring core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Snallygaster Heartstring",
+    "wood_name": "Cherry",
+    "quality_name": "Inferior",
+    "dbnotes": "",
+    "last_updated": "2026-04-23T04:27:13"
+  },
+  {
+    "record_id": "wand_31367",
+    "name": "Shoddy Elder wand with a Tebo Tusk core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Tebo Tusk",
+    "wood_name": "Elder",
+    "quality_name": "Shoddy",
+    "dbnotes": "",
+    "last_updated": "2026-04-23T04:32:38"
+  },
+  {
+    "record_id": "wand_31368",
+    "name": "Inferior Vine wand with a Thunderbird Feather core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Thunderbird Feather",
+    "wood_name": "Vine",
+    "quality_name": "Inferior",
+    "dbnotes": "",
+    "last_updated": "2026-04-23T04:37:40"
+  },
+  {
+    "record_id": "wand_31369",
+    "name": "Standard Walnut wand with a Troll Whisker core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Troll Whisker",
+    "wood_name": "Walnut",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-23T04:40:08"
+  },
+  {
+    "record_id": "wand_31370",
+    "name": "Shoddy Ash wand with a Unicorn Horn core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Unicorn Horn",
+    "wood_name": "Ash",
+    "quality_name": "Shoddy",
+    "dbnotes": "",
+    "last_updated": "2026-04-23T04:43:20"
+  },
+  {
+    "record_id": "wand_31371",
+    "name": "Standard Walnut wand with a Veela Hair core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Veela Hair",
+    "wood_name": "Walnut",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-23T04:48:09"
+  },
+  {
+    "record_id": "wand_31372",
+    "name": "Shoddy Beech wand with a Wampus Cat Hair core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Wampus Cat Hair",
+    "wood_name": "Beech",
+    "quality_name": "Shoddy",
+    "dbnotes": "",
+    "last_updated": "2026-04-23T04:52:06"
+  },
+  {
+    "record_id": "wand_31373",
+    "name": "Standard Rowan wand with a White River Monster Spine core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "White River Monster Spine",
+    "wood_name": "Rowan",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-23T04:55:12"
+  },
+  {
+    "record_id": "wand_31374",
+    "name": "Inferior Sycamore wand with a Wiggentree Leaf Stem core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Wiggentree Leaf Stem",
+    "wood_name": "Sycamore",
+    "quality_name": "Inferior",
+    "dbnotes": "",
+    "last_updated": "2026-04-23T04:58:39"
+  },
+  {
+    "record_id": "wand_31375",
+    "name": "Shoddy Blackthorn wand with a Cockatrice Beak core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Cockatrice Beak",
+    "wood_name": "Blackthorn",
+    "quality_name": "Shoddy",
+    "dbnotes": "",
+    "last_updated": "2026-04-23T05:02:55"
+  },
+  {
+    "record_id": "wand_31376",
+    "name": "Inferior Cedarwood wand with a Dragon Heartstring core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Dragon Heartstring",
+    "wood_name": "Cedarwood",
+    "quality_name": "Inferior",
+    "dbnotes": "",
+    "last_updated": "2026-04-23T14:40:34"
+  },
+  {
+    "record_id": "wand_31377",
+    "name": "Inferior Cherry wand with a Griffin Claw core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Griffin Claw",
+    "wood_name": "Cherry",
+    "quality_name": "Inferior",
+    "dbnotes": "",
+    "last_updated": "2026-04-23T14:43:20"
+  },
+  {
+    "record_id": "wand_31378",
+    "name": "Shoddy Rowan wand with a Horned Serpent Horn core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Horned Serpent Horn",
+    "wood_name": "Rowan",
+    "quality_name": "Shoddy",
+    "dbnotes": "",
+    "last_updated": "2026-04-23T14:48:21"
+  },
+  {
+    "record_id": "wand_31379",
+    "name": "Shoddy Cypress wand with a Jackalope Antler core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Jackalope Antler",
+    "wood_name": "Cypress",
+    "quality_name": "Shoddy",
+    "dbnotes": "",
+    "last_updated": "2026-04-23T14:53:40"
+  },
+  {
+    "record_id": "wand_31380",
+    "name": "Inferior Ebony wand with a Kneazle Whisker core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Kneazle Whisker",
+    "wood_name": "Ebony",
+    "quality_name": "Inferior",
+    "dbnotes": "",
+    "last_updated": "2026-04-23T15:03:05"
+  },
+  {
+    "record_id": "wand_31381",
+    "name": "Standard Mahogany wand with a Kelpie Hair core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Kelpie Hair",
+    "wood_name": "Mahogany",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-23T15:06:29"
+  },
+  {
+    "record_id": "wand_31382",
+    "name": "Shoddy Elm wand with a Snallygaster Heartstring core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Snallygaster Heartstring",
+    "wood_name": "Elm",
+    "quality_name": "Shoddy",
+    "dbnotes": "",
+    "last_updated": "2026-04-23T15:10:56"
+  },
+  {
+    "record_id": "wand_31383",
+    "name": "Shoddy Apple wand with a Selma Fang Core core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Selma Fang Core",
+    "wood_name": "Apple",
+    "quality_name": "Shoddy",
+    "dbnotes": "",
+    "last_updated": "2026-04-23T15:16:31"
+  },
+  {
+    "record_id": "wand_31384",
+    "name": "Inferior Elm wand with a Tebo Tusk core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Tebo Tusk",
+    "wood_name": "Elm",
+    "quality_name": "Inferior",
+    "dbnotes": "",
+    "last_updated": "2026-04-23T15:23:43"
+  },
+  {
+    "record_id": "wand_31385",
+    "name": "Standard Black Walnut wand with a Thunderbird Feather core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Thunderbird Feather",
+    "wood_name": "Black Walnut",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-24T02:12:16"
+  },
+  {
+    "record_id": "wand_31386",
+    "name": "Shoddy Aspen wand with a Troll Whisker core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Troll Whisker",
+    "wood_name": "Aspen",
+    "quality_name": "Shoddy",
+    "dbnotes": "",
+    "last_updated": "2026-04-24T02:17:08"
+  },
+  {
+    "record_id": "wand_31387",
+    "name": "Standard Vine wand with a Unicorn Horn core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Unicorn Horn",
+    "wood_name": "Vine",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-24T02:27:07"
+  },
+  {
+    "record_id": "wand_31388",
+    "name": "Shoddy Willow wand with a Veela Hair core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Veela Hair",
+    "wood_name": "Willow",
+    "quality_name": "Shoddy",
+    "dbnotes": "",
+    "last_updated": "2026-04-24T02:31:56"
+  },
+  {
+    "record_id": "wand_31389",
+    "name": "Inferior Silver Lime wand with a Wampus Cat Hair core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Wampus Cat Hair",
+    "wood_name": "Silver Lime",
+    "quality_name": "Inferior",
+    "dbnotes": "",
+    "last_updated": "2026-04-24T02:38:00"
+  },
+  {
+    "record_id": "wand_31390",
+    "name": "Standard Walnut wand with a White River Monster Spine core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "White River Monster Spine",
+    "wood_name": "Walnut",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-24T02:45:02"
+  },
+  {
+    "record_id": "wand_31391",
+    "name": "Shoddy Ash wand with a Wiggentree Leaf Stem core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Wiggentree Leaf Stem",
+    "wood_name": "Ash",
+    "quality_name": "Shoddy",
+    "dbnotes": "",
+    "last_updated": "2026-04-24T02:50:16"
+  },
+  {
+    "record_id": "wand_31392",
+    "name": "Inferior Elm wand with a Chimera Whisker core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Chimera Whisker",
+    "wood_name": "Elm",
+    "quality_name": "Inferior",
+    "dbnotes": "",
+    "last_updated": "2026-04-24T02:55:41"
+  },
+  {
+    "record_id": "wand_31393",
+    "name": "Standard Vine wand with a Cockatrice Beak core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Cockatrice Beak",
+    "wood_name": "Vine",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-24T03:00:47"
+  },
+  {
+    "record_id": "wand_31394",
+    "name": "Inferior Rowan wand with a Coral core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Coral",
+    "wood_name": "Rowan",
+    "quality_name": "Inferior",
+    "dbnotes": "",
+    "last_updated": "2026-04-24T07:36:43"
+  },
+  {
+    "record_id": "wand_31395",
+    "name": "Shoddy Walnut wand with a Dragon Heartstring core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Dragon Heartstring",
+    "wood_name": "Walnut",
+    "quality_name": "Shoddy",
+    "dbnotes": "",
+    "last_updated": "2026-04-24T07:39:18"
+  },
+  {
+    "record_id": "wand_31396",
+    "name": "Standard Dogwood wand with a Kelpie Hair core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Kelpie Hair",
+    "wood_name": "Dogwood",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-24T07:41:08"
+  },
+  {
+    "record_id": "wand_31397",
+    "name": "Shoddy Apple wand with a Snallygaster Heartstring core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Snallygaster Heartstring",
+    "wood_name": "Apple",
+    "quality_name": "Shoddy",
+    "dbnotes": "",
+    "last_updated": "2026-04-24T07:43:59"
+  },
+  {
+    "record_id": "wand_31398",
+    "name": "Standard Cedarwood wand with a Selma Fang Core core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Selma Fang Core",
+    "wood_name": "Cedarwood",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-24T07:47:07"
+  },
+  {
+    "record_id": "wand_31399",
+    "name": "Inferior Vine wand with a Tebo Tusk core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Tebo Tusk",
+    "wood_name": "Vine",
+    "quality_name": "Inferior",
+    "dbnotes": "",
+    "last_updated": "2026-04-24T07:50:15"
+  },
+  {
+    "record_id": "wand_31400",
+    "name": "Standard Silver Lime wand with a Thestral Tail Hair core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Thestral Tail Hair",
+    "wood_name": "Silver Lime",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-24T07:52:55"
+  },
+  {
+    "record_id": "wand_31401",
+    "name": "Shoddy Spruce wand with a Thunderbird Feather core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Thunderbird Feather",
+    "wood_name": "Spruce",
+    "quality_name": "Shoddy",
+    "dbnotes": "",
+    "last_updated": "2026-04-24T07:55:36"
+  },
+  {
+    "record_id": "wand_31402",
+    "name": "Standard Chestnut wand with a Troll Whisker core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Troll Whisker",
+    "wood_name": "Chestnut",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-24T07:58:14"
+  },
+  {
+    "record_id": "wand_31403",
+    "name": "Shoddy Holly wand with a Unicorn Horn core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Unicorn Horn",
+    "wood_name": "Holly",
+    "quality_name": "Shoddy",
+    "dbnotes": "",
+    "last_updated": "2026-04-24T08:03:06"
+  },
+  {
+    "record_id": "wand_31404",
+    "name": "Inferior Ebony wand with a Veela Hair core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Veela Hair",
+    "wood_name": "Ebony",
+    "quality_name": "Inferior",
+    "dbnotes": "",
+    "last_updated": "2026-04-24T08:05:43"
+  },
+  {
+    "record_id": "wand_31405",
+    "name": "Shoddy Fir wand with a Kelpie Hair core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Kelpie Hair",
+    "wood_name": "Fir",
+    "quality_name": "Shoddy",
+    "dbnotes": "",
+    "last_updated": "2026-04-24T08:08:46"
+  },
+  {
+    "record_id": "wand_31406",
+    "name": "Standard Rowan wand with a Kneazle Whisker core (crafted by Jimmy Kiddell)",
+    "maker_name": "Jimmy Kiddell",
+    "core_name": "Kneazle Whisker",
+    "wood_name": "Rowan",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-04-24T08:12:03"
+  },
+  {
+    "record_id": "edbb4412-bf26-4ade-bd78-6e021d866f9e",
+    "name": "Superior Silver Lime wand with a Unicorn Horn core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Unicorn Horn",
+    "wood_name": "Silver Lime",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "a08ac890-8722-4a61-a381-aa4408f318d4",
+    "name": "Superior Silver Lime wand with a Dragon Heartstring core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Dragon Heartstring",
+    "wood_name": "Silver Lime",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "42cce2bc-916d-474e-ad28-746a33dc43a0",
+    "name": "Superior Silver Lime wand with a Phoenix Feather core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Phoenix Feather",
+    "wood_name": "Silver Lime",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "9dc7b5d4-c229-4c0c-8598-300ff1016768",
+    "name": "Superior Silver Lime wand with a Chimera Whisker core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Chimera Whisker",
+    "wood_name": "Silver Lime",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "8d96825a-aaac-4247-881f-2aedff8a0382",
+    "name": "Superior Silver Lime wand with a Kelpie Hair core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Kelpie Hair",
+    "wood_name": "Silver Lime",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "e965ac17-9e28-4b07-bbd2-41125d938594",
+    "name": "Superior Silver Lime wand with a Tebo Tusk core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Tebo Tusk",
+    "wood_name": "Silver Lime",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "187ba9be-6a03-41ac-85ce-94700061d56e",
+    "name": "Superior Silver Lime wand with a Cockatrice Beak core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Cockatrice Beak",
+    "wood_name": "Silver Lime",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "8b5e4a8b-eefe-439f-b470-c4ef2166f5a4",
+    "name": "Superior Silver Lime wand with a Selma Fang Core core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Selma Fang Core",
+    "wood_name": "Silver Lime",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "32d73717-6ef9-40c5-9d26-60ef0840cf5f",
+    "name": "Superior Silver Lime wand with a Griffin Claw core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Griffin Claw",
+    "wood_name": "Silver Lime",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "91695482-7c41-4c86-ae82-4565a7f2e7e3",
+    "name": "Superior Silver Lime wand with a Thestral Tail Hair core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Thestral Tail Hair",
+    "wood_name": "Silver Lime",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "91ecacd9-5a5d-4649-9939-79fe10ee01b5",
+    "name": "Superior Silver Lime wand with a Troll Whisker core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Troll Whisker",
+    "wood_name": "Silver Lime",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "3aa816aa-8415-4937-87ee-64243ef6e172",
+    "name": "Superior Silver Lime wand with a Kneazle Whisker core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Kneazle Whisker",
+    "wood_name": "Silver Lime",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "db596a33-21d5-4b03-8fec-09916b4c35d8",
+    "name": "Superior Silver Lime wand with a Veela Hair core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Veela Hair",
+    "wood_name": "Silver Lime",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "1b889b3a-04c3-41d9-9cce-cea94d5462af",
+    "name": "Superior Silver Lime wand with a Coral core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Coral",
+    "wood_name": "Silver Lime",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "9035c496-372a-4146-af1a-832eaa901295",
+    "name": "Superior Silver Lime wand with a Thunderbird Feather core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Thunderbird Feather",
+    "wood_name": "Silver Lime",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "30b42e24-a804-46b7-904c-765763862b1d",
+    "name": "Superior Silver Lime wand with a Wampus Cat Hair core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Wampus Cat Hair",
+    "wood_name": "Silver Lime",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "00936f0f-e161-46b8-882d-0084767c29fa",
+    "name": "Superior Silver Lime wand with a White River Monster Spine core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "White River Monster Spine",
+    "wood_name": "Silver Lime",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "9b846b4b-7cfc-4771-b41f-5e322071bd7d",
+    "name": "Superior Silver Lime wand with a Rougarou Hair core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Rougarou Hair",
+    "wood_name": "Silver Lime",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "d0f8e7b8-80cc-41eb-887a-e6132bfb360e",
+    "name": "Superior Silver Lime wand with a Horned Serpent Horn core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Horned Serpent Horn",
+    "wood_name": "Silver Lime",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "e0ee4cde-3b8d-4f8a-b41a-4c1e548699e6",
+    "name": "Superior Silver Lime wand with a Snallygaster Heartstring core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Snallygaster Heartstring",
+    "wood_name": "Silver Lime",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "91c57e55-8f6c-4829-93c3-ad409a5f441d",
+    "name": "Superior Silver Lime wand with a Jackalope Antler core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Jackalope Antler",
+    "wood_name": "Silver Lime",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "8df88673-fce5-4296-91b6-94d62333f0f2",
+    "name": "Superior Silver Lime wand with a Wiggentree Leaf Stem core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Wiggentree Leaf Stem",
+    "wood_name": "Silver Lime",
+    "quality_name": "Superior",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "3ace80ab-4d5f-4469-9e21-1ef2f8c86f92",
+    "name": "Standard Silver Lime wand with a Unicorn Horn core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Unicorn Horn",
+    "wood_name": "Silver Lime",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "401c048e-0d71-4dd4-b6de-b892e6bad764",
+    "name": "Standard Silver Lime wand with a Dragon Heartstring core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Dragon Heartstring",
+    "wood_name": "Silver Lime",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "0500ab84-8cc5-4f2a-93f1-33821ea1b23b",
+    "name": "Standard Silver Lime wand with a Phoenix Feather core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Phoenix Feather",
+    "wood_name": "Silver Lime",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "50942b00-be45-49f8-87e9-d5d08d5c689b",
+    "name": "Standard Silver Lime wand with a Chimera Whisker core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Chimera Whisker",
+    "wood_name": "Silver Lime",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "0d815282-76d8-478f-80e6-e6b378e30cdc",
+    "name": "Standard Silver Lime wand with a Kelpie Hair core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Kelpie Hair",
+    "wood_name": "Silver Lime",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "9d76aab2-1a5a-4f13-8781-446fde5cde73",
+    "name": "Standard Silver Lime wand with a Tebo Tusk core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Tebo Tusk",
+    "wood_name": "Silver Lime",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "25f6f107-06df-4180-8a24-047541475bcb",
+    "name": "Standard Silver Lime wand with a Cockatrice Beak core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Cockatrice Beak",
+    "wood_name": "Silver Lime",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "d1cb89c8-5bdf-4192-ac21-03f5a69d2e33",
+    "name": "Standard Silver Lime wand with a Selma Fang Core core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Selma Fang Core",
+    "wood_name": "Silver Lime",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "67a41828-37ba-44d4-b6f0-2f4b893a02c8",
+    "name": "Standard Silver Lime wand with a Griffin Claw core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Griffin Claw",
+    "wood_name": "Silver Lime",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "335f4aaa-6235-4221-92ca-f32584fe5e74",
+    "name": "Standard Silver Lime wand with a Thestral Tail Hair core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Thestral Tail Hair",
+    "wood_name": "Silver Lime",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "b5cf0629-5db6-43b1-8683-a8dfb1ed2a2c",
+    "name": "Standard Silver Lime wand with a Troll Whisker core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Troll Whisker",
+    "wood_name": "Silver Lime",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "e178087e-7e82-462e-856c-1c82994b5cc2",
+    "name": "Standard Silver Lime wand with a Kneazle Whisker core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Kneazle Whisker",
+    "wood_name": "Silver Lime",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "c848da74-233c-4bbe-b69d-2c7dc124e430",
+    "name": "Standard Silver Lime wand with a Veela Hair core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Veela Hair",
+    "wood_name": "Silver Lime",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "c0eb54d3-7214-45d7-b49b-96a78aa363a4",
+    "name": "Standard Silver Lime wand with a Coral core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Coral",
+    "wood_name": "Silver Lime",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "de398721-cb64-4179-9657-5d02adbb3f68",
+    "name": "Standard Silver Lime wand with a Thunderbird Feather core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Thunderbird Feather",
+    "wood_name": "Silver Lime",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "17c1e719-9779-4ca8-bead-850277862990",
+    "name": "Standard Silver Lime wand with a Wampus Cat Hair core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Wampus Cat Hair",
+    "wood_name": "Silver Lime",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "9faada89-6eee-4838-962d-f5cd9d1ea8ff",
+    "name": "Standard Silver Lime wand with a White River Monster Spine core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "White River Monster Spine",
+    "wood_name": "Silver Lime",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "6e103d0c-30b0-4309-b11c-5b3b17483e90",
+    "name": "Standard Silver Lime wand with a Rougarou Hair core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Rougarou Hair",
+    "wood_name": "Silver Lime",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "7b4253f0-5c26-4735-ad40-688ffe0baed8",
+    "name": "Standard Silver Lime wand with a Horned Serpent Horn core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Horned Serpent Horn",
+    "wood_name": "Silver Lime",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "afcfd7e9-72ae-4334-9080-f140a4c4a833",
+    "name": "Standard Silver Lime wand with a Snallygaster Heartstring core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Snallygaster Heartstring",
+    "wood_name": "Silver Lime",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "e99b145e-9c44-4a1a-8664-c17cae787696",
+    "name": "Standard Silver Lime wand with a Jackalope Antler core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Jackalope Antler",
+    "wood_name": "Silver Lime",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "79531b14-a550-4f08-a0d2-f0f518fe9739",
+    "name": "Standard Silver Lime wand with a Wiggentree Leaf Stem core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Wiggentree Leaf Stem",
+    "wood_name": "Silver Lime",
+    "quality_name": "Standard",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "67646f2e-1d4a-4d33-8f81-843f0b5d9348",
+    "name": "Shoddy Silver Lime wand with a Unicorn Horn core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Unicorn Horn",
+    "wood_name": "Silver Lime",
+    "quality_name": "Shoddy",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "8bd45960-5b34-4237-bebd-739bcf65c1e5",
+    "name": "Shoddy Silver Lime wand with a Dragon Heartstring core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Dragon Heartstring",
+    "wood_name": "Silver Lime",
+    "quality_name": "Shoddy",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "da33968c-7f92-40ac-b3d6-265cc446f93f",
+    "name": "Shoddy Silver Lime wand with a Phoenix Feather core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Phoenix Feather",
+    "wood_name": "Silver Lime",
+    "quality_name": "Shoddy",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "b7cf92e0-554a-4acd-bc20-c9b2948b4f52",
+    "name": "Shoddy Silver Lime wand with a Chimera Whisker core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Chimera Whisker",
+    "wood_name": "Silver Lime",
+    "quality_name": "Shoddy",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "82018159-62c3-4577-b38f-ec078a9d74e8",
+    "name": "Shoddy Silver Lime wand with a Kelpie Hair core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Kelpie Hair",
+    "wood_name": "Silver Lime",
+    "quality_name": "Shoddy",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "52eba314-0c3d-4bd2-9527-d24ba79f179c",
+    "name": "Shoddy Silver Lime wand with a Tebo Tusk core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Tebo Tusk",
+    "wood_name": "Silver Lime",
+    "quality_name": "Shoddy",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "ee8b2300-89ae-42e6-992f-ed7a73df960a",
+    "name": "Shoddy Silver Lime wand with a Cockatrice Beak core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Cockatrice Beak",
+    "wood_name": "Silver Lime",
+    "quality_name": "Shoddy",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "46e2ea04-16c6-4985-a2ee-686246bba828",
+    "name": "Shoddy Silver Lime wand with a Selma Fang Core core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Selma Fang Core",
+    "wood_name": "Silver Lime",
+    "quality_name": "Shoddy",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "2ceda89c-b6c6-4bf2-822d-0d855ffe84b5",
+    "name": "Shoddy Silver Lime wand with a Griffin Claw core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Griffin Claw",
+    "wood_name": "Silver Lime",
+    "quality_name": "Shoddy",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "59522030-5de1-4291-bd18-91031c5f3e81",
+    "name": "Shoddy Silver Lime wand with a Thestral Tail Hair core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Thestral Tail Hair",
+    "wood_name": "Silver Lime",
+    "quality_name": "Shoddy",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "23fb914c-12bf-4c82-a1c0-ef110710406f",
+    "name": "Shoddy Silver Lime wand with a Troll Whisker core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Troll Whisker",
+    "wood_name": "Silver Lime",
+    "quality_name": "Shoddy",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "f0bdd6b8-f712-4628-b51b-f8e68a47091f",
+    "name": "Shoddy Silver Lime wand with a Kneazle Whisker core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Kneazle Whisker",
+    "wood_name": "Silver Lime",
+    "quality_name": "Shoddy",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "67f9004c-217f-421e-8b9b-b3bbc44fd457",
+    "name": "Shoddy Silver Lime wand with a Veela Hair core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Veela Hair",
+    "wood_name": "Silver Lime",
+    "quality_name": "Shoddy",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "ae74bc8c-4782-45c5-a9bf-313d61a28eec",
+    "name": "Shoddy Silver Lime wand with a Coral core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Coral",
+    "wood_name": "Silver Lime",
+    "quality_name": "Shoddy",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "35bae482-9cd9-4dce-b488-6e2343ded40e",
+    "name": "Shoddy Silver Lime wand with a Thunderbird Feather core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Thunderbird Feather",
+    "wood_name": "Silver Lime",
+    "quality_name": "Shoddy",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "4af93648-6d2d-4384-a986-612fa0595b60",
+    "name": "Shoddy Silver Lime wand with a Wampus Cat Hair core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Wampus Cat Hair",
+    "wood_name": "Silver Lime",
+    "quality_name": "Shoddy",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "47f4f3a3-705c-4429-a358-38dedc8ba033",
+    "name": "Shoddy Silver Lime wand with a White River Monster Spine core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "White River Monster Spine",
+    "wood_name": "Silver Lime",
+    "quality_name": "Shoddy",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "c1321d54-d2ad-4e41-9cc0-590265278182",
+    "name": "Shoddy Silver Lime wand with a Rougarou Hair core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Rougarou Hair",
+    "wood_name": "Silver Lime",
+    "quality_name": "Shoddy",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "6ea2fbf5-7c3b-49dc-8fff-09eb1ac3c914",
+    "name": "Shoddy Silver Lime wand with a Horned Serpent Horn core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Horned Serpent Horn",
+    "wood_name": "Silver Lime",
+    "quality_name": "Shoddy",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "65cf70f3-0605-4836-8c29-84963f0264e8",
+    "name": "Shoddy Silver Lime wand with a Snallygaster Heartstring core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Snallygaster Heartstring",
+    "wood_name": "Silver Lime",
+    "quality_name": "Shoddy",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "eda9cce9-c320-4839-a5b0-4101a56be303",
+    "name": "Shoddy Silver Lime wand with a Jackalope Antler core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Jackalope Antler",
+    "wood_name": "Silver Lime",
+    "quality_name": "Shoddy",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "89cd9087-90c4-4bdf-a7b7-bd9085b57d97",
+    "name": "Shoddy Silver Lime wand with a Wiggentree Leaf Stem core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Wiggentree Leaf Stem",
+    "wood_name": "Silver Lime",
+    "quality_name": "Shoddy",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "be216077-c480-472c-80fb-c34a89dbcc7e",
+    "name": "Inferior Silver Lime wand with a Unicorn Horn core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Unicorn Horn",
+    "wood_name": "Silver Lime",
+    "quality_name": "Inferior",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "eb9b85d4-87df-476c-a2f4-5f7cc4a0e48a",
+    "name": "Inferior Silver Lime wand with a Dragon Heartstring core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Dragon Heartstring",
+    "wood_name": "Silver Lime",
+    "quality_name": "Inferior",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "89385efa-3935-4a5f-aa1f-6178560daf28",
+    "name": "Inferior Silver Lime wand with a Phoenix Feather core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Phoenix Feather",
+    "wood_name": "Silver Lime",
+    "quality_name": "Inferior",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "d7c021de-ad57-49a9-9258-28d1af2350fb",
+    "name": "Inferior Silver Lime wand with a Chimera Whisker core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Chimera Whisker",
+    "wood_name": "Silver Lime",
+    "quality_name": "Inferior",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "792f40ab-a264-498e-8471-962e3ca07869",
+    "name": "Inferior Silver Lime wand with a Kelpie Hair core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Kelpie Hair",
+    "wood_name": "Silver Lime",
+    "quality_name": "Inferior",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "a7b0e5d9-2f4a-4414-9314-2fd3453aea69",
+    "name": "Inferior Silver Lime wand with a Tebo Tusk core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Tebo Tusk",
+    "wood_name": "Silver Lime",
+    "quality_name": "Inferior",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "56a03d8e-1437-4d03-97b8-5434bc6ec72b",
+    "name": "Inferior Silver Lime wand with a Cockatrice Beak core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Cockatrice Beak",
+    "wood_name": "Silver Lime",
+    "quality_name": "Inferior",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "e4efa720-0432-41d8-a556-475a12732a3b",
+    "name": "Inferior Silver Lime wand with a Selma Fang Core core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Selma Fang Core",
+    "wood_name": "Silver Lime",
+    "quality_name": "Inferior",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "599505b3-ed3e-4224-b8dd-e6d6e0cd0a0f",
+    "name": "Inferior Silver Lime wand with a Griffin Claw core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Griffin Claw",
+    "wood_name": "Silver Lime",
+    "quality_name": "Inferior",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "bfae7253-3091-4359-9e6f-00f7537600b2",
+    "name": "Inferior Silver Lime wand with a Thestral Tail Hair core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Thestral Tail Hair",
+    "wood_name": "Silver Lime",
+    "quality_name": "Inferior",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "475fb391-77b3-4723-b974-4800293816ba",
+    "name": "Inferior Silver Lime wand with a Troll Whisker core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Troll Whisker",
+    "wood_name": "Silver Lime",
+    "quality_name": "Inferior",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "1d4061e4-fa42-47aa-b648-8689ba02cba9",
+    "name": "Inferior Silver Lime wand with a Kneazle Whisker core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Kneazle Whisker",
+    "wood_name": "Silver Lime",
+    "quality_name": "Inferior",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "ff49d217-f496-4a72-9e9f-cfb819b65be1",
+    "name": "Inferior Silver Lime wand with a Veela Hair core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Veela Hair",
+    "wood_name": "Silver Lime",
+    "quality_name": "Inferior",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "4e1ec722-7992-4641-b4e2-8c8883411dcf",
+    "name": "Inferior Silver Lime wand with a Coral core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Coral",
+    "wood_name": "Silver Lime",
+    "quality_name": "Inferior",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "b9d150f6-2c19-4add-9f5f-21cb1ae68130",
+    "name": "Inferior Silver Lime wand with a Thunderbird Feather core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Thunderbird Feather",
+    "wood_name": "Silver Lime",
+    "quality_name": "Inferior",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "d19f2ac0-e0b8-4fd0-aa4c-7d0626063f43",
+    "name": "Inferior Silver Lime wand with a Wampus Cat Hair core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Wampus Cat Hair",
+    "wood_name": "Silver Lime",
+    "quality_name": "Inferior",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "cbe8e2a6-84fb-4c6c-be84-9b492d235efe",
+    "name": "Inferior Silver Lime wand with a White River Monster Spine core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "White River Monster Spine",
+    "wood_name": "Silver Lime",
+    "quality_name": "Inferior",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "0b235bd0-e279-43d3-af19-3ece128d0b96",
+    "name": "Inferior Silver Lime wand with a Rougarou Hair core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Rougarou Hair",
+    "wood_name": "Silver Lime",
+    "quality_name": "Inferior",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "61fb2a00-dd66-4278-830a-50b07ce555ac",
+    "name": "Inferior Silver Lime wand with a Horned Serpent Horn core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Horned Serpent Horn",
+    "wood_name": "Silver Lime",
+    "quality_name": "Inferior",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "2e2b4728-65e7-47b3-84dc-a88f501498b4",
+    "name": "Inferior Silver Lime wand with a Snallygaster Heartstring core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Snallygaster Heartstring",
+    "wood_name": "Silver Lime",
+    "quality_name": "Inferior",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "06bc8218-4fa7-4d3c-8635-e43ae6f7c607",
+    "name": "Inferior Silver Lime wand with a Jackalope Antler core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Jackalope Antler",
+    "wood_name": "Silver Lime",
+    "quality_name": "Inferior",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  },
+  {
+    "record_id": "d7c60034-2dec-42a1-a707-af232778a54b",
+    "name": "Inferior Silver Lime wand with a Wiggentree Leaf Stem core (crafted by Arturo Cephalopos)",
+    "maker_name": "Arturo Cephalopos",
+    "core_name": "Wiggentree Leaf Stem",
+    "wood_name": "Silver Lime",
+    "quality_name": "Inferior",
+    "dbnotes": "",
+    "last_updated": "2026-07-21T04:54:02.206Z"
+  }
+],
   "holdable_items": [],
   "accessories": [],
   "general_items": [],
@@ -1967,12 +4807,5 @@
   "books": [],
   "bookshelves": [],
   "proficiencies": [],
-  "spells": [],
-  "preferences": {
-    "window": {
-      "start_maximized": true,
-      "sidebar_width": 250
-    },
-    "layouts": {}
-  }
+  "spells": []
 }

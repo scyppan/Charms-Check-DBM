@@ -3,6 +3,7 @@ from functools import partial
 
 from runtime_theme import runtime_theme
 from theme import (
+    app_font,
     BORDER,
     BUTTON_DISABLED,
     BUTTON_SOFT,
@@ -67,7 +68,7 @@ class RoundedEntry(tk.Frame):
         width=180,
         height=40,
         radius=CONTROL_RADIUS,
-        font=("Segoe UI", 11),
+        font=app_font(11),
         justify="left",
         show=None,
         background_role="SURFACE",
@@ -264,7 +265,7 @@ class RoundedText(tk.Frame):
         fill=FIELD_BACKGROUND,
         height=6,
         radius=CONTROL_RADIUS,
-        font=("Segoe UI", 11),
+        font=app_font(11),
         background_role="SURFACE",
         fill_role="FIELD_BACKGROUND",
     ):
@@ -429,7 +430,7 @@ class SoftButton(tk.Canvas):
         width=None,
         height=38,
         radius=CONTROL_RADIUS,
-        font=("Segoe UI", 10, "bold"),
+        font=app_font(10),
         anchor="center",
         padx=16,
         background_role="SURFACE",
@@ -596,7 +597,8 @@ class RoundedSelect(tk.Frame):
         width=150,
         height=38,
         radius=CONTROL_RADIUS,
-        font=("Segoe UI", 10),
+        font=app_font(10),
+        placeholder="Select type",
         background_role="SURFACE",
         fill_role="FIELD_BACKGROUND",
     ):
@@ -612,6 +614,7 @@ class RoundedSelect(tk.Frame):
         self.normal_fill = fill
         self.radius = radius
         self.font = font
+        self.placeholder = placeholder
         self.background_role = background_role
         self.fill_role = fill_role
         self.hover_fill = FIELD_HOVER
@@ -651,7 +654,7 @@ class RoundedSelect(tk.Frame):
             height // 2,
             text="▾",
             fill=TEXT_DARK,
-            font=("Segoe UI", 10, "bold"),
+            font=app_font(10),
             anchor="e",
         )
 
@@ -666,12 +669,7 @@ class RoundedSelect(tk.Frame):
             borderwidth=1,
         )
 
-        for value in values:
-            menu_label = value or "None"
-            self.menu.add_command(
-                label=menu_label,
-                command=partial(self.select_value, value),
-            )
+        self.set_values(values)
 
         self.variable.trace_add("write", self.handle_value_change)
         self.bind("<Configure>", self.handle_resize)
@@ -681,7 +679,18 @@ class RoundedSelect(tk.Frame):
         runtime_theme.register(self)
 
     def display_value(self):
-        return self.variable.get() or "Select type"
+        return self.variable.get() or self.placeholder
+
+    def set_values(self, values):
+        self.values = list(values)
+        self.menu.delete(0, "end")
+
+        for value in self.values:
+            menu_label = value or "None"
+            self.menu.add_command(
+                label=menu_label,
+                command=partial(self.select_value, value),
+            )
 
     def handle_resize(self, event):
         width = max(2, event.width)

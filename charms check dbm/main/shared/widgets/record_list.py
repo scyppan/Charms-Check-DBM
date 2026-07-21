@@ -4,6 +4,7 @@ from collections import Counter
 from runtime_theme import bind_theme, runtime_theme
 from shared.widgets.controls import RoundedEntry
 from theme import (
+    app_font,
     BORDER_SOFT,
     FIELD_BACKGROUND,
     LIST_HOVER,
@@ -45,7 +46,7 @@ class SearchableRecordList(tk.Frame):
             text=heading_text,
             bg=SURFACE,
             fg=TEXT_DARK,
-            font=("Segoe UI", 15, "bold"),
+            font=app_font(15),
             anchor="w",
         )
         self.heading.grid(
@@ -69,7 +70,7 @@ class SearchableRecordList(tk.Frame):
             textvariable=self.search_value,
             background=SURFACE,
             height=40,
-            font=("Segoe UI", 11),
+            font=app_font(11),
         )
         self.search_entry.grid(
             row=1,
@@ -91,7 +92,7 @@ class SearchableRecordList(tk.Frame):
             highlightcolor=BORDER_SOFT,
             highlightthickness=1,
             borderwidth=0,
-            font=("Segoe UI", 10),
+            font=app_font(10),
             activestyle="none",
             exportselection=False,
             selectmode="browse",
@@ -135,7 +136,7 @@ class SearchableRecordList(tk.Frame):
             text=f"0 {item_word}",
             bg=SURFACE,
             fg=TEXT_MUTED,
-            font=("Segoe UI", 9),
+            font=app_font(9),
             anchor="w",
         )
         self.count_label.grid(

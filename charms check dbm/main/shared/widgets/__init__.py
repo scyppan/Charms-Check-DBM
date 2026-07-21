@@ -5,12 +5,14 @@ from shared.widgets.controls import (
     SoftButton,
 )
 from shared.widgets.fields import MultilineField
+from shared.widgets.name_checklist import NameChecklist
 from shared.widgets.record_list import SearchableRecordList
 from shared.widgets.record_toolbar import RecordToolbar
 
 
 __all__ = (
     "MultilineField",
+    "NameChecklist",
     "RecordToolbar",
     "RoundedEntry",
     "RoundedSelect",

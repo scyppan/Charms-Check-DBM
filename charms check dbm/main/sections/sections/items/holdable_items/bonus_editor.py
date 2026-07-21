@@ -345,3 +345,4 @@ class BonusEditor(tk.Frame):
             self.scroll_area.yview_scroll(3, "units")
 
         return "break"
+

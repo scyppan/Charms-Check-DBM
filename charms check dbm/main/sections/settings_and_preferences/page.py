@@ -7,6 +7,7 @@ from sections.settings_and_preferences.theme_view import ThemeSettingsView
 from runtime_theme import bind_theme
 from shared.widgets import SoftButton
 from theme import (
+    app_font,
     APP_BACKGROUND,
     BORDER,
     BUTTON_SOFT,
@@ -49,7 +50,7 @@ class SettingsAndPreferencesPage(tk.Frame):
             text="Settings & Preferences",
             bg=PRIMARY_LIGHT,
             fg=TEXT_DARK,
-            font=("Segoe UI", 17, "bold"),
+            font=app_font(17),
             padx=20,
         )
         self.section_title.pack(side="left", fill="y")
@@ -156,7 +157,7 @@ class SettingsAndPreferencesPage(tk.Frame):
             textvariable=self.status_value,
             bg=SURFACE_MUTED,
             fg=TEXT_MUTED,
-            font=("Segoe UI", 9),
+            font=app_font(9),
             anchor="w",
             padx=12,
             pady=7,

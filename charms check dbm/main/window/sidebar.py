@@ -4,6 +4,7 @@ from functools import partial
 from runtime_theme import bind_theme
 from shared.widgets import SoftButton
 from theme import (
+    app_font,
     PRIMARY_LIGHT,
     SIDEBAR_BACKGROUND,
     SIDEBAR_TILE,
@@ -42,7 +43,7 @@ class Sidebar(tk.Frame):
             text="CHARMS CHECK",
             bg=SIDEBAR_BACKGROUND,
             fg=TEXT_LIGHT,
-            font=("Segoe UI", 18, "bold"),
+            font=app_font(18),
             pady=20,
         )
         self.title_label.grid(row=0, column=0, sticky="ew")
@@ -114,7 +115,7 @@ class Sidebar(tk.Frame):
                 height=46,
                 radius=10,
                 anchor="w",
-                font=("Segoe UI", 11, "bold"),
+                font=app_font(11),
                 padx=18,
             )
             tile.pack(fill="x", padx=12, pady=5)

@@ -1,4 +1,45 @@
+import tkinter as tk
+import tkinter.font as tkfont
+
 from runtime_theme import runtime_theme
+
+
+FONT_FAMILY = "Segoe UI"
+MONOSPACE_FONT_FAMILY = "Consolas"
+FONT_WEIGHT = "bold"
+
+_NAMED_FONT_FAMILIES = {
+    "TkDefaultFont": FONT_FAMILY,
+    "TkTextFont": FONT_FAMILY,
+    "TkMenuFont": FONT_FAMILY,
+    "TkHeadingFont": FONT_FAMILY,
+    "TkCaptionFont": FONT_FAMILY,
+    "TkSmallCaptionFont": FONT_FAMILY,
+    "TkIconFont": FONT_FAMILY,
+    "TkTooltipFont": FONT_FAMILY,
+    "TkFixedFont": MONOSPACE_FONT_FAMILY,
+}
+
+
+def app_font(size):
+    return (FONT_FAMILY, size, FONT_WEIGHT)
+
+
+def monospace_font(size):
+    return (MONOSPACE_FONT_FAMILY, size, FONT_WEIGHT)
+
+
+def configure_tk_fonts(root):
+    for font_name, font_family in _NAMED_FONT_FAMILIES.items():
+        try:
+            named_font = tkfont.nametofont(font_name, root=root)
+        except tk.TclError:
+            continue
+
+        named_font.configure(
+            family=font_family,
+            weight=FONT_WEIGHT,
+        )
 
 
 _theme = runtime_theme.get_values()

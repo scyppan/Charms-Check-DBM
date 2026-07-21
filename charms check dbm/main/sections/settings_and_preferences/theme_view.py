@@ -7,6 +7,8 @@ from preferences.defaults import THEME_COLOR_FIELDS
 from runtime_theme import bind_theme, runtime_theme
 from shared.widgets.controls import rounded_points
 from theme import (
+    app_font,
+    monospace_font,
     BORDER,
     SURFACE,
     TEXT_DARK,
@@ -123,7 +125,7 @@ class ThemeSettingsView(tk.Frame):
             ),
             bg=SURFACE,
             fg=TEXT_MUTED,
-            font=("Segoe UI", 10),
+            font=app_font(10),
             justify="left",
             anchor="w",
         )
@@ -186,7 +188,7 @@ class ThemeSettingsView(tk.Frame):
                     text=category,
                     bg=SURFACE,
                     fg=TEXT_DARK,
-                    font=("Segoe UI", 14, "bold"),
+                    font=app_font(14),
                     anchor="w",
                 )
                 category_label.grid(
@@ -214,7 +216,7 @@ class ThemeSettingsView(tk.Frame):
                 text=f"{label_text}  ({field_key})",
                 bg=SURFACE,
                 fg=TEXT_DARK,
-                font=("Segoe UI", 10),
+                font=app_font(10),
                 anchor="w",
             )
             field_label.grid(
@@ -261,7 +263,7 @@ class ThemeSettingsView(tk.Frame):
                 textvariable=color_value,
                 bg=SURFACE,
                 fg=TEXT_MUTED,
-                font=("Consolas", 10),
+                font=monospace_font(10),
                 width=9,
                 anchor="w",
                 cursor="hand2",

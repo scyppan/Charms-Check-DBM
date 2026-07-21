@@ -2,7 +2,7 @@ import tkinter as tk
 
 from runtime_theme import bind_theme
 from shared.widgets import MultilineField, RoundedEntry
-from theme import SURFACE, TEXT_DARK, TEXT_MUTED
+from theme import SURFACE, TEXT_DARK, TEXT_MUTED, app_font
 
 
 class FoodAndDrinkForm(tk.Frame):
@@ -53,7 +53,7 @@ class FoodAndDrinkForm(tk.Frame):
             text="Name",
             bg=SURFACE,
             fg=TEXT_DARK,
-            font=("Segoe UI", 10, "bold"),
+            font=app_font(10),
             anchor="w",
         )
         self.name_label.grid(row=0, column=0, sticky="ew")
@@ -70,7 +70,7 @@ class FoodAndDrinkForm(tk.Frame):
             textvariable=self.name_value,
             background=SURFACE,
             height=42,
-            font=("Segoe UI", 12),
+            font=app_font(12),
         )
         self.name_entry.grid(
             row=1,
@@ -85,7 +85,7 @@ class FoodAndDrinkForm(tk.Frame):
             textvariable=self.last_updated_value,
             bg=SURFACE,
             fg=TEXT_MUTED,
-            font=("Segoe UI", 9),
+            font=app_font(9),
             anchor="w",
             justify="left",
         )

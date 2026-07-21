@@ -7,6 +7,7 @@ from sections.wands.wand_woods.record_list import WandWoodList
 from runtime_theme import bind_theme
 from shared.widgets import RecordToolbar
 from theme import (
+    app_font,
     APP_BACKGROUND,
     BORDER,
     SURFACE,
@@ -119,7 +120,7 @@ class WandWoodsPage(tk.Frame):
             textvariable=self.status_value,
             bg=SURFACE_MUTED,
             fg=TEXT_MUTED,
-            font=("Segoe UI", 9),
+            font=app_font(9),
             anchor="w",
             padx=12,
             pady=7,

@@ -1,13 +1,9 @@
 import tkinter as tk
 from tkinter import messagebox
 
-from sections.nature_and_alchemy.foods_and_drinks.controller import (
-    FoodAndDrinkController,
-)
-from sections.nature_and_alchemy.foods_and_drinks.record_form import (
-    FoodAndDrinkForm,
-)
-from sections.nature_and_alchemy.foods_and_drinks.record_list import RecordList
+from sections.items.holdable_items.controller import HoldableItemController
+from sections.items.holdable_items.record_form import HoldableItemForm
+from sections.items.holdable_items.record_list import HoldableItemList
 from runtime_theme import bind_theme
 from shared.widgets import RecordToolbar
 from theme import (
@@ -20,13 +16,13 @@ from theme import (
 )
 
 
-class FoodsAndDrinksPage(tk.Frame):
+class HoldableItemsPage(tk.Frame):
     def __init__(self, parent, database):
         super().__init__(parent, bg=APP_BACKGROUND)
         bind_theme(self, background="APP_BACKGROUND")
 
         self.database = database
-        self.controller = FoodAndDrinkController(database)
+        self.controller = HoldableItemController(database)
         self.records = []
         self.current_record_id = None
         self.form_dirty = False
@@ -36,7 +32,7 @@ class FoodsAndDrinksPage(tk.Frame):
 
         self.toolbar = RecordToolbar(
             self,
-            title="Foods & Drinks",
+            title="Holdable Items",
             new_command=self.new_record,
             delete_command=self.delete_record,
             revert_command=self.revert_record,
@@ -76,7 +72,7 @@ class FoodsAndDrinksPage(tk.Frame):
             highlightbackground="BORDER",
         )
 
-        self.record_list = RecordList(
+        self.record_list = HoldableItemList(
             self.list_card,
             selection_command=self.select_record,
         )
@@ -96,7 +92,7 @@ class FoodsAndDrinksPage(tk.Frame):
             highlightbackground="BORDER",
         )
 
-        self.record_form = FoodAndDrinkForm(
+        self.record_form = HoldableItemForm(
             self.form_card,
             change_command=self.mark_form_dirty,
         )
@@ -111,11 +107,11 @@ class FoodsAndDrinksPage(tk.Frame):
         self.content_panes.add(
             self.list_card,
             minsize=220,
-            width=300,
+            width=280,
         )
         self.content_panes.add(
             self.form_card,
-            minsize=500,
+            minsize=600,
         )
 
         self.status_value = tk.StringVar(value="Ready")
@@ -161,7 +157,7 @@ class FoodsAndDrinksPage(tk.Frame):
         self.record_list.set_selected_record(record_id)
         self.form_dirty = False
         self.toolbar.set_record_state(dirty=False, has_record=True)
-        self.status_value.set(f"Loaded {record.get('name', 'record')}")
+        self.status_value.set(f"Loaded {record.get('name', 'item')}")
 
         return True
 
@@ -184,28 +180,53 @@ class FoodsAndDrinksPage(tk.Frame):
         self.record_list.clear_selection()
         self.form_dirty = False
         self.toolbar.set_record_state(dirty=False, has_record=False)
-        self.status_value.set("Creating a new record")
+        self.status_value.set("Creating a new holdable item")
 
         return True
 
     def save_record(self):
-        record_values = self.record_form.get_values()
-
-        if not record_values["name"]:
+        try:
+            record_values = self.record_form.get_values()
+        except ValueError as error:
             messagebox.showerror(
-                "Name required",
-                "A Food & Drink record must have a name.",
+                "Invalid value",
+                str(error),
                 parent=self,
             )
             return False
 
-        if self.current_record_id is None:
-            saved_record = self.controller.create_record(record_values)
-        else:
-            saved_record = self.controller.update_record(
-                self.current_record_id,
-                record_values,
+        if not record_values["name"]:
+            messagebox.showerror(
+                "Name required",
+                "A holdable item must have a name.",
+                parent=self,
             )
+            return False
+
+        for bonus in record_values["bonuses"]:
+            if not bonus["type"]:
+                messagebox.showerror(
+                    "Bonus type required",
+                    "Every non-empty bonus must have a type.",
+                    parent=self,
+                )
+                return False
+
+        try:
+            if self.current_record_id is None:
+                saved_record = self.controller.create_record(record_values)
+            else:
+                saved_record = self.controller.update_record(
+                    self.current_record_id,
+                    record_values,
+                )
+        except (TypeError, ValueError) as error:
+            messagebox.showerror(
+                "Cannot save holdable item",
+                str(error),
+                parent=self,
+            )
+            return False
 
         self.current_record_id = saved_record["record_id"]
         self.refresh_records(self.current_record_id)
@@ -221,13 +242,13 @@ class FoodsAndDrinksPage(tk.Frame):
             self.record_form.clear()
             self.form_dirty = False
             self.toolbar.set_record_state(dirty=False, has_record=False)
-            self.status_value.set("New record cleared")
+            self.status_value.set("New holdable item cleared")
             return
 
         record = self.controller.get_record(self.current_record_id)
-        record_name = record.get("name", "this record")
+        record_name = record.get("name", "this holdable item")
         delete_confirmed = messagebox.askyesno(
-            "Delete record",
+            "Delete holdable item",
             f"Permanently delete {record_name}?",
             parent=self,
         )
@@ -253,7 +274,7 @@ class FoodsAndDrinksPage(tk.Frame):
             self.record_form.clear()
             self.form_dirty = False
             self.toolbar.set_record_state(dirty=False, has_record=False)
-            self.status_value.set("New record cleared")
+            self.status_value.set("New holdable item cleared")
             return
 
         self.load_record(self.current_record_id)
@@ -272,8 +293,8 @@ class FoodsAndDrinksPage(tk.Frame):
             return True
 
         save_choice = messagebox.askyesnocancel(
-            "Unsaved record changes",
-            "Save changes to this record before continuing?",
+            "Unsaved holdable item changes",
+            "Save changes to this holdable item before continuing?",
             parent=self,
         )
 

@@ -5,6 +5,6 @@ from .page import WandMakersPage
 SECTION = SectionDefinition(
     key="wand_makers",
     title="Wand Makers",
-    order=50,
+    order=60,
     page_class=WandMakersPage,
 )
