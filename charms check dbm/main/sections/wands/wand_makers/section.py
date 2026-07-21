@@ -7,4 +7,5 @@ SECTION = SectionDefinition(
     title="Wand Makers",
     order=60,
     page_class=WandMakersPage,
+    visible=False,
 )

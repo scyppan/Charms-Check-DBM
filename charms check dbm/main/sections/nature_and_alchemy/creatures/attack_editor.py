@@ -1,13 +1,13 @@
 import tkinter as tk
 from copy import deepcopy
 
-from runtime_theme import bind_theme, runtime_theme
+from runtime_theme import bind_theme
 from sections.nature_and_alchemy.creatures.damage_editor import DamageEditor
 from sections.nature_and_alchemy.creatures.form_fields import (
     LabeledEntry,
     RangeField,
 )
-from shared.widgets import MultilineField, SoftButton
+from shared.widgets import MultilineField, SoftButton, StripedListbox
 from theme import (
     BORDER_SOFT,
     FIELD_BACKGROUND,
@@ -87,7 +87,7 @@ class AttackEditor(tk.LabelFrame):
         self.body.grid_rowconfigure(0, weight=1)
         bind_theme(self.body, background="SURFACE")
 
-        self.listbox = tk.Listbox(
+        self.listbox = StripedListbox(
             self.body,
             width=16,
             height=list_height,
@@ -107,16 +107,6 @@ class AttackEditor(tk.LabelFrame):
         )
         self.listbox.grid(row=0, column=0, sticky="nsew", padx=(0, 8))
         self.listbox.bind("<<ListboxSelect>>", self.select_attack)
-        bind_theme(
-            self.listbox,
-            background="FIELD_BACKGROUND",
-            foreground="TEXT_DARK",
-            selectbackground="SIDEBAR_TILE_SELECTED",
-            selectforeground="TEXT_DARK",
-            highlightbackground="BORDER_SOFT",
-            highlightcolor="BORDER_SOFT",
-        )
-
         self.detail = tk.Frame(self.body, bg=SURFACE)
         self.detail.grid(row=0, column=1, sticky="nsew")
         self.detail.grid_columnconfigure(0, weight=1)
@@ -366,18 +356,8 @@ class AttackEditor(tk.LabelFrame):
 
     def refresh_list(self):
         self.listbox.delete(0, "end")
-        theme_values = runtime_theme.get_values()
-
-        for attack_index, attack in enumerate(self.attacks):
+        for attack in self.attacks:
             self.listbox.insert("end", attack.get("name", "") or "Unnamed")
-            self.listbox.itemconfigure(
-                attack_index,
-                background=(
-                    theme_values["FIELD_BACKGROUND"]
-                    if attack_index % 2 == 0
-                    else theme_values["SURFACE_MUTED"]
-                ),
-            )
 
         if self.selected_index is not None:
             self.listbox.selection_set(self.selected_index)

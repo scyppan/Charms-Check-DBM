@@ -1,9 +1,9 @@
 import tkinter as tk
 from copy import deepcopy
 
-from runtime_theme import bind_theme, runtime_theme
+from runtime_theme import bind_theme
 from sections.nature_and_alchemy.creatures.form_fields import LabeledEntry
-from shared.widgets import SoftButton
+from shared.widgets import SoftButton, StripedListbox
 from theme import (
     BORDER_SOFT,
     FIELD_BACKGROUND,
@@ -68,7 +68,7 @@ class TagEditor(tk.LabelFrame):
         )
         self.remove_button.grid(row=0, column=2, sticky="s")
 
-        self.listbox = tk.Listbox(
+        self.listbox = StripedListbox(
             self,
             height=6,
             bg=FIELD_BACKGROUND,
@@ -87,15 +87,6 @@ class TagEditor(tk.LabelFrame):
         )
         self.listbox.grid(row=1, column=0, sticky="nsew")
         self.listbox.bind("<<ListboxSelect>>", self.update_remove_state)
-        bind_theme(
-            self.listbox,
-            background="FIELD_BACKGROUND",
-            foreground="TEXT_DARK",
-            selectbackground="SIDEBAR_TILE_SELECTED",
-            selectforeground="TEXT_DARK",
-            highlightbackground="BORDER_SOFT",
-            highlightcolor="BORDER_SOFT",
-        )
         self.remove_button.set_enabled(False)
 
     def set_tags(self, tags):
@@ -158,18 +149,8 @@ class TagEditor(tk.LabelFrame):
 
     def refresh_list(self):
         self.listbox.delete(0, "end")
-        theme_values = runtime_theme.get_values()
-
-        for tag_index, tag in enumerate(self.tags):
+        for tag in self.tags:
             self.listbox.insert("end", tag)
-            self.listbox.itemconfigure(
-                tag_index,
-                background=(
-                    theme_values["FIELD_BACKGROUND"]
-                    if tag_index % 2 == 0
-                    else theme_values["SURFACE_MUTED"]
-                ),
-            )
 
         self.remove_button.set_enabled(False)
 

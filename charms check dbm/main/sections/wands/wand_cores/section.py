@@ -7,4 +7,5 @@ SECTION = SectionDefinition(
     title="Wand Cores",
     order=40,
     page_class=WandCoresPage,
+    visible=False,
 )

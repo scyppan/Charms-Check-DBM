@@ -3,7 +3,7 @@ from collections import Counter
 from functools import partial
 
 from runtime_theme import bind_theme, runtime_theme
-from shared.widgets import RoundedEntry
+from shared.widgets import RoundedEntry, alternating_row_background
 from theme import (
     BORDER_SOFT,
     FIELD_BACKGROUND,
@@ -265,13 +265,19 @@ class WandList(tk.Frame):
     def refresh_row_colors(self):
         theme_values = runtime_theme.get_values()
 
-        for record_id, row in self.rows_by_id.items():
+        for row_index, record_id in enumerate(self.visible_record_ids):
+            row = self.rows_by_id[record_id]
+
             if record_id == self.selected_record_id:
                 background = theme_values["SIDEBAR_TILE_SELECTED"]
             elif record_id == self.hovered_record_id:
                 background = theme_values["LIST_HOVER"]
             else:
-                background = theme_values["FIELD_BACKGROUND"]
+                background = alternating_row_background(
+                    self.list_canvas,
+                    theme_values,
+                    row_index,
+                )
 
             row.configure(
                 bg=background,

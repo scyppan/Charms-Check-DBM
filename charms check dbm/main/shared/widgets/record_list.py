@@ -1,8 +1,9 @@
 import tkinter as tk
 from collections import Counter
 
-from runtime_theme import bind_theme, runtime_theme
+from runtime_theme import bind_theme
 from shared.widgets.controls import RoundedEntry
+from shared.widgets.striped_listbox import StripedListbox
 from theme import (
     app_font,
     BORDER_SOFT,
@@ -81,7 +82,7 @@ class SearchableRecordList(tk.Frame):
             pady=(0, 12),
         )
 
-        self.listbox = tk.Listbox(
+        self.listbox = StripedListbox(
             self,
             bg=FIELD_BACKGROUND,
             fg=TEXT_DARK,
@@ -106,16 +107,6 @@ class SearchableRecordList(tk.Frame):
         self.listbox.bind("<<ListboxSelect>>", self.handle_selection)
         self.listbox.bind("<Motion>", self.handle_hover)
         self.listbox.bind("<Leave>", self.clear_hover)
-        bind_theme(
-            self.listbox,
-            background="FIELD_BACKGROUND",
-            foreground="TEXT_DARK",
-            selectbackground="SIDEBAR_TILE_SELECTED",
-            selectforeground="TEXT_DARK",
-            highlightbackground="BORDER_SOFT",
-            highlightcolor="BORDER_SOFT",
-        )
-
         self.scrollbar = tk.Scrollbar(
             self,
             orient="vertical",
@@ -211,18 +202,8 @@ class SearchableRecordList(tk.Frame):
         self.suppress_selection_event = True
         self.listbox.delete(0, "end")
 
-        theme_values = runtime_theme.get_values()
-
-        for record_index, record_id in enumerate(self.visible_record_ids):
+        for record_id in self.visible_record_ids:
             self.listbox.insert("end", self.labels_by_id[record_id])
-            self.listbox.itemconfigure(
-                record_index,
-                background=(
-                    theme_values["FIELD_BACKGROUND"]
-                    if record_index % 2 == 0
-                    else theme_values["SURFACE_MUTED"]
-                ),
-            )
 
         self.suppress_selection_event = False
         self.hovered_index = None
@@ -282,22 +263,8 @@ class SearchableRecordList(tk.Frame):
 
         self.clear_hover()
         self.hovered_index = hovered_index
-        theme_values = runtime_theme.get_values()
-        self.listbox.itemconfigure(
-            hovered_index,
-            background=theme_values["LIST_HOVER"],
-        )
+        self.listbox.set_hovered_index(hovered_index)
 
     def clear_hover(self, event=None):
-        if self.hovered_index is not None:
-            theme_values = runtime_theme.get_values()
-            self.listbox.itemconfigure(
-                self.hovered_index,
-                background=(
-                    theme_values["FIELD_BACKGROUND"]
-                    if self.hovered_index % 2 == 0
-                    else theme_values["SURFACE_MUTED"]
-                ),
-            )
-
         self.hovered_index = None
+        self.listbox.clear_hovered_index()

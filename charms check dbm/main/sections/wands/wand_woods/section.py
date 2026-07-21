@@ -7,4 +7,5 @@ SECTION = SectionDefinition(
     title="Wand Woods",
     order=30,
     page_class=WandWoodsPage,
+    visible=False,
 )

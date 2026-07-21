@@ -1,7 +1,7 @@
 import tkinter as tk
 from copy import deepcopy
 
-from runtime_theme import bind_theme, runtime_theme
+from runtime_theme import bind_theme
 from sections.nature_and_alchemy.creatures.constants import (
     PROFICIENCY_DEFAULTS,
 )
@@ -9,7 +9,7 @@ from sections.nature_and_alchemy.creatures.form_fields import (
     LabeledEntry,
     LabeledSelect,
 )
-from shared.widgets import MultilineField, SoftButton
+from shared.widgets import MultilineField, SoftButton, StripedListbox
 from theme import (
     BORDER_SOFT,
     FIELD_BACKGROUND,
@@ -78,7 +78,7 @@ class PartsEditor(tk.Frame):
         self.body.grid_columnconfigure(1, weight=1)
         bind_theme(self.body, background="SURFACE")
 
-        self.listbox = tk.Listbox(
+        self.listbox = StripedListbox(
             self.body,
             width=26,
             bg=FIELD_BACKGROUND,
@@ -97,16 +97,6 @@ class PartsEditor(tk.Frame):
         )
         self.listbox.grid(row=0, column=0, sticky="nsew", padx=(0, 10))
         self.listbox.bind("<<ListboxSelect>>", self.select_part)
-        bind_theme(
-            self.listbox,
-            background="FIELD_BACKGROUND",
-            foreground="TEXT_DARK",
-            selectbackground="SIDEBAR_TILE_SELECTED",
-            selectforeground="TEXT_DARK",
-            highlightbackground="BORDER_SOFT",
-            highlightcolor="BORDER_SOFT",
-        )
-
         self.detail = tk.Frame(self.body, bg=SURFACE)
         self.detail.grid(row=0, column=1, sticky="nsew")
         self.detail.grid_columnconfigure(0, weight=1)
@@ -285,18 +275,8 @@ class PartsEditor(tk.Frame):
 
     def refresh_list(self):
         self.listbox.delete(0, "end")
-        theme_values = runtime_theme.get_values()
-
-        for part_index, part in enumerate(self.parts):
+        for part in self.parts:
             self.listbox.insert("end", part.get("name", "") or "Unnamed")
-            self.listbox.itemconfigure(
-                part_index,
-                background=(
-                    theme_values["FIELD_BACKGROUND"]
-                    if part_index % 2 == 0
-                    else theme_values["SURFACE_MUTED"]
-                ),
-            )
 
         if self.selected_index is not None:
             self.listbox.selection_set(self.selected_index)

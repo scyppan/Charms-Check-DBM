@@ -13,10 +13,6 @@ class SectionLoaderTests(unittest.TestCase):
             [
                 "People",
                 "Schools",
-                "Wand Woods",
-                "Wand Cores",
-                "Wand Qualities",
-                "Wand Makers",
                 "Wands",
                 "Holdable Items",
                 "Accessories",

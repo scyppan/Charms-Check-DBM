@@ -1,10 +1,10 @@
 from core.section_definition import SectionDefinition
-from .page import WandsPage
+from sections.wands.workspace import WandWorkspacePage
 
 
 SECTION = SectionDefinition(
     key="wands",
     title="Wands",
-    order=70,
-    page_class=WandsPage,
+    order=30,
+    page_class=WandWorkspacePage,
 )

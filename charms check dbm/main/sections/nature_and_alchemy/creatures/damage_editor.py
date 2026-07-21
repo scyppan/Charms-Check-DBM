@@ -1,13 +1,13 @@
 import tkinter as tk
 from copy import deepcopy
 
-from runtime_theme import bind_theme, runtime_theme
+from runtime_theme import bind_theme
 from sections.nature_and_alchemy.creatures.constants import UNDEFINED
 from sections.nature_and_alchemy.creatures.form_fields import (
     BoundedNumberField,
     LabeledSelect,
 )
-from shared.widgets import SoftButton
+from shared.widgets import SoftButton, StripedListbox
 from shared.wounds import (
     WOUND_AMOUNT_LIMITS,
     WOUND_TYPE_OPTIONS,
@@ -88,7 +88,7 @@ class DamageEditor(tk.LabelFrame):
         )
         self.remove_button.pack(side="left")
 
-        self.listbox = tk.Listbox(
+        self.listbox = StripedListbox(
             self,
             width=16,
             height=5,
@@ -113,16 +113,6 @@ class DamageEditor(tk.LabelFrame):
             padx=(0, 8),
         )
         self.listbox.bind("<<ListboxSelect>>", self.select_damage)
-        bind_theme(
-            self.listbox,
-            background="FIELD_BACKGROUND",
-            foreground="TEXT_DARK",
-            selectbackground="SIDEBAR_TILE_SELECTED",
-            selectforeground="TEXT_DARK",
-            highlightbackground="BORDER_SOFT",
-            highlightcolor="BORDER_SOFT",
-        )
-
         self.fields = tk.Frame(self, bg=SURFACE)
         self.fields.grid(row=1, column=1, sticky="new")
         self.fields.grid_columnconfigure(0, weight=7)
@@ -242,9 +232,7 @@ class DamageEditor(tk.LabelFrame):
 
     def refresh_list(self):
         self.listbox.delete(0, "end")
-        theme_values = runtime_theme.get_values()
-
-        for damage_index, damage_entry in enumerate(self.damage_entries):
+        for damage_entry in self.damage_entries:
             severity = damage_entry.get("severity", UNDEFINED)
             severity_display = WOUND_SEVERITY_DISPLAY.get(
                 severity,
@@ -255,14 +243,6 @@ class DamageEditor(tk.LabelFrame):
             self.listbox.insert(
                 "end",
                 f"{amount} {severity_display}: {wound_type}",
-            )
-            self.listbox.itemconfigure(
-                damage_index,
-                background=(
-                    theme_values["FIELD_BACKGROUND"]
-                    if damage_index % 2 == 0
-                    else theme_values["SURFACE_MUTED"]
-                ),
             )
 
         if self.selected_index is not None:
