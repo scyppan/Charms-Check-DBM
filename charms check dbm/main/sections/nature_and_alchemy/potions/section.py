@@ -4,7 +4,7 @@ from .page import PotionsPage
 
 SECTION = SectionDefinition(
     key="potions",
-    title="Potions",
+    title="Potions & Preparations",
     order=160,
     page_class=PotionsPage,
 )

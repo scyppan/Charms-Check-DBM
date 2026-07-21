@@ -1,4 +1,6 @@
 import tkinter as tk
+import ctypes
+import sys
 from pathlib import Path
 
 from core.section_loader import load_sections
@@ -14,12 +16,28 @@ from window.sidebar import Sidebar
 
 class App(tk.Tk):
     def __init__(self):
+        if sys.platform == "win32":
+            try:
+                ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(
+                    "CharmsCheck.DatabaseManager"
+                )
+            except (AttributeError, OSError):
+                pass
+
         super().__init__()
         configure_tk_fonts(self)
 
-        icon_path = Path(__file__).parent / "assets" / "House Icon.png"
+        asset_directory = Path(__file__).parent / "assets"
+        icon_path = asset_directory / "House Icon.png"
+        windows_icon_path = asset_directory / "House Icon.ico"
 
         self.title("Charms Check DB Manager")
+
+        if sys.platform == "win32" and windows_icon_path.exists():
+            try:
+                self.iconbitmap(str(windows_icon_path))
+            except tk.TclError:
+                pass
 
         if icon_path.exists():
             self.app_icon = tk.PhotoImage(file=icon_path)

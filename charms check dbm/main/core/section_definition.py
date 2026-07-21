@@ -9,6 +9,7 @@ class SectionDefinition:
     page_class: type
     storage_key: str | None = None
     storage_type: str | None = "collection"
+    visible: bool = True
 
     @property
     def database_key(self):

@@ -211,8 +211,18 @@ class SearchableRecordList(tk.Frame):
         self.suppress_selection_event = True
         self.listbox.delete(0, "end")
 
-        for record_id in self.visible_record_ids:
+        theme_values = runtime_theme.get_values()
+
+        for record_index, record_id in enumerate(self.visible_record_ids):
             self.listbox.insert("end", self.labels_by_id[record_id])
+            self.listbox.itemconfigure(
+                record_index,
+                background=(
+                    theme_values["FIELD_BACKGROUND"]
+                    if record_index % 2 == 0
+                    else theme_values["SURFACE_MUTED"]
+                ),
+            )
 
         self.suppress_selection_event = False
         self.hovered_index = None
@@ -283,7 +293,11 @@ class SearchableRecordList(tk.Frame):
             theme_values = runtime_theme.get_values()
             self.listbox.itemconfigure(
                 self.hovered_index,
-                background=theme_values["FIELD_BACKGROUND"],
+                background=(
+                    theme_values["FIELD_BACKGROUND"]
+                    if self.hovered_index % 2 == 0
+                    else theme_values["SURFACE_MUTED"]
+                ),
             )
 
         self.hovered_index = None

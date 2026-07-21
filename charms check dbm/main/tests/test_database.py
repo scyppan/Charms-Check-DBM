@@ -8,14 +8,14 @@ from database.paths import DATABASE_PATH
 
 
 class JsonDatabaseTests(unittest.TestCase):
-    def test_database_contains_domain_collections_and_preferences(self):
+    def test_database_contains_domain_collections_and_metadata(self):
         database = JsonDatabase(DATABASE_PATH)
         database.load()
 
         self.assertTrue(database.has_container("people"))
         self.assertTrue(database.has_container("foods_and_drinks"))
         self.assertTrue(database.has_container("spells"))
-        self.assertTrue(database.has_container("preferences"))
+        self.assertTrue(database.has_container("accessories"))
 
         metadata = database.get_database_metadata()
         self.assertEqual(metadata["schema_version"], 1)

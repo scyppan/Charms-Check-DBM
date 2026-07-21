@@ -7,4 +7,5 @@ SECTION = SectionDefinition(
     title="Plant Parts",
     order=140,
     page_class=PlantPartsPage,
+    visible=False,
 )

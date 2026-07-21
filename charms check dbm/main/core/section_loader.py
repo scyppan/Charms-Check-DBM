@@ -24,7 +24,8 @@ def load_sections():
                 f"{module_info.name} must expose a SectionDefinition named SECTION"
             )
 
-        discovered_sections.append(section_definition)
+        if section_definition.visible:
+            discovered_sections.append(section_definition)
 
     discovered_sections.sort(key=attrgetter("order"))
 

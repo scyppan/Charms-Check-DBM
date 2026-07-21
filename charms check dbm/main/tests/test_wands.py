@@ -36,7 +36,7 @@ class WandTests(unittest.TestCase):
             "last_updated",
         }
 
-        self.assertEqual(len(records), 150)
+        self.assertEqual(len(records), 238)
         self.assertEqual(len(record_ids), len(set(record_ids)))
         self.assertEqual(len(names), len(set(names)))
         self.assertEqual(len(combinations), len(set(combinations)))

@@ -7,4 +7,5 @@ SECTION = SectionDefinition(
     title="Creature Parts",
     order=120,
     page_class=CreaturePartsPage,
+    visible=False,
 )

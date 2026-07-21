@@ -7,4 +7,5 @@ SECTION = SectionDefinition(
     title="Preparations",
     order=150,
     page_class=PreparationsPage,
+    visible=False,
 )
