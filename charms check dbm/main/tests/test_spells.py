@@ -16,6 +16,7 @@ from sections.magic.spells.filter_dialog import SpellFilterDialog
 from sections.magic.spells.page import SpellsPage
 from sections.magic.spells.record_form import SpellForm
 from sections.magic.spells.record_list import SpellList
+from sections.magic.traditions import TRADITIONS, TRADITIONS_PATH
 
 
 class SpellTests(unittest.TestCase):
@@ -71,6 +72,7 @@ class SpellTests(unittest.TestCase):
         )
         self.assertTrue(all(record["tags"] == [] for record in spell_records))
         self.assertNotIn("spell_subtypes", database.data)
+        self.assertNotIn("traditions", database.data)
         self.assertEqual(
             Counter(record["skill"] for record in spell_records),
             Counter(
@@ -243,17 +245,19 @@ class SpellTests(unittest.TestCase):
                     }
                 )
 
-    def test_spell_filters_combine_skill_threshold_and_tags(self):
+    def test_spell_filters_combine_skill_tradition_threshold_and_tags(self):
         matching_spell = {
             "name": "Shielded Step",
             "skill": "Defense",
             "subtype": "Shielding",
+            "tradition": "British",
             "threshold": 18,
             "tags": ["Movement", "Shield"],
         }
         filters = {
             "skills": ("Defense", "Charms"),
             "subtypes": ("Shielding", "Repelling"),
+            "traditions": ("British", "Greek"),
             "minimum_threshold": 15,
             "maximum_threshold": 20,
             "tags": ("Movement",),
@@ -277,6 +281,12 @@ class SpellTests(unittest.TestCase):
         self.assertFalse(
             SpellList.record_matches_filters(
                 {**matching_spell, "subtype": "Hex"},
+                filters,
+            )
+        )
+        self.assertFalse(
+            SpellList.record_matches_filters(
+                {**matching_spell, "tradition": "Mayan"},
                 filters,
             )
         )
@@ -366,6 +376,46 @@ class SpellTests(unittest.TestCase):
         form_source = getsource(SpellForm.__init__)
         self.assertIn("values=SPELL_SKILLS", form_source)
         self.assertNotIn("self.skill_field = LabeledEntry", form_source)
+
+    def test_traditions_live_in_the_data_text_file(self):
+        database = JsonDatabase(DATABASE_PATH)
+        database.load()
+        spell_traditions = {
+            record["tradition"]
+            for record in database.get_collection("spells")
+            if record["tradition"]
+        }
+
+        self.assertEqual(
+            TRADITIONS,
+            (
+                "British",
+                "Chinese",
+                "Egyptian",
+                "Greek",
+                "Mayan",
+                "Mesopotamian",
+                "Roman",
+                "Spanish",
+            ),
+        )
+        self.assertEqual(
+            TRADITIONS_PATH.read_text(encoding="utf-8").splitlines(),
+            list(TRADITIONS),
+        )
+        self.assertTrue(spell_traditions.issubset(set(TRADITIONS)))
+        self.assertNotIn("traditions", database.data)
+
+        form_source = getsource(SpellForm.__init__)
+        self.assertIn("values=(\"\", *TRADITIONS)", form_source)
+        self.assertNotIn("self.tradition_field = LabeledEntry", form_source)
+
+    def test_spell_filter_includes_traditions(self):
+        dialog_source = getsource(SpellFilterDialog)
+
+        self.assertIn("self.tradition_values = list(TRADITIONS)", dialog_source)
+        self.assertIn("self.tradition_listbox", dialog_source)
+        self.assertIn('"traditions": self.get_selected_values', dialog_source)
 
     def test_subtype_filter_uses_two_column_checkboxes(self):
         dialog_source = getsource(SpellFilterDialog.__init__)

@@ -2,6 +2,7 @@ import tkinter as tk
 
 from runtime_theme import bind_theme
 from sections.items.general_items.bonus_editor import BonusEditor
+from sections.items.general_items.constants import GENERAL_ITEM_TYPES
 from shared.widgets import MultilineField, RoundedEntry, RoundedSelect
 from theme import SURFACE, TEXT_DARK, TEXT_MUTED, app_font
 
@@ -31,6 +32,7 @@ class GeneralItemForm(tk.Frame):
         )
         self.identity_panel.grid_columnconfigure(0, weight=3)
         self.identity_panel.grid_columnconfigure(1, weight=1)
+        self.identity_panel.grid_columnconfigure(2, weight=1)
         bind_theme(self.identity_panel, background="SURFACE")
 
         self.name_label = tk.Label(
@@ -63,7 +65,7 @@ class GeneralItemForm(tk.Frame):
         )
         self.magical_effects_label.grid(
             row=0,
-            column=1,
+            column=2,
             sticky="ew",
             padx=(10, 0),
         )
@@ -90,6 +92,45 @@ class GeneralItemForm(tk.Frame):
             pady=(5, 0),
         )
 
+        self.type_label = tk.Label(
+            self.identity_panel,
+            text="Type",
+            bg=SURFACE,
+            fg=TEXT_DARK,
+            font=app_font(10),
+            anchor="w",
+        )
+        self.type_label.grid(
+            row=0,
+            column=1,
+            sticky="ew",
+            padx=10,
+        )
+        bind_theme(
+            self.type_label,
+            background="SURFACE",
+            foreground="TEXT_DARK",
+        )
+
+        self.type_value = tk.StringVar()
+        self.type_value.trace_add("write", self.handle_type_change)
+        self.type_select = RoundedSelect(
+            self.identity_panel,
+            variable=self.type_value,
+            values=GENERAL_ITEM_TYPES,
+            background=SURFACE,
+            height=42,
+            font=app_font(11),
+            placeholder="Select type",
+        )
+        self.type_select.grid(
+            row=1,
+            column=1,
+            sticky="ew",
+            padx=10,
+            pady=(5, 0),
+        )
+
         self.magical_effects_value = tk.StringVar()
         self.magical_effects_value.trace_add(
             "write",
@@ -106,7 +147,7 @@ class GeneralItemForm(tk.Frame):
         )
         self.magical_effects_select.grid(
             row=1,
-            column=1,
+            column=2,
             sticky="ew",
             padx=(10, 0),
             pady=(5, 0),
@@ -126,7 +167,7 @@ class GeneralItemForm(tk.Frame):
         self.last_updated_label.grid(
             row=2,
             column=0,
-            columnspan=2,
+            columnspan=3,
             sticky="ew",
             pady=(9, 0),
         )
@@ -179,6 +220,7 @@ class GeneralItemForm(tk.Frame):
         self.loading_record = True
 
         self.name_value.set(record.get("name", ""))
+        self.type_value.set(record.get("type", "Other"))
         self.magical_effects_value.set(
             record.get("has_magical_effects", "")
         )
@@ -204,6 +246,7 @@ class GeneralItemForm(tk.Frame):
     def get_values(self):
         return {
             "name": self.name_value.get().strip(),
+            "type": self.type_value.get().strip(),
             "has_magical_effects": self.magical_effects_value.get().strip(),
             "description": self.description_field.get_value(),
             "bonuses": self.bonus_editor.get_bonuses(),
@@ -215,6 +258,10 @@ class GeneralItemForm(tk.Frame):
             self.change_command()
 
     def handle_magical_effects_change(self, *arguments):
+        if not self.loading_record:
+            self.change_command()
+
+    def handle_type_change(self, *arguments):
         if not self.loading_record:
             self.change_command()
 

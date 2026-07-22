@@ -1,16 +1,9 @@
 import tkinter as tk
+from collections import Counter
 from functools import partial
 
 from runtime_theme import bind_theme, runtime_theme
-from sections.magic.spells.filter_dialog import (
-    EMPTY_SPELL_FILTERS,
-    SpellFilterDialog,
-)
-from shared.widgets import (
-    RoundedEntry,
-    SoftButton,
-    alternating_row_background,
-)
+from shared.widgets import RoundedEntry, alternating_row_background
 from theme import (
     BORDER_SOFT,
     FIELD_BACKGROUND,
@@ -23,7 +16,7 @@ from theme import (
 )
 
 
-class SpellList(tk.Frame):
+class SchoolList(tk.Frame):
     def __init__(self, parent, selection_command):
         super().__init__(parent, bg=SURFACE)
         bind_theme(self, background="SURFACE")
@@ -36,14 +29,13 @@ class SpellList(tk.Frame):
         self.rows_by_id = {}
         self.selected_record_id = None
         self.hovered_record_id = None
-        self.active_filters = dict(EMPTY_SPELL_FILTERS)
 
         self.grid_rowconfigure(2, weight=1)
         self.grid_columnconfigure(0, weight=1)
 
         self.heading = tk.Label(
             self,
-            text="All Spells",
+            text="All Schools",
             bg=SURFACE,
             fg=TEXT_DARK,
             font=app_font(15),
@@ -61,23 +53,6 @@ class SpellList(tk.Frame):
             self.heading,
             background="SURFACE",
             foreground="TEXT_DARK",
-        )
-
-        self.filter_button = SoftButton(
-            self,
-            text="Filter",
-            command=self.open_filter_dialog,
-            background=SURFACE,
-            width=88,
-            height=32,
-            font=app_font(9),
-            background_role="SURFACE",
-        )
-        self.filter_button.place(
-            relx=1,
-            x=-16,
-            y=12,
-            anchor="ne",
         )
 
         self.search_value = tk.StringVar()
@@ -145,7 +120,7 @@ class SpellList(tk.Frame):
 
         self.count_label = tk.Label(
             self,
-            text="0 spells",
+            text="0 schools",
             bg=SURFACE,
             fg=TEXT_MUTED,
             font=app_font(9),
@@ -165,25 +140,21 @@ class SpellList(tk.Frame):
             foreground="TEXT_MUTED",
         )
         runtime_theme.register(self)
-        self.update_filter_button()
 
     @staticmethod
-    def build_display_text(record):
-        spell_name = str(record.get("name", "")).strip() or "Unnamed spell"
-        incantation = (
-            str(record.get("incantation", "")).strip() or "No incantation"
+    def build_display_text(record, repeated_name=False):
+        school_name = (
+            str(record.get("name", "")).strip() or "Unnamed school"
         )
-        skill = str(record.get("skill", "")).strip() or "Unspecified skill"
-        threshold = record.get("threshold")
-        threshold_text = "—" if threshold in (None, "") else str(threshold)
-        subtype = (
-            str(record.get("subtype", "")).strip() or "Unspecified subtype"
+        location = (
+            str(record.get("location", "")).strip()
+            or "Location unspecified"
         )
 
-        return (
-            f"{spell_name} ({incantation})\n"
-            f"{skill} {threshold_text} ({subtype})"
-        )
+        if repeated_name:
+            school_name = f"{school_name} — {record.get('record_id', '')}"
+
+        return f"{school_name}\n{location}"
 
     @staticmethod
     def build_search_text(record):
@@ -191,64 +162,22 @@ class SpellList(tk.Frame):
             str(value)
             for value in (
                 record.get("name", ""),
-                record.get("incantation", ""),
-                record.get("tradition", ""),
-                record.get("skill", ""),
-                record.get("subtype", ""),
-                record.get("threshold", ""),
-                " ".join(str(tag) for tag in record.get("tags", [])),
+                record.get("location", ""),
             )
         ).casefold()
 
-    @staticmethod
-    def record_matches_filters(record, filters):
-        selected_skills = filters.get("skills", ())
-
-        if selected_skills and record.get("skill", "") not in selected_skills:
-            return False
-
-        selected_subtypes = filters.get("subtypes", ())
-
-        if (
-            selected_subtypes
-            and record.get("subtype", "") not in selected_subtypes
-        ):
-            return False
-
-        selected_traditions = filters.get("traditions", ())
-
-        if (
-            selected_traditions
-            and record.get("tradition", "") not in selected_traditions
-        ):
-            return False
-
-        threshold = record.get("threshold")
-        minimum_threshold = filters.get("minimum_threshold")
-        maximum_threshold = filters.get("maximum_threshold")
-
-        if minimum_threshold is not None and threshold < minimum_threshold:
-            return False
-
-        if maximum_threshold is not None and threshold > maximum_threshold:
-            return False
-
-        selected_tags = {
-            str(tag).casefold() for tag in filters.get("tags", ())
-        }
-        record_tags = {
-            str(tag).casefold() for tag in record.get("tags", [])
-        }
-
-        if selected_tags and not selected_tags.intersection(record_tags):
-            return False
-
-        return True
-
     def set_records(self, records, selected_record_id=None):
         self.records = records
+        name_counts = Counter(
+            str(record.get("name", "")).casefold() for record in records
+        )
         self.labels_by_id = {
-            record["record_id"]: self.build_display_text(record)
+            record["record_id"]: self.build_display_text(
+                record,
+                repeated_name=(
+                    name_counts[str(record.get("name", "")).casefold()] > 1
+                ),
+            )
             for record in records
         }
         self.search_text_by_id = {
@@ -279,12 +208,8 @@ class SpellList(tk.Frame):
         visible_records = [
             record
             for record in self.records
-            if self.record_matches_filters(record, self.active_filters)
-            and (
-                not search_text
-                or search_text
-                in self.search_text_by_id[record["record_id"]]
-            )
+            if not search_text
+            or search_text in self.search_text_by_id[record["record_id"]]
         ]
         self.visible_record_ids = [
             record["record_id"] for record in visible_records
@@ -331,10 +256,10 @@ class SpellList(tk.Frame):
         total_count = len(self.records)
 
         if visible_count == total_count:
-            self.count_label.configure(text=f"{total_count} spells")
+            self.count_label.configure(text=f"{total_count} schools")
         else:
             self.count_label.configure(
-                text=f"{visible_count} of {total_count} spells"
+                text=f"{visible_count} of {total_count} schools"
             )
 
         self.refresh_row_colors()
@@ -379,48 +304,6 @@ class SpellList(tk.Frame):
             row.configure(
                 bg=background,
                 fg=theme_values["TEXT_DARK"],
-            )
-
-    def open_filter_dialog(self):
-        dialog = SpellFilterDialog(
-            self,
-            self.records,
-            self.active_filters,
-        )
-        self.wait_window(dialog)
-
-        if dialog.result is None:
-            return
-
-        self.active_filters = dialog.result
-        self.update_filter_button()
-        self.rebuild_visible_list()
-
-    def update_filter_button(self):
-        active_filter_count = sum(
-            (
-                bool(self.active_filters.get("skills")),
-                bool(self.active_filters.get("subtypes")),
-                bool(self.active_filters.get("traditions")),
-                self.active_filters.get("minimum_threshold") is not None
-                or self.active_filters.get("maximum_threshold") is not None,
-                bool(self.active_filters.get("tags")),
-            )
-        )
-
-        if active_filter_count:
-            self.filter_button.set_text(f"Filter ({active_filter_count})")
-            self.filter_button.set_theme_roles(
-                "PRIMARY",
-                "PRIMARY_DARK",
-                "TEXT_DARK",
-            )
-        else:
-            self.filter_button.set_text("Filter")
-            self.filter_button.set_theme_roles(
-                "BUTTON_SOFT",
-                "BUTTON_SOFT_HOVER",
-                "TEXT_DARK",
             )
 
     def handle_canvas_resize(self, event):

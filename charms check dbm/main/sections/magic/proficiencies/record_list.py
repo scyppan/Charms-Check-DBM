@@ -2,9 +2,9 @@ import tkinter as tk
 from functools import partial
 
 from runtime_theme import bind_theme, runtime_theme
-from sections.magic.spells.filter_dialog import (
-    EMPTY_SPELL_FILTERS,
-    SpellFilterDialog,
+from sections.magic.proficiencies.filter_dialog import (
+    EMPTY_PROFICIENCY_FILTERS,
+    ProficiencyFilterDialog,
 )
 from shared.widgets import (
     RoundedEntry,
@@ -23,7 +23,7 @@ from theme import (
 )
 
 
-class SpellList(tk.Frame):
+class ProficiencyList(tk.Frame):
     def __init__(self, parent, selection_command):
         super().__init__(parent, bg=SURFACE)
         bind_theme(self, background="SURFACE")
@@ -36,14 +36,14 @@ class SpellList(tk.Frame):
         self.rows_by_id = {}
         self.selected_record_id = None
         self.hovered_record_id = None
-        self.active_filters = dict(EMPTY_SPELL_FILTERS)
+        self.active_filters = dict(EMPTY_PROFICIENCY_FILTERS)
 
         self.grid_rowconfigure(2, weight=1)
         self.grid_columnconfigure(0, weight=1)
 
         self.heading = tk.Label(
             self,
-            text="All Spells",
+            text="All Proficiencies",
             bg=SURFACE,
             fg=TEXT_DARK,
             font=app_font(15),
@@ -145,7 +145,7 @@ class SpellList(tk.Frame):
 
         self.count_label = tk.Label(
             self,
-            text="0 spells",
+            text="0 proficiencies",
             bg=SURFACE,
             fg=TEXT_MUTED,
             font=app_font(9),
@@ -169,20 +169,18 @@ class SpellList(tk.Frame):
 
     @staticmethod
     def build_display_text(record):
-        spell_name = str(record.get("name", "")).strip() or "Unnamed spell"
-        incantation = (
-            str(record.get("incantation", "")).strip() or "No incantation"
+        proficiency_name = (
+            str(record.get("name", "")).strip() or "Unnamed proficiency"
         )
         skill = str(record.get("skill", "")).strip() or "Unspecified skill"
         threshold = record.get("threshold")
         threshold_text = "—" if threshold in (None, "") else str(threshold)
-        subtype = (
-            str(record.get("subtype", "")).strip() or "Unspecified subtype"
-        )
+        tradition = str(record.get("tradition", "")).strip()
+        tradition_text = f" ({tradition})" if tradition else ""
 
         return (
-            f"{spell_name} ({incantation})\n"
-            f"{skill} {threshold_text} ({subtype})"
+            f"{proficiency_name}\n"
+            f"{skill} {threshold_text}{tradition_text}"
         )
 
     @staticmethod
@@ -191,11 +189,22 @@ class SpellList(tk.Frame):
             str(value)
             for value in (
                 record.get("name", ""),
-                record.get("incantation", ""),
                 record.get("tradition", ""),
                 record.get("skill", ""),
-                record.get("subtype", ""),
                 record.get("threshold", ""),
+                " ".join(
+                    " ".join(
+                        (
+                            str(material.get("name", "")),
+                            str(material.get("type", "")),
+                            str(material.get("quantity", "")),
+                        )
+                    )
+                    for material in record.get("required_materials", [])
+                    if isinstance(material, dict)
+                ),
+                record.get("description", ""),
+                record.get("history", ""),
                 " ".join(str(tag) for tag in record.get("tags", [])),
             )
         ).casefold()
@@ -205,14 +214,6 @@ class SpellList(tk.Frame):
         selected_skills = filters.get("skills", ())
 
         if selected_skills and record.get("skill", "") not in selected_skills:
-            return False
-
-        selected_subtypes = filters.get("subtypes", ())
-
-        if (
-            selected_subtypes
-            and record.get("subtype", "") not in selected_subtypes
-        ):
             return False
 
         selected_traditions = filters.get("traditions", ())
@@ -227,11 +228,13 @@ class SpellList(tk.Frame):
         minimum_threshold = filters.get("minimum_threshold")
         maximum_threshold = filters.get("maximum_threshold")
 
-        if minimum_threshold is not None and threshold < minimum_threshold:
-            return False
+        if minimum_threshold is not None:
+            if not isinstance(threshold, int) or threshold < minimum_threshold:
+                return False
 
-        if maximum_threshold is not None and threshold > maximum_threshold:
-            return False
+        if maximum_threshold is not None:
+            if not isinstance(threshold, int) or threshold > maximum_threshold:
+                return False
 
         selected_tags = {
             str(tag).casefold() for tag in filters.get("tags", ())
@@ -331,10 +334,10 @@ class SpellList(tk.Frame):
         total_count = len(self.records)
 
         if visible_count == total_count:
-            self.count_label.configure(text=f"{total_count} spells")
+            self.count_label.configure(text=f"{total_count} proficiencies")
         else:
             self.count_label.configure(
-                text=f"{visible_count} of {total_count} spells"
+                text=f"{visible_count} of {total_count} proficiencies"
             )
 
         self.refresh_row_colors()
@@ -382,7 +385,7 @@ class SpellList(tk.Frame):
             )
 
     def open_filter_dialog(self):
-        dialog = SpellFilterDialog(
+        dialog = ProficiencyFilterDialog(
             self,
             self.records,
             self.active_filters,
@@ -400,7 +403,6 @@ class SpellList(tk.Frame):
         active_filter_count = sum(
             (
                 bool(self.active_filters.get("skills")),
-                bool(self.active_filters.get("subtypes")),
                 bool(self.active_filters.get("traditions")),
                 self.active_filters.get("minimum_threshold") is not None
                 or self.active_filters.get("maximum_threshold") is not None,

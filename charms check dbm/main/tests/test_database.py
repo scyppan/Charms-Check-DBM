@@ -12,7 +12,10 @@ class JsonDatabaseTests(unittest.TestCase):
         database = JsonDatabase(DATABASE_PATH)
         database.load()
 
-        self.assertTrue(database.has_container("people"))
+        self.assertFalse(database.has_container("people"))
+        self.assertTrue(database.has_container("schools"))
+        self.assertTrue(database.has_container("books"))
+        self.assertTrue(database.has_container("bookshelves"))
         self.assertTrue(database.has_container("foods_and_drinks"))
         self.assertTrue(database.has_container("spells"))
         self.assertTrue(database.has_container("accessories"))

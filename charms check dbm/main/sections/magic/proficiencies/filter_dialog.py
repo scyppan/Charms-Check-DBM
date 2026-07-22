@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import messagebox
 
 from runtime_theme import bind_theme
-from sections.magic.spells.constants import SPELL_SKILLS, SPELL_SUBTYPES
+from sections.magic.proficiencies.constants import PROFICIENCY_SKILLS
 from sections.magic.traditions import TRADITIONS
 from shared.widgets import RoundedEntry, SoftButton, StripedListbox
 from theme import (
@@ -10,8 +10,6 @@ from theme import (
     BORDER,
     BORDER_SOFT,
     FIELD_BACKGROUND,
-    FIELD_HOVER,
-    PRIMARY_LIGHT,
     SIDEBAR_TILE_SELECTED,
     SURFACE,
     TEXT_DARK,
@@ -20,9 +18,8 @@ from theme import (
 )
 
 
-EMPTY_SPELL_FILTERS = {
+EMPTY_PROFICIENCY_FILTERS = {
     "skills": (),
-    "subtypes": (),
     "traditions": (),
     "minimum_threshold": None,
     "maximum_threshold": None,
@@ -30,15 +27,14 @@ EMPTY_SPELL_FILTERS = {
 }
 
 
-class SpellFilterDialog(tk.Toplevel):
+class ProficiencyFilterDialog(tk.Toplevel):
     def __init__(self, parent, records, current_filters):
         super().__init__(parent)
         self.configure(bg=APP_BACKGROUND)
         bind_theme(self, background="APP_BACKGROUND")
 
         self.result = None
-        self.skill_values = list(SPELL_SKILLS)
-        self.subtype_values = list(SPELL_SUBTYPES)
+        self.skill_values = list(PROFICIENCY_SKILLS)
         self.tradition_values = list(TRADITIONS)
         self.tag_values = sorted(
             {
@@ -50,8 +46,8 @@ class SpellFilterDialog(tk.Toplevel):
             key=str.casefold,
         )
 
-        self.title("Filter Spells")
-        self.geometry("720x780")
+        self.title("Filter Proficiencies")
+        self.geometry("720x760")
         self.minsize(640, 680)
         self.transient(parent.winfo_toplevel())
         self.protocol("WM_DELETE_WINDOW", self.cancel)
@@ -60,7 +56,7 @@ class SpellFilterDialog(tk.Toplevel):
 
         self.heading = tk.Label(
             self,
-            text="Filter Spells",
+            text="Filter Proficiencies",
             bg=APP_BACKGROUND,
             fg=TEXT_DARK,
             font=app_font(16),
@@ -104,7 +100,6 @@ class SpellFilterDialog(tk.Toplevel):
             pady=(16, 0),
         )
         self.classification_row.grid_rowconfigure(2, weight=1)
-        self.classification_row.grid_rowconfigure(5, weight=1)
         self.classification_row.grid_columnconfigure(0, weight=1)
         self.classification_row.grid_columnconfigure(1, weight=1)
         bind_theme(self.classification_row, background="SURFACE")
@@ -130,15 +125,15 @@ class SpellFilterDialog(tk.Toplevel):
             foreground="TEXT_DARK",
         )
 
-        self.subtype_label = tk.Label(
+        self.tradition_label = tk.Label(
             self.classification_row,
-            text="Subtypes",
+            text="Traditions",
             bg=SURFACE,
             fg=TEXT_DARK,
             font=app_font(11),
             anchor="w",
         )
-        self.subtype_label.grid(
+        self.tradition_label.grid(
             row=0,
             column=1,
             sticky="ew",
@@ -146,7 +141,7 @@ class SpellFilterDialog(tk.Toplevel):
             pady=(0, 2),
         )
         bind_theme(
-            self.subtype_label,
+            self.tradition_label,
             background="SURFACE",
             foreground="TEXT_DARK",
         )
@@ -172,15 +167,15 @@ class SpellFilterDialog(tk.Toplevel):
             foreground="TEXT_MUTED",
         )
 
-        self.subtype_hint = tk.Label(
+        self.tradition_hint = tk.Label(
             self.classification_row,
-            text="No selection includes every subtype.",
+            text="No selection includes every tradition.",
             bg=SURFACE,
             fg=TEXT_MUTED,
             font=app_font(8),
             anchor="w",
         )
-        self.subtype_hint.grid(
+        self.tradition_hint.grid(
             row=1,
             column=1,
             sticky="ew",
@@ -188,14 +183,14 @@ class SpellFilterDialog(tk.Toplevel):
             pady=(0, 6),
         )
         bind_theme(
-            self.subtype_hint,
+            self.tradition_hint,
             background="SURFACE",
             foreground="TEXT_MUTED",
         )
 
         self.skill_listbox = StripedListbox(
             self.classification_row,
-            height=4,
+            height=10,
             bg=FIELD_BACKGROUND,
             fg=TEXT_DARK,
             selectbackground=SIDEBAR_TILE_SELECTED,
@@ -216,54 +211,11 @@ class SpellFilterDialog(tk.Toplevel):
             sticky="nsew",
             padx=(0, 9),
         )
-        if self.skill_values:
-            self.skill_listbox.insert("end", *self.skill_values)
-
-        self.tradition_label = tk.Label(
-            self.classification_row,
-            text="Traditions",
-            bg=SURFACE,
-            fg=TEXT_DARK,
-            font=app_font(11),
-            anchor="w",
-        )
-        self.tradition_label.grid(
-            row=3,
-            column=0,
-            sticky="ew",
-            padx=(0, 9),
-            pady=(10, 2),
-        )
-        bind_theme(
-            self.tradition_label,
-            background="SURFACE",
-            foreground="TEXT_DARK",
-        )
-
-        self.tradition_hint = tk.Label(
-            self.classification_row,
-            text="No selection includes every tradition.",
-            bg=SURFACE,
-            fg=TEXT_MUTED,
-            font=app_font(8),
-            anchor="w",
-        )
-        self.tradition_hint.grid(
-            row=4,
-            column=0,
-            sticky="ew",
-            padx=(0, 9),
-            pady=(0, 6),
-        )
-        bind_theme(
-            self.tradition_hint,
-            background="SURFACE",
-            foreground="TEXT_MUTED",
-        )
+        self.skill_listbox.insert("end", *self.skill_values)
 
         self.tradition_listbox = StripedListbox(
             self.classification_row,
-            height=8,
+            height=10,
             bg=FIELD_BACKGROUND,
             fg=TEXT_DARK,
             selectbackground=SIDEBAR_TILE_SELECTED,
@@ -279,84 +231,14 @@ class SpellFilterDialog(tk.Toplevel):
             selectmode="extended",
         )
         self.tradition_listbox.grid(
-            row=5,
-            column=0,
+            row=2,
+            column=1,
             sticky="nsew",
-            padx=(0, 9),
+            padx=(9, 0),
         )
 
         if self.tradition_values:
             self.tradition_listbox.insert("end", *self.tradition_values)
-
-        self.subtype_check_frame = tk.Frame(
-            self.classification_row,
-            bg=FIELD_BACKGROUND,
-            highlightbackground=BORDER_SOFT,
-            highlightthickness=1,
-            borderwidth=0,
-        )
-        self.subtype_check_frame.grid(
-            row=2,
-            column=1,
-            rowspan=4,
-            sticky="nsew",
-            padx=(9, 0),
-        )
-        self.subtype_check_frame.grid_columnconfigure(
-            0,
-            weight=1,
-            uniform="subtype_columns",
-        )
-        self.subtype_check_frame.grid_columnconfigure(
-            1,
-            weight=1,
-            uniform="subtype_columns",
-        )
-        bind_theme(
-            self.subtype_check_frame,
-            background="FIELD_BACKGROUND",
-            highlightbackground="BORDER_SOFT",
-        )
-
-        self.subtype_variables = {}
-        subtype_rows_per_column = (len(self.subtype_values) + 1) // 2
-
-        for subtype_index, subtype_name in enumerate(self.subtype_values):
-            subtype_column = subtype_index // subtype_rows_per_column
-            subtype_row = subtype_index % subtype_rows_per_column
-            subtype_variable = tk.BooleanVar(value=False)
-            self.subtype_variables[subtype_name] = subtype_variable
-            subtype_checkbox = tk.Checkbutton(
-                self.subtype_check_frame,
-                text=subtype_name,
-                variable=subtype_variable,
-                bg=FIELD_BACKGROUND,
-                fg=TEXT_DARK,
-                activebackground=FIELD_HOVER,
-                activeforeground=TEXT_DARK,
-                selectcolor=PRIMARY_LIGHT,
-                font=app_font(9),
-                anchor="w",
-                justify="left",
-                relief="flat",
-                borderwidth=0,
-                highlightthickness=0,
-                padx=5,
-                pady=2,
-            )
-            subtype_checkbox.grid(
-                row=subtype_row,
-                column=subtype_column,
-                sticky="ew",
-            )
-            bind_theme(
-                subtype_checkbox,
-                background="FIELD_BACKGROUND",
-                foreground="TEXT_DARK",
-                activebackground="FIELD_HOVER",
-                activeforeground="TEXT_DARK",
-                selectcolor="PRIMARY_LIGHT",
-            )
 
         self.threshold_label = tk.Label(
             self.card,
@@ -500,9 +382,9 @@ class SpellFilterDialog(tk.Toplevel):
         self.tag_hint = tk.Label(
             self.card,
             text=(
-                "Select one or more. A spell may match any selected tag."
+                "Select one or more. A proficiency may match any selected tag."
                 if self.tag_values
-                else "No spell tags have been added yet."
+                else "No proficiency tags have been added yet."
             ),
             bg=SURFACE,
             fg=TEXT_MUTED,
@@ -546,6 +428,7 @@ class SpellFilterDialog(tk.Toplevel):
             padx=18,
             pady=(0, 16),
         )
+
         if self.tag_values:
             self.tag_listbox.insert("end", *self.tag_values)
 
@@ -600,16 +483,12 @@ class SpellFilterDialog(tk.Toplevel):
 
     def load_filters(self, filters):
         selected_skills = set(filters.get("skills", ()))
-        selected_subtypes = set(filters.get("subtypes", ()))
         selected_traditions = set(filters.get("traditions", ()))
         selected_tags = set(filters.get("tags", ()))
 
         for skill_index, skill_name in enumerate(self.skill_values):
             if skill_name in selected_skills:
                 self.skill_listbox.selection_set(skill_index)
-
-        for subtype_name, subtype_variable in self.subtype_variables.items():
-            subtype_variable.set(subtype_name in selected_subtypes)
 
         for tradition_index, tradition_name in enumerate(
             self.tradition_values
@@ -678,11 +557,6 @@ class SpellFilterDialog(tk.Toplevel):
                 self.skill_listbox,
                 self.skill_values,
             ),
-            "subtypes": tuple(
-                subtype_name
-                for subtype_name in self.subtype_values
-                if self.subtype_variables[subtype_name].get()
-            ),
             "traditions": self.get_selected_values(
                 self.tradition_listbox,
                 self.tradition_values,
@@ -699,7 +573,7 @@ class SpellFilterDialog(tk.Toplevel):
         return "break"
 
     def clear(self):
-        self.result = dict(EMPTY_SPELL_FILTERS)
+        self.result = dict(EMPTY_PROFICIENCY_FILTERS)
         self.destroy()
 
     def cancel(self, event=None):

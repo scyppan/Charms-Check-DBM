@@ -11,7 +11,6 @@ class SectionLoaderTests(unittest.TestCase):
         self.assertEqual(
             section_titles,
             [
-                "People",
                 "Schools",
                 "Wands",
                 "Holdable Items",

@@ -29,7 +29,7 @@ class App(tk.Tk):
 
         asset_directory = Path(__file__).parent / "assets"
         icon_path = asset_directory / "House Icon.png"
-        windows_icon_path = asset_directory / "House Icon.ico"
+        windows_icon_path = asset_directory / "Charms Check Large.ico"
 
         self.title("Charms Check DB Manager")
 
@@ -39,7 +39,7 @@ class App(tk.Tk):
             except tk.TclError:
                 pass
 
-        if icon_path.exists():
+        elif icon_path.exists():
             self.app_icon = tk.PhotoImage(file=icon_path)
             self.iconphoto(True, self.app_icon)
 

@@ -6,6 +6,10 @@ from sections.magic.spells.constants import (
     SPELL_SUBTYPES,
     SPELL_SUBTYPES_BY_NORMALIZED_NAME,
 )
+from sections.magic.traditions import (
+    TRADITIONS,
+    TRADITIONS_BY_NORMALIZED_NAME,
+)
 
 
 class SpellController:
@@ -123,6 +127,17 @@ class SpellController:
             if canonical_skill is not None:
                 normalized_values["skill"] = canonical_skill
 
+        if "tradition" in normalized_values:
+            normalized_tradition = " ".join(
+                normalized_values["tradition"].split()
+            ).casefold()
+            canonical_tradition = TRADITIONS_BY_NORMALIZED_NAME.get(
+                normalized_tradition
+            )
+
+            if canonical_tradition is not None:
+                normalized_values["tradition"] = canonical_tradition
+
         if "threshold" in normalized_values:
             threshold = normalized_values["threshold"]
 
@@ -160,6 +175,11 @@ class SpellController:
 
         if record_values["subtype"] not in SPELL_SUBTYPES:
             raise ValueError("A spell must use a defined subtype.")
+
+        tradition = record_values.get("tradition", "")
+
+        if tradition and tradition not in TRADITIONS:
+            raise ValueError("A spell must use a defined tradition.")
 
         threshold = record_values.get("threshold")
 
