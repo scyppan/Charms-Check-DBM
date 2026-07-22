@@ -2,7 +2,7 @@
   "_database": {
     "schema_version": 1,
     "database_version": "1.0",
-    "last_saved": "2026-07-21T13:48:32.080736+00:00"
+    "last_saved": "2026-07-21T16:33:51.119290+00:00"
   },
   "people": [],
   "schools": [],
@@ -28970,7 +28970,6348 @@
       "last_updated": "2023-03-14T18:40:14"
     }
   ],
-  "potions": [],
+  "potions": [
+    {
+      "record_id": "potion_21755",
+      "name": "Accip's Subterfuge Draught",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "7 Days",
+      "threshold": 25,
+      "description": "",
+      "raw_effect": "This potion helps to conceal one's subterfuge. If they are in conversation and the other individual attempts a social skills check to check whether the drinker has been lying, this potion guards against that check up to a value of 20.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Jobberknoll Feather",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Rosewater",
+          "type": "Food/Drink",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:24:00",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21658",
+      "name": "Aging Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "14 Days",
+      "threshold": 17,
+      "description": "",
+      "raw_effect": "Each dose of the aging potion makes the drinker 1 year older. This effect lasts 2 hours plus 1 hour per 1 over the difficulty.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:20:10",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21273",
+      "name": "Alihotsy Draught",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "Trivial",
+      "threshold": 5,
+      "description": "",
+      "raw_effect": "Alihotsy Draught is a potion made from the Alihotsy plant. Drinking it or inhaling its fumes induces hysterical laughter.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Alihotsy Leaves",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Ingredient",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:10:23",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21749",
+      "name": "Amortentia",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "7 days",
+      "threshold": 19,
+      "description": "",
+      "raw_effect": "A powerful love potion which causes the drinker to fall hopelessly in love with anyone whose hair was dissolved in the potion before they drank it. The love produced is not true love, will always be empty, and almost never brings happiness. Lasts until an antidote is administered.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Ashwinder Eggs",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:23:43",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21581",
+      "name": "Angel's Trumpet Draught",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "Trivial",
+      "threshold": 12,
+      "description": "",
+      "raw_effect": "The Angel's Trumpet Draught will help one be more attuned to their surroundings. Any trace detection checks are at +3 and any perception checks are at +5. Six doses per bottle.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Ingredient",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:13:47",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21441",
+      "name": "Anti-Paralysis Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "2 Hours",
+      "threshold": 7,
+      "description": ".",
+      "raw_effect": "The Anti-Paralysis Potion is a Healing potion, which acts as an antidote to paralysis, including reversing the effects of the Full Body-Bind Curse.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Cockatrice Feather",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-12-19T17:14:41",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21438",
+      "name": "Antidote to Common Poisons",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "2 Days",
+      "threshold": 7,
+      "description": "",
+      "raw_effect": "The Antidote to Common Poisons (or Antidote for Common Poisons) is a potion and antidote which counteracts ordinary poisons, such as creature bites and stings.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Ingredient",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:22:12",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21608",
+      "name": "Antidote to Uncommon Poisons",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "7 days",
+      "threshold": 15,
+      "description": "",
+      "raw_effect": "Despite its name, the Antidote to Uncommon Poisons also heals most diseases and toxins in addition to poisons 2H wounds per dose max 1 dose per day; may use repeatedly).",
+      "effect_in_other_potions": "x",
+      "ingredients": [
+        {
+          "name": "Powdered Graphorn Horn",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Dried Billywig Stings",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Chizpurfle Carapaces",
+          "type": "Creature Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-12-19T19:37:43",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21710",
+      "name": "Antidote to Veritaserum",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "28 Days",
+      "threshold": 70,
+      "description": "",
+      "raw_effect": "Reverses the effects of veritaserum.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Jobberknoll Feather",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Jobberknoll Feather",
+          "type": "Creature Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:22:52",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21578",
+      "name": "Babbling Beverage",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "2 Hours",
+      "threshold": 10,
+      "description": "",
+      "raw_effect": "Causes the drinker to babble incoherently for 1 hour plus 5 minutes per 1 over the difficulty. Spells must be cast non-verbally.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Jobberknoll Feather",
+          "type": "Creature Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:13:37",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21745",
+      "name": "Bacopa Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "3 Months",
+      "threshold": 18,
+      "description": "",
+      "raw_effect": "A powerful anxiolytic. This will stave off (guard against prophylactically) anxiety-causing damage up to 3H wounds and will heal anxiety-causing damage up to 6H wounds. Any DoT anxiety-producing effects are nullified. If the drinker takes this potion long term, their natural alarm system (fight/flight/freeze) will dampen. They will become unperturbed by seemingly alarming events. They will still fight and defend themselves if need be, but their overall reaction to worrisome events will be significantly muted. It takes two months for the full effects of long term use to fully wear off.",
+      "effect_in_other_potions": ".",
+      "ingredients": [
+        {
+          "name": "Smashed Scarab Beetles",
+          "type": "General Item",
+          "quantity": 1
+        },
+        {
+          "name": "Honeywater",
+          "type": "Food/Drink",
+          "quantity": 1
+        },
+        {
+          "name": "Vinegar",
+          "type": "Food/Drink",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-12-19T17:26:47",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21636",
+      "name": "Baruffio's Brain Elixer",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "4 Days",
+      "threshold": 15,
+      "description": "",
+      "raw_effect": "A potion that increases one's intelligence by 2 until the potion wears off (approximately five minutes or two combat rounds).",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Frog Brains",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Runespoor Fangs",
+          "type": "Creature Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:18:00",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21617",
+      "name": "Beautification Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "7 days",
+      "threshold": 15,
+      "description": "",
+      "raw_effect": "The Beautification Potion makes the drinker considerably more attractive for about 6 hours.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Fairy Wings",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Unicorn Hair",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Boomslang Skin",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Morning Dew",
+          "type": "General Item",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:16:32",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21445",
+      "name": "Blood Replenishing Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "3 Days",
+      "threshold": 7,
+      "description": "",
+      "raw_effect": "The Blood-Replenishing Potion heals wounds of the eruptive, gouge, and gash/slash type by replenishing lost blood 2L wounds once per injury.",
+      "effect_in_other_potions": ".",
+      "ingredients": [
+        {
+          "name": "Dried Leeches",
+          "type": "General Item",
+          "quantity": 1
+        },
+        {
+          "name": "Murtlap Tentacles",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-12-19T17:16:58",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21660",
+      "name": "Bloodroot Poison",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "8 Hours",
+      "threshold": 17,
+      "description": "",
+      "raw_effect": "The Bloodroot Poison is a potion made from bloodroot. It is poisonous, although its precise effects are unknown.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Pogrebin Hair",
+          "type": "Creature Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:20:14",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21285",
+      "name": "Boil-aid",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "2 Hours",
+      "threshold": 5,
+      "description": "",
+      "raw_effect": "Boil-aid (also known as simply Boil Cure) is a potion which removes boils.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Dried Nettles",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Snake Fang",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Porcupine Quills",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Flobberworm Mucus",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Live Leeches",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Shrake Spines",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:10:43",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21292",
+      "name": "Bruise-Removal Paste",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "2 Hours",
+      "threshold": 5,
+      "description": "",
+      "raw_effect": "This is a very weak treatment for blunt-force damage (1L per hour for ten hours).",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Wiggentree Bark",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Moly Bulbs",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Dittany Stems",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Ingredient",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:10:55",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21476",
+      "name": "Bulgeye Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "Trivial",
+      "threshold": 7,
+      "description": "",
+      "raw_effect": "The Bulgeye Potion is a potion that affects one's eyes, causing them to swell. It is emerald-green in colour.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Beetle Eyes",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Eel Eyes",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:23:25",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21546",
+      "name": "Bundimun Pomade",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "Trivial",
+      "threshold": 10,
+      "description": "",
+      "raw_effect": "A potion used to style one's hair. Can improve persuasion checks in situations where the target may be impressed with particularly nice hair.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Bundimum Ooze",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Veela Hair",
+          "type": "General Item",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:10:52",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21448",
+      "name": "Burn-Healing Paste",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "2 Hours",
+      "threshold": 7,
+      "description": "",
+      "raw_effect": "The Burn-healing paste is a healing potion in the form of a thick orange paste, which is used to heal burns completely.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Murtlap Essence",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Leaves of Aloe Vera",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Crushed Eggshells",
+          "type": "General Item",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Ingredient",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-12-19T17:19:12",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21582",
+      "name": "Burning Bitterroot Balm",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "2 Hours",
+      "threshold": 12,
+      "description": "",
+      "raw_effect": "Burning bitterroot balm is a soothing balsam made from the bitter root plant. It is soothing to one's gastrointestinal system and reverses the fire-breathing spell.",
+      "effect_in_other_potions": "",
+      "ingredients": [],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:14:57",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21501",
+      "name": "Calming Draught",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "3 Days",
+      "threshold": 10,
+      "description": "",
+      "raw_effect": "A Calming Draught is a potion that is used to calm a person down after they have had suffered a shock, trauma, or emotional outburst. Mostly treats anxiety (2H wounds), but can be somewhat helpful for sanity-shaking damage (1M wound).",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Crocodile Heart",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Ingredient",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:24:02",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21335",
+      "name": "Caxambu Style Borborygmus Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "Trivial",
+      "threshold": 5,
+      "description": "",
+      "raw_effect": "A potion which causes one's stomach to growl. Few think it is worth bothering to make given the danger and expense associated with acquiring pogrebin scalp.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Lavender Roots",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Pogregbin Scalp",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:15:34",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21322",
+      "name": "Cerci's Lion Enchantment",
+      "inventor": "",
+      "tradition": "",
+      "brew_time": "1 Week",
+      "threshold": 26,
+      "description": "",
+      "raw_effect": "This potion, when consumed, will turn the drinker into a lion. The effect will last approximately one hour and cannot be repeated for six months.",
+      "effect_in_other_potions": "",
+      "ingredients": [],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:12:13",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21323",
+      "name": "Cerci's Pig Enchantment",
+      "inventor": "",
+      "tradition": "",
+      "brew_time": "2 Days",
+      "threshold": 10,
+      "description": "",
+      "raw_effect": "This potion, when consumed, will turn the drinker into a pig. The enchantment will last for about 10 days and cannot be repeated for one year.",
+      "effect_in_other_potions": "",
+      "ingredients": [],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:13:41",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21321",
+      "name": "Cerci's Wolf Enchantment",
+      "inventor": "",
+      "tradition": "",
+      "brew_time": "One moon cycle",
+      "threshold": 19,
+      "description": "",
+      "raw_effect": "This potion will turn the drinker into a wolf temporarily (approximately six hours). The effect cannot be repeated for one month.",
+      "effect_in_other_potions": "",
+      "ingredients": [],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:12:04",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21679",
+      "name": "Chelidonium Miniscula",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "Trivial",
+      "threshold": 17,
+      "description": "",
+      "raw_effect": "Reduces pain and eases physical suffering (which can be used to prevent sanity-shaking damage from pain; will not reverse sanity-shaking damage).",
+      "effect_in_other_potions": "",
+      "ingredients": [],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:20:34",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21620",
+      "name": "Concentration Capsules",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "7 days",
+      "threshold": 15,
+      "description": "",
+      "raw_effect": "Concentration Capsules are pills that enhance one's concentration skills (+5 to final grades; +1 to perception checks).",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Flobberworm Mucus",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Ingredient",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:16:40",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21622",
+      "name": "Confusing Concoction",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "6 days",
+      "threshold": 15,
+      "description": "",
+      "raw_effect": "The Confusing Concoction or Befuddlement Draught causes confusion. In non-combat situations, this plays out as them having little understanding of what is going on around them and little understanding of what they are doing. In combat situations, the drinker loses two turns in battle.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Standard Ingredient",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:16:43",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21316",
+      "name": "Cornflower Meal",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "Trivial",
+      "threshold": 5,
+      "description": "",
+      "raw_effect": "Ground cornflower for use in potions.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Cornflower Petals",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:11:28",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21517",
+      "name": "Cough Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "Trivial",
+      "threshold": 7,
+      "description": "",
+      "raw_effect": "Cough potion is a general purpose disease/poison/toxic potion healing 1H wound once per day for up to three uses (3H wounds max).",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Peppermint Oil",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-12-19T17:06:12",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21656",
+      "name": "Crystalized Water",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "Trivial",
+      "threshold": 15,
+      "description": "",
+      "raw_effect": "A concoction used in potions.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Bonemeal",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Flouridated Muggle Water",
+          "type": "General Item",
+          "quantity": 1
+        },
+        {
+          "name": "Bonemeal",
+          "type": "Creature Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:20:07",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21730",
+      "name": "Cupid Crystals",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "3 Days",
+      "threshold": 18,
+      "description": "",
+      "raw_effect": "Cupid Crystals are a brand of Love Potion from the WonderWitch line by Weasleys' Wizard Wheezes.",
+      "effect_in_other_potions": "",
+      "ingredients": [],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:23:22",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21628",
+      "name": "Daisyroot Draught",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "7 days",
+      "threshold": 15,
+      "description": "",
+      "raw_effect": "An alcoholic beverage made from daisies.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Ingredient",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Grains",
+          "type": "Food/Drink",
+          "quantity": 1
+        },
+        {
+          "name": "Hops",
+          "type": "Food/Drink",
+          "quantity": 1
+        },
+        {
+          "name": "Yeast",
+          "type": "Food/Drink",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:17:46",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21780",
+      "name": "Death Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "1 Year",
+      "threshold": 80,
+      "description": "",
+      "raw_effect": "The potion has several functions. First, extracted memories can be shown visible for all to see. Second, while one's memories are visible, they are usually transfixed by them. Finally, any who come into contact with the potion will die. No known supply of the drug is known to be in existence and the formula may be lost to history.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Crystalized Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:10:16",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21548",
+      "name": "Death-cap Draught",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "6 days",
+      "threshold": 10,
+      "description": "",
+      "raw_effect": "The Death-cap Draught is a poison made of Death-Caps. It causes 5 heavy wounds per gulp.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Frog Parts",
+          "type": "General Item",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:10:57",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21326",
+      "name": "Decrustrative Skin Potion",
+      "inventor": "",
+      "tradition": "",
+      "brew_time": "1 hour",
+      "threshold": 10,
+      "description": "",
+      "raw_effect": "This potion will reverse the effects of any skin encrustations that have occurred regardless of their source (including wartcap exposure).",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Asphodel Roots",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Mercurialis Annua Flowers",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:14:00",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21505",
+      "name": "Deflating Draught",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "1 Day",
+      "threshold": 10,
+      "description": "",
+      "raw_effect": "The Deflating Draught is a potion which causes anything swollen by magical means to shrink back to normal size. This is the opposite to a Swelling Solution and acts as an antidote to it.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Standard Ingredient",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Collection of Lacewing Flies",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:05:33",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21294",
+      "name": "Delirium Potion",
+      "inventor": "",
+      "tradition": "Mayan",
+      "brew_time": "20 seconds",
+      "threshold": 7,
+      "description": "",
+      "raw_effect": "The one who ingests this potion will become incapacitated through delirium for three days.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Datura Leaves",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:10:59",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21339",
+      "name": "Developing Solution",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "Trivial",
+      "threshold": 5,
+      "description": "",
+      "raw_effect": "Developing solution was a potion that - when used in the developing of photographs - allowed the pictures to move. It will apparently even work with Muggle film, as the Muggle-born wizard Colin Creevey learned during his first year, much to his delight.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Bouncing Bulbs",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Mayflower Petals",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Ingredient",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:15:40",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21344",
+      "name": "Dizziness Draught",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "Trivial",
+      "threshold": 5,
+      "description": "",
+      "raw_effect": "Dizziness Draught is a potion that provokes a sensation of lightheadedness and loss of balance on the drinker. In larger doses, it may be temporarily incapacitating.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Polypody Leaves",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Billywig Wing",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Ingredient",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:15:48",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21550",
+      "name": "Dogbane Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "6 Hours",
+      "threshold": 10,
+      "description": "",
+      "raw_effect": "Poisons dogs.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:11:01",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21552",
+      "name": "Dogbreath Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "6 Hours",
+      "threshold": 10,
+      "description": "",
+      "raw_effect": "Gives the drinker fiery breath.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:11:03",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21452",
+      "name": "Doxycide",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "2 Hours",
+      "threshold": 7,
+      "description": "",
+      "raw_effect": "Doxycide is a black-coloured foul smelling solution used to spray Doxies. It paralyses them for a period of time, allowing the user to safely remove the Doxies without fear of being bitten.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Streeler Shells",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:22:45",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21639",
+      "name": "Dr. Ubbly's Oblivious Unction",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "3 Days",
+      "threshold": 15,
+      "description": "",
+      "raw_effect": "Heals sanity shaking damage. A single dose can heal 3 heavy wounds. However, if one reaches 7 heavy wounds of sanity shaking damage, they are permanently unhealable.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Eagle's Blood",
+          "type": "Creature Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-12-19T17:13:05",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21558",
+      "name": "Dragon Dung Fertiliser",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "6 Hours",
+      "threshold": 10,
+      "description": "",
+      "raw_effect": "Dragon dung fertilizer helps advanced magical plants (those with a skill level of more than 5) to grow. Many can only survive if given dragon dung fertilizer. One bag is enough to supply 10 plants through a full growing season.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Sloth Brain",
+          "type": "General Item",
+          "quantity": 1
+        },
+        {
+          "name": "Dragon Dung",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Rat Spleen",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Toasted Dragonfly Thorax",
+          "type": "General Item",
+          "quantity": 1
+        },
+        {
+          "name": "Flying Seahorse Corpses",
+          "type": "Creature Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:11:08",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21590",
+      "name": "Dragon Poison",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "2 Hours",
+      "threshold": 12,
+      "description": "",
+      "raw_effect": "A highly potent poison",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Peruvian Vipertooth Venom",
+          "type": "Creature Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:15:31",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21349",
+      "name": "Dragon Tonic",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "2 Hours",
+      "threshold": 25,
+      "description": "",
+      "raw_effect": "Cures sick dragons",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Eagle Owl Feather",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Peacock Feather",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Giant Purple Toad Warts",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Crystalized Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:15:55",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21493",
+      "name": "Dragon-Gash Healing Paste",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "Trivial",
+      "threshold": 7,
+      "description": "",
+      "raw_effect": "Gashed by a dragon? No problem! Just bring one of the dragon's claws to your nearest trusted potioneer and they can whip up this simple concoction in no time! Applying the paste to the wound will completely health wounds of the slash/gash type (even if it wasn't caused by a dragon). The wound completely within just three hours!",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Pickled Caterpillar",
+          "type": "General Item",
+          "quantity": 1
+        },
+        {
+          "name": "Dragon Claw",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Shrivelfig Paste",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-12-19T17:28:36",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21705",
+      "name": "Draught of Living Death",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "2 Hours",
+      "threshold": 18,
+      "description": "",
+      "raw_effect": "The Draught of Living Death is an extremely powerful sleeping draught, sending the drinker into a deathlike slumber. Its effects are similar to suspended animation. Waking one from this sleep is exceptionally difficult.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Sloth Brain",
+          "type": "General Item",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Ingredient",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:22:29",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21665",
+      "name": "Draught of Peace",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "4 Hours",
+      "threshold": 17,
+      "description": "",
+      "raw_effect": "This potion stabilizes one's sanity and decreases anxiety.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Unicorn Hair",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Porcupine Quills",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Ingredient",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:20:17",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21354",
+      "name": "Drowsiness Draught",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "Trivial",
+      "threshold": 5,
+      "description": "",
+      "raw_effect": "The Drowsiness Draught is a potion whose fumes can be used to induce drowsiness, tiredness and fatigue in the drinker. The potion produces a light pinkish-purple steam.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Chamomile Flowers",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Lavender Roots",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Ingredient",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:16:21",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21320",
+      "name": "Egyptian Cure for Jaundice",
+      "inventor": "",
+      "tradition": "",
+      "brew_time": "Trivial",
+      "threshold": 5,
+      "description": "",
+      "raw_effect": "This Ancient Egyptian potion can be easily developed to cure jaundice.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Dandelion Petals",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:11:32",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21667",
+      "name": "Elixer of Euphoria",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "6 days",
+      "threshold": 17,
+      "description": "",
+      "raw_effect": "The Elixir to Induce Euphoria is a sunshine-yellow potion that induces a sense of inexplicable, irrational happiness upon the drinker. This will counteract depressive-based DoT, but will not reverse damage already done.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Porcupine Quills",
+          "type": "Creature Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:20:20",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21785",
+      "name": "Emerald Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "21 Days",
+      "threshold": 80,
+      "description": "",
+      "raw_effect": "The Emerald Potion is often called the Drink of Despair (though this is a misnomer, because its effects are anxiety inducing). It produces a fearful delirium and extreme thirst (1H wound and 1M wound per drink). Touching this potion with your hands produces a serious burn to the hand (2 heavy wounds). No spells work on this potion. It also cannot be removed in any way other than by drinking it. There is no other way to affect its nature in any way. It can only be drunk. As such, this potion is designed to produce something incredibly important.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Ectoplasm",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Ghost Vapor",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Crystalized Water",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Sea Salts",
+          "type": "General Item",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:10:28",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21598",
+      "name": "Erumpent Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "2 Hours",
+      "threshold": 32,
+      "description": "A highly explosive potion that can produce a massive explosion (enough to destroy a building). Anyone in the immediate vicinity is killed immediately. It is highly volitile.",
+      "raw_effect": "A highly explosive potion that can produce a massive explosion (enough to destroy a building). Anyone in the immediate vicinity is killed immediately. It is highly volitile.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Erumpent Horn Chalk",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Erumpent Tail",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Erumpent Horn Fluid",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:15:43",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21681",
+      "name": "Everklena",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "1 Day",
+      "threshold": 17,
+      "description": "",
+      "raw_effect": "A purported cleaning potion that actually creates more mould and grime (delayed reaction).",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Sea Salts",
+          "type": "General Item",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:20:40",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21735",
+      "name": "Exploding Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "2 Hours",
+      "threshold": 18,
+      "description": "",
+      "raw_effect": "An explosive potion that can be thrown at enemies to cause damage. 1M wound if hit directly. 2L if nearby. 1L if somewhat close. Roll finesse to throw. If your finesse roll is greater than the opponent's finesse roll, you get a direct hit. If you fail by 2 or less, you get a nearby hit. If you fail by four or more, you get a somewhat close roll. Otherwise, you just failed. These come in a pack of 20.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Acromantula Pedipalp",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Boomberry Juice",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Ice Pop",
+          "type": "Food/Drink",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:23:27",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21456",
+      "name": "Exstimulo Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "2 Hours",
+      "threshold": 7,
+      "description": "",
+      "raw_effect": "The Exstimulo Potion is a potion that produces an exceptional enhancement of magical power for a single spell cast by the drinker (+5 to power for the next cast only). There is only enough for one dose in the bottle.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Re'em Blood",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Granian Hair",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:22:55",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21358",
+      "name": "Fatiguing Infusion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "2 Hours",
+      "threshold": 5,
+      "description": "",
+      "raw_effect": "The Fatiguing Fusion is a potion used to induce fatigue. Inhaling the potion's fumes is enough to start feeling the effects.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Lavender Roots",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Ground Moonseeds",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Peppermint Oil",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:16:26",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21720",
+      "name": "Felix Felicis",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "6 Months",
+      "threshold": 80,
+      "description": "",
+      "raw_effect": "Felix Felicis, also called \"Liquid Luck\", is a magical potion that makes the drinker lucky for a period of time, during which everything they attempt will be successful. It turns an ordinary day into an extraordinary one. It is meant to be used sparingly, however, as it causes giddiness, recklessness, and dangerous overconfidence if taken in excess. Felix is highly toxic in large quantities and is also a banned substance in all organised competitions. It is very difficult to make and if made incorrectly could have long-last magical effects with no known cure. As an added wrinkle, when made incorrectly, it often looks identical to the correct concoction. Those under the effects of Felix Felicis may re-roll any die they cast (taking the better of the two rolls) until the effects of the potion wear off. One dose per vial.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Ashwinder Eggs",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Murtlap Tentacles",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Occamy Eggshell",
+          "type": "Creature Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:23:08",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21722",
+      "name": "Fergus Fungal Budge Treatment",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "7 days",
+      "threshold": 18,
+      "description": "",
+      "raw_effect": "Fergus Fungal Budge is an ointment useful for treating abrasions and cuts (2H wounds per hour and can be used repeatedly on wounds of these types). \r\n\r\nTypically, one would soak a medical dressing in the product. This will cause some damage to house elves (2L wounds per hour).",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Onion Juice",
+          "type": "Food/Drink",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-12-19T17:24:55",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21509",
+      "name": "Fire Protection Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "Trivial",
+      "threshold": 10,
+      "description": "",
+      "raw_effect": "The Fire Protection Potion, also known as the Ice Potion, is a potion used to move through flames unscathed. When drunk, it induces a sensation of ice and frigidity in the drinker, and provides protection from most (but not all) magical fires.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Salamander Blood",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:05:38",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21668",
+      "name": "Fire Whiskey",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "49 days",
+      "threshold": 17,
+      "description": "",
+      "raw_effect": "Firewhisky is an alcoholic drink that is consumed by wizards and witches. Those under the age of seventeen are not allowed to buy or drink it. It is known to cause a burning sensation when drunk and for filling one's body with courage.",
+      "effect_in_other_potions": "",
+      "ingredients": [],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:20:25",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21585",
+      "name": "Fire-breathing Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "6 days",
+      "threshold": 12,
+      "description": "",
+      "raw_effect": "The Fire-Breathing Potion is a dangerous potion that can make a person breathe fire (which they can then use to cause 1H of damage per drink).",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Powdered Dragon Horn",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:15:05",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21512",
+      "name": "Flesh Eating Slug Repellent",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "2 Hours",
+      "threshold": 10,
+      "description": "",
+      "raw_effect": "Flesh-Eating Slug Repellent was a pesticide used to get rid of Flesh-Eating Slugs. It can be purchased in Knockturn Alley, and its slogan was \"with slugs out, mandrakes sprout.\"",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Doxy Venom",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Ground Horned Slugs",
+          "type": "Creature Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:05:46",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21459",
+      "name": "Forgetfulness Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "3 Days",
+      "threshold": 7,
+      "description": "",
+      "raw_effect": "The Forgetfulness Potion is a potion which causes an unknown degree of memory loss in the drinker.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Lethe River Water",
+          "type": "General Item",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:23:01",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21359",
+      "name": "Frog Parts Mixture",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "Trivial",
+      "threshold": 5,
+      "description": "",
+      "raw_effect": "A mixture used in some potions",
+      "effect_in_other_potions": "",
+      "ingredients": [],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:16:29",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21523",
+      "name": "Fungiface Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "Trivial",
+      "threshold": 7,
+      "description": "",
+      "raw_effect": "The Fungiface Potion is a potion used to cause the drinker's face to break out in fungi.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Collection of Lacewing Flies",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:10:13",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21629",
+      "name": "Garrotting Gas",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "7 days",
+      "threshold": 15,
+      "description": "",
+      "raw_effect": "Garrotting Gas is emited by its associated potion (which has no effect if drunk). Anyone exposed to the gas will suffer 1M wound of Vital damage in combat as they find themselves choking and as a result. Outside of combat, they will suffer 1M wound per minute, but may simply leave the area to prevent further damage.",
+      "effect_in_other_potions": "",
+      "ingredients": [],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:17:49",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21752",
+      "name": "Garvin Instant Darkness Powder",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "14 Days",
+      "threshold": 25,
+      "description": "",
+      "raw_effect": ".",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Bat Spleen",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Ingredient",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:23:52",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21529",
+      "name": "Girding Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "Trivial",
+      "threshold": 7,
+      "description": "",
+      "raw_effect": "The Girding Potion is a potion that gives the consumer prolonged endurance. The maximum dosage is two vials. It has a rather foul odour. This can help to protect against extreme fatigue and is a favorite of students cramming for their NEWTs. Taking this continuously for more than 3 days will cause ever increasing sanity damage... I mean really, kid... Just go to bed! You need sleep!",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Toasted Dragonfly Thorax",
+          "type": "General Item",
+          "quantity": 1
+        },
+        {
+          "name": "Flying Seahorse Corpses",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Doxy Eggs",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Fairy Wings",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:10:25",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21640",
+      "name": "Gregory's Unctuous Unction",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "Trivial",
+      "threshold": 15,
+      "description": "",
+      "raw_effect": "Gregory's Unctuous Unction is a potion that was invented by Gregory the Smarmy. It causes the drinker to believe that whomever gave the potion to him or her is their best friend (effects wear off after 12 hours).\r\n\r\n1 dose per brew",
+      "effect_in_other_potions": "",
+      "ingredients": [],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:18:10",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21364",
+      "name": "Hair-Raising Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "Trivial",
+      "threshold": 5,
+      "description": "",
+      "raw_effect": "The Hair-Raising Potion is a potion that causes the drinker's hair to stand on end. One of the known ingredients is rat tails.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Rat Tails",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Porcupine Quills",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Dried Billywig Stings",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:16:36",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21671",
+      "name": "Hate Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "6 days",
+      "threshold": 17,
+      "description": "",
+      "raw_effect": "When the drinker consumes this potion, they will experience a considerable hatred toward the person who gave them the potion. This will be temporary (usually lasting about 3 days).",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Ashwinder Eggs",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:20:27",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21707",
+      "name": "Heartbreak Teardrops",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "6 Hours",
+      "threshold": 55,
+      "description": "",
+      "raw_effect": "Heartbreak Teardrops are sold in Weasley's Wizard Wheezes. No one but Fred and George know the formula. The potion is known to decrease one's heartbreak but can also decrease one's embarrassment. It's is believed to work because drinking the tears of other heartbroken souls reminds one that they are not alone in their pain.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Tears of one who is heartbroken",
+          "type": "General Item",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:22:31",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21367",
+      "name": "Herbicide",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "Trivial",
+      "threshold": 5,
+      "description": "",
+      "raw_effect": "Herbicide Potion damages plants. It has the ability to kill any plant under level 3. It will harm or weaken any plant under level 6. Higher level plants remain uneffected. Fungi are unaffected.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Flobberworm Mucus",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Lionfish Spines",
+          "type": "Creature Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:16:46",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21586",
+      "name": "Hiccuping Solution",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "2 Hours",
+      "threshold": 12,
+      "description": "",
+      "raw_effect": "A potion that induces incessant hiccuping for 1 hour.",
+      "effect_in_other_potions": "",
+      "ingredients": [],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:15:22",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21633",
+      "name": "Invigoration Draught",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "4 Hours",
+      "threshold": 15,
+      "description": "",
+      "raw_effect": "Invigoration draught improves one's power by 1 for 15 minutes (or 9 combat rounds).",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Dried Billywig Stings",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Ingredient",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:17:58",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21563",
+      "name": "Invisibility Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "Trivial",
+      "threshold": 10,
+      "description": "",
+      "raw_effect": "The Invisibility Potion makes the drinker invisible for a short time. The potion will wear off at some random time (recommended that the headmaster roll to determine the wearing off time with higher quality concoctions lasting longer).\r\n\r\n3 Doses per Brew",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Tebo Tusk",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Chicken Carcass",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Dried Spiders",
+          "type": "General Item",
+          "quantity": 1
+        },
+        {
+          "name": "Crystalized Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:11:13",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21684",
+      "name": "Jawbind Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "15 Days",
+      "threshold": 17,
+      "description": "",
+      "raw_effect": "A potion that induces lockjaw",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Muggle Nails",
+          "type": "General Item",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:20:42",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21685",
+      "name": "Kissing Concoction",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "1 Day",
+      "threshold": 17,
+      "description": "",
+      "raw_effect": "A weaker and cheaper alternative to the love potion.",
+      "effect_in_other_potions": "",
+      "ingredients": [],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:20:58",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21687",
+      "name": "Laxative Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "1 Day",
+      "threshold": 17,
+      "description": "",
+      "raw_effect": "A potion to induce diarrhea.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:21:58",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21431",
+      "name": "Leech Juice",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "Trivial",
+      "threshold": 5,
+      "description": "",
+      "raw_effect": "This is a juice made from leeches that is sometimes used in other potions as the primary fluid.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Live Leeches",
+          "type": "Creature Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:21:01",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21520",
+      "name": "Liquid Mirth Formula 017",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "1 Day",
+      "threshold": 7,
+      "description": "",
+      "raw_effect": "This is an antidepressive potion that is more effective (2H wounds per drink) than chewing Alihotsy leaves or ingesting raw St.John's-wort. There are 3 doses per vial.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Ingredient",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:08:48",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21637",
+      "name": "Liquid Mirth Formula 215",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "7 days",
+      "threshold": 15,
+      "description": "",
+      "raw_effect": "This is a powerful antidepressive potion that will remove all depression.",
+      "effect_in_other_potions": "",
+      "ingredients": [],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:18:02",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21599",
+      "name": "Madame Glossy's Silver Polish",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "2 Hours",
+      "threshold": 12,
+      "description": "",
+      "raw_effect": "Madame Glossy's Silver Polish is a magical cleaning solution often used by squibs.",
+      "effect_in_other_potions": "",
+      "ingredients": [],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:15:45",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21737",
+      "name": "Magi-me-more",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "5 days",
+      "threshold": 18,
+      "description": "",
+      "raw_effect": "Magi-Me-More pills help the consumer with concentration. However, there are considerable transfigurating side-effects.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Twine of Horse Hair",
+          "type": "Creature Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:23:31",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21776",
+      "name": "Mandrake Draught",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "3 Months",
+      "threshold": 80,
+      "description": ".",
+      "raw_effect": "Mandrake Restorative Draught is a healing potion which restores one who has been transfigured, cursed or petrified back to their original state. The restoration process is very slow, with the full effects not resolving for approximately 1 month. 5 doses per bottle.",
+      "effect_in_other_potions": ".",
+      "ingredients": [
+        {
+          "name": "Mandrake Stew",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Ingredient",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-12-19T17:07:11",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21576",
+      "name": "Mandrake Stew",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "Trivial",
+      "threshold": 10,
+      "description": "",
+      "raw_effect": "This is a stew made from havested mandrakes that can be used in other potions. No one is sure what benefits or risks are associated with the raw stew. Few dare to try it. However, it's said to be quite delicious.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Ashwinder Eggs",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Lake Water",
+          "type": "General Item",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:11:34",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21534",
+      "name": "Manegro Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "2 Hours",
+      "threshold": 7,
+      "description": "",
+      "raw_effect": "The Manegro Potion is a potion used to cause the hair on the drinker's head to grow out rapidly.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Rat Tails",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Porcupine Quills",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Dried Billywig Stings",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:10:33",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21600",
+      "name": "Maximum Turbo Farts Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "4 Hours",
+      "threshold": 12,
+      "description": "",
+      "raw_effect": "The Maximum Turbo Farts Potion was a potion that causes the drinker to rapidly develop flatulence.",
+      "effect_in_other_potions": "",
+      "ingredients": [],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:15:50",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21287",
+      "name": "Mayan Guidance of the Dead",
+      "inventor": "",
+      "tradition": "Mayan",
+      "brew_time": "4 Hours",
+      "threshold": 35,
+      "description": "",
+      "raw_effect": "Ingesting this potion allows the faintest interaction with the spirit of one who has recently passed on. In so doing, the spirit will have the ability to communicate their knowledge and emotions, but only briefly (usually about 90 seconds). Very very rarely (rolls of 60 or higher) have been shown to either sustain the connection longer or to reconnect with the spirit a second time.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Cane Toad Skin-Gland Secretions",
+          "type": "Creature Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:10:46",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21566",
+      "name": "Memory Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "2 Hours",
+      "threshold": 10,
+      "description": "",
+      "raw_effect": "A Memory Potion is a potion which improves the drinker's memory, boosting their mental cognition. (History checks by +5).",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Jobberknoll Feather",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Crystalized Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:11:18",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21688",
+      "name": "Moonseed Poison",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "6 Hours",
+      "threshold": 17,
+      "description": "",
+      "raw_effect": "The Moonseed Poison is a weak poison (2L per hour for three hours).",
+      "effect_in_other_potions": "",
+      "ingredients": [],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:22:01",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21645",
+      "name": "Mrs. Scower's All-purpose Magic Mess Remover",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "2 Hours",
+      "threshold": 15,
+      "description": "",
+      "raw_effect": ".",
+      "effect_in_other_potions": "",
+      "ingredients": [],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:19:45",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21644",
+      "name": "Muffling Draught",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "3 Days",
+      "threshold": 15,
+      "description": "",
+      "raw_effect": "The Muffling Draught is a potion used to affect the target's ability to speak. Inhaling its fumes are enough to start feeling its effects. It is exceptionally expensive owing to the fact that no wizard to date has found a way to make the potion without the use of Nundu Claw.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Nundu Claw",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Ingredient",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:18:15",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21298",
+      "name": "Murtlap Essence",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "Trivial",
+      "threshold": 25,
+      "description": ".",
+      "raw_effect": "Murtlap Essence is a solution of strained and pickled tentacles of Murtlaps. Heals abrasions and burns 3H wounds once per injury.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Coneflower Petals",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Murtlap Tentacles",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Vinegar",
+          "type": "Food/Drink",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-12-19T17:10:54",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21741",
+      "name": "Noxious Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "6 Hours",
+      "threshold": 18,
+      "description": "",
+      "raw_effect": "This potion when dumped onto the ground will release a noxious gas into the air that will force others to flee the area for at least one hour. Those with an alternative breathing source or a counteracting potion may be able to withstand this potion's effects.\r\n\r\n10 Doses per Brew",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Troll Dung",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Decaying Tooth Root",
+          "type": "General Item",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:23:34",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21371",
+      "name": "Oculus Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "Trivial",
+      "threshold": 5,
+      "description": "",
+      "raw_effect": "Restores normal functioning to one's eyesight. It is incredibly expensive because of the need to use Ground Unicorn Horn which can only be harvested from Unicorns that died of natural causes. This is a cure for blindness.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Wormwood Oil",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Ground Unicorn Horn",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-12-19T19:38:57",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21277",
+      "name": "Olmec Conjuration Potion",
+      "inventor": "",
+      "tradition": "Mayan",
+      "brew_time": "30 Seconds",
+      "threshold": 10,
+      "description": "",
+      "raw_effect": "This Mayan-era potion utilizes Agarin as its primary ingredient. The result of ingesting the potion is the conjuration of four sprite-like creatures (per dose) that each cause 2L wound of cutting damage per attack. Each has a heavy wound capacity of 1. These are conjured within one turn and can begin attacking immediately. They may be reconjured once all initial sprites have died.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Agarin",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:10:31",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21497",
+      "name": "Penelope's Antinox Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "1 Day",
+      "threshold": 7,
+      "description": "",
+      "raw_effect": "A powerful potion which offers magical protection against venoms (up to 2H wounds) and poison gasses (protection value = 25; one hour of protection). Offers magical resistance of 10 for one hour.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Basilisk Venom",
+          "type": "General Item",
+          "quantity": 1
+        },
+        {
+          "name": "Rosewater",
+          "type": "Food/Drink",
+          "quantity": 1
+        },
+        {
+          "name": "Enchanted Creeper Vines",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:23:55",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21269",
+      "name": "Penelope's Prolonging Potion",
+      "inventor": "Penelope Evans",
+      "tradition": "",
+      "brew_time": "Trivial",
+      "threshold": 13,
+      "description": "",
+      "raw_effect": "Extends the life of a living creature that is near death (and can bring a plant back from the brink of death).",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Welwitschia Leaf Oils",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Wiggentree Bark",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Sopophorous Bean Powder",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Basilisk Venom",
+          "type": "General Item",
+          "quantity": 1
+        },
+        {
+          "name": "Bloodroot Roots",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:10:19",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21462",
+      "name": "Pepperup Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "4 Hours",
+      "threshold": 7,
+      "description": "",
+      "raw_effect": "A potion which provides some healing for disease/toxic/poison damage (2L per drink). It also warms up the recipient. It has the side-effect of causing steam to gently emit from the drinker's ears for hours afterward.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Horseradish Roots",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Peppermint Oil",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Cayenne Powder",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Bicorn Hair",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-12-19T17:21:00",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21701",
+      "name": "Peruvian Instant Darkness Powder",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "7 Days",
+      "threshold": 17,
+      "description": "",
+      "raw_effect": "When this powder is thrown into the air, it blankets the entire area in a magical darkness that cannot be penetrated by magical or muggle light.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Peruvian Vipertooth Venom",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Rat Entrails",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Bonemeal",
+          "type": "Creature Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:22:24",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21729",
+      "name": "PolyJuice Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "30 Days",
+      "threshold": 18,
+      "description": "",
+      "raw_effect": "Polyjuice Potion is a potion that allows the drinker to assume the form of someone else. It is a highly complicated, challenging and time-consuming potion that even adult witches and wizards struggle to brew correctly. The potion is incredibly advanced and has two separate parts that contain steps for each part, when brewing is complete the potion has to stew for a month before usage. Its use is strictly prohibited by the ministry.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Collection of Lacewing Flies",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Live Leeches",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Bicorn Hair",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Boomslang Skin",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "A bit of the person one wants to turn into",
+          "type": "General Item",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:23:20",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21303",
+      "name": "Pompion Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "Trivial",
+      "threshold": 5,
+      "description": "",
+      "raw_effect": "Pompion Potion is a potion that when drunk, temporarily turns the drinker's head into a pumpkin.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Bouncing Bulbs",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Foxglove Bulbs",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Crushed Flitterby Moth",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:11:11",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21593",
+      "name": "Potion for Dreamless Sleep",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "6 days",
+      "threshold": 12,
+      "description": "",
+      "raw_effect": "Potion for Dreamless Sleep induces drowsiness in small doses and a deep restful sleep with full doses.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Bear Fur",
+          "type": "General Item",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:15:37",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21674",
+      "name": "Potion Number 07",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "18 Hours",
+      "threshold": 17,
+      "description": "",
+      "raw_effect": "Potion № 07 is a deadly poison. It produces 2H wounds per hour for three days.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Powdered Lionfish",
+          "type": "General Item",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:20:30",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21778",
+      "name": "Potion of All Potential",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "5 days",
+      "threshold": 80,
+      "description": "",
+      "raw_effect": "This potion ensures that the next cast will succeed as if the drinker has rolled a 10. It appears to sparkle slightly in its phial.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Crystalized Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:10:10",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21375",
+      "name": "Rat Spleen Mixture",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "Trivial",
+      "threshold": 5,
+      "description": "",
+      "raw_effect": "A mixture of rat spleen used in potions",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Rat Spleen",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Syrup",
+          "type": "Food/Drink",
+          "quantity": 1
+        },
+        {
+          "name": "Sea Salts",
+          "type": "General Item",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:17:55",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21537",
+      "name": "Rat tonic",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "Trivial",
+      "threshold": 7,
+      "description": ".",
+      "raw_effect": "A Rat tonic is a healing potion for rats (1L wound per dose. Max once per day). It is most often used to treat ageing rats. Rats will grow if they drink too much.",
+      "effect_in_other_potions": ".",
+      "ingredients": [
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Rotted Dirty Cheese Curds",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-12-19T17:08:57",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_24525",
+      "name": "Raya's Enhanced Welwitschia Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "Trivial",
+      "threshold": 30,
+      "description": "Invented by Raphael Raya. One batch of ingredients makes nine doses.\r\n\r\nRaya does not know the ingredients.",
+      "raw_effect": "Cures one disease one time completely. But, can only be used once per lifetime. That disease will never reinfect the target.",
+      "effect_in_other_potions": ".",
+      "ingredients": [
+        {
+          "name": "Welwitschia Leaf Oils",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Wiggentree Bark",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Infected Bamboo Plant Stem",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Leaves of Scurvy Grass",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Mooncalf Dung",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Pickled Caterpillar",
+          "type": "General Item",
+          "quantity": 1
+        },
+        {
+          "name": "Sopophorous Bean Powder",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Bloodroot Roots",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:22:49",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_23628",
+      "name": "Raya's Standard Welwitschia Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "Trivial",
+      "threshold": 30,
+      "description": "Invented by Raphael Raya. One batch of ingredients makes three doses.",
+      "raw_effect": "Cures one disease one time completely. But, can only be used once per lifetime. That disease will never reinfect the target.",
+      "effect_in_other_potions": ".",
+      "ingredients": [
+        {
+          "name": "Welwitschia Leaf Oils",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Wiggentree Bark",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Infected Bamboo Plant Stem",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Leaves of Scurvy Grass",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Mooncalf Dung",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Pickled Caterpillar",
+          "type": "General Item",
+          "quantity": 1
+        },
+        {
+          "name": "Sopophorous Bean Powder",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Bloodroot Roots",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:13:44",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_23490",
+      "name": "Raya's Welwitschia Potion",
+      "inventor": "Penelope Evans",
+      "tradition": "British",
+      "brew_time": "Trivial",
+      "threshold": 28,
+      "description": "One batch of ingredients makes six doses. This potion is technically slightly harder to cast, but mostly its difficulty is mitigated by requiring a more purified version of welwitchia extract.",
+      "raw_effect": "Extends the life of a living creature that is near death (and can bring a plant back from the brink of death).",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Infected Bamboo Plant Stem",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Leaves of Scurvy Grass",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Mooncalf Dung",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Pickled Caterpillar",
+          "type": "General Item",
+          "quantity": 1
+        },
+        {
+          "name": "Welwitschia Leaf Oils",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:22:18",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21791",
+      "name": "Regeneration Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "Trivial",
+      "threshold": 80,
+      "description": "",
+      "raw_effect": "This potion is an \"old piece of dark magic\" that restores a wizard whose body has become maimed and disfigured to their true and whole bodily form.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Crystalized Water",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Bone of one's father",
+          "type": "General Item",
+          "quantity": 1
+        },
+        {
+          "name": "Flesh of a servent willingly given",
+          "type": "General Item",
+          "quantity": 1
+        },
+        {
+          "name": "Blood of one's foe",
+          "type": "General Item",
+          "quantity": 1
+        },
+        {
+          "name": "Rudimentary Body",
+          "type": "General Item",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:10:36",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21382",
+      "name": "Regerminating Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "Trivial",
+      "threshold": 5,
+      "description": "",
+      "raw_effect": "Revives dead flitterblooms and aids plants in germinating. If you're trying to plant a plant with seeds (or fungi with spores) you are required to make an herbology check. Using this potion adds 2 to that herbology check. There are enough doses in this for 10 uses.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Cherry Tree Bark",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Coneflower Petals",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Pulverized Sea Serpent Skin",
+          "type": "General Item",
+          "quantity": 1
+        },
+        {
+          "name": "Mooncalf Dung",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Natural Soils",
+          "type": "General Item",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:18:05",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21772",
+      "name": "Replenishing Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "Trivial",
+      "threshold": 55,
+      "description": "",
+      "raw_effect": "The Replenishing Potion is a potion used to replenish empty potions. The more difficult the potion is to make, the less likely this potion is to be effective (headmaster's discretion). There are 4 doses in each vial. Drinking this potion does nothing.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:08:42",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21647",
+      "name": "Restoration Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "3 Days",
+      "threshold": 15,
+      "description": "",
+      "raw_effect": "Removes spell effects when drank by a beast or when poured on an object or animal.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:19:51",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21539",
+      "name": "Revival Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "18 Hours",
+      "threshold": 7,
+      "description": "",
+      "raw_effect": "The Revive Potion is a potion used to awaken an unconscious person.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:10:41",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21765",
+      "name": "Rudimentary Body Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "2 Days",
+      "threshold": 50,
+      "description": "",
+      "raw_effect": "This potion is used to prepare a rudimentary body for a non-corporeal wizard from an intact horcrux.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Snake Venom",
+          "type": "General Item",
+          "quantity": 1
+        },
+        {
+          "name": "Unicorn Blood",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "An Intact Horcrux",
+          "type": "General Item",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:05:42",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21387",
+      "name": "Scintillation Solution",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "2 Hours",
+      "threshold": 5,
+      "description": "",
+      "raw_effect": "A potion that makes the drinker sparkle slightly.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Gleaming Leaves of Niffler's Fancy",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Peppermint Oil",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Collection of Lacewing Flies",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Ingredient",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:18:12",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21515",
+      "name": "Shrinking Solution",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "1 Day",
+      "threshold": 10,
+      "description": "",
+      "raw_effect": "Shrinking Solution, also known as a Shrinking Potion, is a potion that causes the drinker to shrink to a smaller form. It is bright green when brewed correctly and, if prepared incorrectly, it can be poisonous. Roll 1d10 when you drink the first dose to determine if the bottle is poisonous. If the roll is less than 3, the batch is poison and the drinker takes a medium wound per drink. They are also incapacitated for the rest of that day.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Sliced Caterpillars",
+          "type": "General Item",
+          "quantity": 1
+        },
+        {
+          "name": "Rat Spleen",
+          "type": "Creature Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:08:38",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21314",
+      "name": "Shrivelfig Paste",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "Trivial",
+      "threshold": 5,
+      "description": "",
+      "raw_effect": "Shrivelfig paste is the most commonly used paste in potioncrafting. While the shrivelfig does not specifically have any magical effect, the fact that the shrivelfig paste shrivels means that the overall volume of most potions and pastes is smaller. The invention of shrivelfig paste, was a revolution in potionmaking because it allowed for potioneers to create larger batches that could be more easily transported to markets throughout the world. The shrivelfig itself is commonly available and its powder produces an easy-to-work-with paste. It provides clear utility to commercial and hobbyist potionmakers.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Shrivelfig Powder",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Cornflower Petals",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Ingredient",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Vinegar",
+          "type": "Food/Drink",
+          "quantity": 1
+        },
+        {
+          "name": "Syrup",
+          "type": "Food/Drink",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:11:22",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21543",
+      "name": "Skele-gro",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "6 days",
+      "threshold": 10,
+      "description": "",
+      "raw_effect": "Skele-Gro mends broken bones. Multiple doses is required to regrow bones.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Pufferfish Eyes",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Smashed Scarab Beetles",
+          "type": "General Item",
+          "quantity": 1
+        },
+        {
+          "name": "Crystalized Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:10:48",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21330",
+      "name": "Skin Restoration Potion",
+      "inventor": "",
+      "tradition": "",
+      "brew_time": "1 Hour",
+      "threshold": 7,
+      "description": "",
+      "raw_effect": "This simple potion will cure boils, blemishes, skin tags, and jinxes that have affected the skin. Essential it returns the skin to its normal state. \r\n\r\nDoes not work on acne.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Leaves of Aloe Vera",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Sea Lavander Flowers",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Moondew Nectar",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:15:18",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21678",
+      "name": "Sleeping Draught",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "7 days",
+      "threshold": 17,
+      "description": "",
+      "raw_effect": "The Sleeping Draught is a potion that causes the drinker to fall almost instantaneously into a deep but temporary sleep. A standard Sleeping Draught differs from the Draught of Living Death, which is much more powerful, long-lasting, and difficult to brew.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Flobberworm Mucus",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Ingredient",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:20:32",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21393",
+      "name": "Snuffling Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "Trivial",
+      "threshold": 5,
+      "description": "",
+      "raw_effect": "This potion enhances one's sense of smell and helps them better discern the source of certain spells.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Minted Oils",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Peppermint Oil",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Motherwort Leaves",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Peony Flowers",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:19:56",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21412",
+      "name": "Standard Ingredient",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "Trivial",
+      "threshold": 5,
+      "description": "",
+      "raw_effect": "A concoction used in potions.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Ground Basil",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Oregano Leaves",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Ground Cinnamon",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Whole Cloves",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Powdered Garlic",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Cayenne Powder",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Parsley Flakes",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:20:22",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21569",
+      "name": "Star Grass Salve",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "Trivial",
+      "threshold": 10,
+      "description": "",
+      "raw_effect": "Treats damage of the explosive type (1M wound per drink) with 10 doses per bottle.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Unicorn Hair",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Star Grass Salve",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:11:20",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21466",
+      "name": "Strength Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "2 Hours",
+      "threshold": 7,
+      "description": "",
+      "raw_effect": "The Strength Potion is a potion which is orange in colour and gives the drinker increased strength (thereby improving their power by 1 until the potion wears off).",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Snake Fang",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "An arm bone",
+          "type": "General Item",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:23:10",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21573",
+      "name": "Strengthening Solution",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "Trivial",
+      "threshold": 10,
+      "description": "",
+      "raw_effect": "This potion grants the drinker considerable physical strength (+5) for the next hour.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Salamander Blood",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Powdered Griffin Claw",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Ingredient",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:11:30",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21308",
+      "name": "Swelling Solution",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "2 Hours",
+      "threshold": 5,
+      "description": "",
+      "raw_effect": "The Swelling Solution is a potion which causes whatever it touches to swell in size.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Dried Nettles",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Pufferfish Eyes",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Bat Spleen",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Ingredient",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:11:16",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21649",
+      "name": "Ten-second Pimple Vanisher",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "2 Hours",
+      "threshold": 15,
+      "description": "",
+      "raw_effect": "The Ten-Second Pimple Vanisher removes pimples.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Honey",
+          "type": "Food/Drink",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-12-19T17:13:45",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21716",
+      "name": "Thick Golden Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "Trivial",
+      "threshold": 75,
+      "description": "",
+      "raw_effect": "Contains curses and slows their effects. Whatever DoT rate the curse would typically take is significantly decreased (headmaster's discretion). When combined with certain spells (it's possible that only Snape knew those spells), curses can be cordoned off to certain areas of the body.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Fish Scales",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:23:03",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_23120",
+      "name": "Tincture of Bloodroot",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "1 Hour",
+      "threshold": 7,
+      "description": "Combine with Vinegar to make Tincture of Bloodroot which can be used to relieve a cough.",
+      "raw_effect": ".",
+      "effect_in_other_potions": ".",
+      "ingredients": [
+        {
+          "name": "Bloodroot Roots",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Alcohol",
+          "type": "Food/Drink",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:15:01",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21433",
+      "name": "Tincture of Thyme",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "Trivial",
+      "threshold": 5,
+      "description": "",
+      "raw_effect": "Thyme dissolved in alcohol to be used in other potions.",
+      "effect_in_other_potions": "",
+      "ingredients": [],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:22:04",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21425",
+      "name": "Tincture of Tormentil",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "Trivial",
+      "threshold": 5,
+      "description": "",
+      "raw_effect": "Tormentil dissolved in alcohol has the ability to stop bleeding preventing some DoTs from progressing.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Alcohol",
+          "type": "Food/Drink",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:20:37",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21472",
+      "name": "Tolipan's Blemish Blitzer",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "2 Hours",
+      "threshold": 7,
+      "description": "",
+      "raw_effect": "Tolipan Blemish Blitzer is a potion that treats acne.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Shrivelfig Paste",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:23:17",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21469",
+      "name": "Tonic for Trace Detection",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "2 Hours",
+      "threshold": 7,
+      "description": "",
+      "raw_effect": "The Tonic for Trace Detection is a potion that can be used to increase an individual's mental perception of Trace magic in the world. If a trace has been placed on an area, this potion enhances the user's ability to perceive it (+5 to perception to the next check solely for a trace).",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Owl Eye",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:23:15",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21713",
+      "name": "Veritaserum",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "28 Days",
+      "threshold": 70,
+      "description": "",
+      "raw_effect": "Veritaserum is a truth potion. The drinker will be forced to answer direct questions honestly (to the best of their knowledge).",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Jobberknoll Feather",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Jobberknoll Feather",
+          "type": "Creature Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:22:58",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21690",
+      "name": "Vitamix Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "4 Hours",
+      "threshold": 17,
+      "description": "",
+      "raw_effect": "Vitamix Potion is a potion that gives the drinker 'a burst of energy', greatly sharpening one's reflexes (+5 to finesse). It's affects are very short lived. This must be brewed in a copper cauldron.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:22:07",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21651",
+      "name": "Volubilis Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "2 Hours",
+      "threshold": 15,
+      "description": "",
+      "raw_effect": "Volubilis Potion is a potion that alters the drinker's voice. It will also restore their voice if they have lost it, and thus will end the effects of the Silencing Charm.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Honeywater",
+          "type": "Food/Drink",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:20:04",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21693",
+      "name": "Weakness Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "5 days",
+      "threshold": 17,
+      "description": "",
+      "raw_effect": "Weakness Potion is a potion whose fumes induce weakness, both physically (-5 to power checks) and mentally (-5 to intelligence checks). Weakness Potion fumes can also induce weakness, both physically (-3 power) and mentally (-3 intelligence).",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Rat's Blood",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:22:09",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21757",
+      "name": "Weedosoros",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "10 Days",
+      "threshold": 35,
+      "description": "",
+      "raw_effect": "This is a highly potent poison that causes 1 heavy wound per day of vital damage for 7 days.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Pumpkin Juice",
+          "type": "Food/Drink",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:24:04",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21480",
+      "name": "Wideye Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "25 Days",
+      "threshold": 7,
+      "description": "",
+      "raw_effect": "The Wideye Potion is also referred to as the Awakening Potion. The potion keeps the drinker awake until the potion wears off (two days). The potion serves as an antidote to the Draught of Living Death.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Snake Fang",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Dried Billywig Stings",
+          "type": "Creature Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:23:29",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21770",
+      "name": "Wiggenweld Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "7 days",
+      "threshold": 55,
+      "description": ".",
+      "raw_effect": "Cures 1H wound of cut/scratch, abrasion/scrape, slash/gash, puncture/piercing, gouge, burn, crushing/blunt force, eruptive/explosive or vital damage. In order to successfully heal the puncture/piercing wound, the stinger or puncturing object must first be removed.\r\n\r\nCan only be used once per injury.",
+      "effect_in_other_potions": ".",
+      "ingredients": [
+        {
+          "name": "Flobberworm Mucus",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Chizpurfle Fangs",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Billywig Sting Slime",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-12-19T17:04:29",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21604",
+      "name": "Wit-sharpening Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "Trivial",
+      "threshold": 12,
+      "description": "",
+      "raw_effect": "The Wit-Sharpening Potion is a potion which allows the drinker to think more clearly. Due to this, it acts an antidote to the Confundus Charm. If the drinker is not under any the effects of any spell or potion, it acts to increase perception (+5) and Intelligence (+5 for the next spell cast).",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Smashed Scarab Beetles",
+          "type": "General Item",
+          "quantity": 1
+        },
+        {
+          "name": "Armadillo Bile",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:15:53",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21760",
+      "name": "Wolfsbane Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "15 Days",
+      "threshold": 40,
+      "description": "",
+      "raw_effect": "The Wolfsbane Potion treats (but does not cure) lycanthropy. The potion is rather dangerous, and the drinker must roll a straight d10 every time they drink the potion. If the roll is less than 5, the entire bottle is poisonous and the drinker takes 1H wound per drink). The drinker must drink the potion once per day in the week leading up to the full moon. They must drink the potion successfully at least once on each of these days or the potion is rendered useless.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Kneazel Hair",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-01T03:05:30",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "potion_21588",
+      "name": "Wound-cleaning Potion",
+      "inventor": "",
+      "tradition": "British",
+      "brew_time": "3 Days",
+      "threshold": 12,
+      "description": "Heals one medium wound per injury of any of the following types\r\n\r\n1. Cuts/Scratches\r\n2. Abrasions/Scrapes\r\n3. Slash/Gash\r\n4. Puncture/Piercing (if the piercing item like a stinger has been removed)\r\n5. Gouges\r\n6. Burns\r\n7. Eruptive/Explosive",
+      "raw_effect": "The Wound-Cleaning Potion (or Wound Cleaning Potion) is a healing potion that is used to sterilise wounds as a powerful antiseptic. It smokes and stings when applied.",
+      "effect_in_other_potions": "",
+      "ingredients": [
+        {
+          "name": "Standard Potioning Water",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-12-19T17:12:23",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    }
+  ],
+  "preparations": [
+    {
+      "record_id": "preparation_12183",
+      "name": "Agapanthus Solution",
+      "skill": "",
+      "threshold": null,
+      "description": "Soak Agapanthus Flowerheads in water to create the resulting solution.",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Agapanthus Flowerheads",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T17:06:57",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_14126",
+      "name": "Agarin",
+      "skill": "",
+      "threshold": null,
+      "description": "Through a combination of boiling, colling, and bathing this flesh, one can extract Agarin from the flesh of the fly amanita. This is safer to consume (only causing 1L wound per unit ingested). The resulting Agarin is useful in potions and historical rituals.",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Flesh of the Fly Amanita",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T17:13:49",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_21916",
+      "name": "Armadillo Bile Solution",
+      "skill": "",
+      "threshold": 15,
+      "description": "",
+      "raw_effect": "This is a corrosive substance that appears to be effective in dissolving some magical objects.",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Armadillo Bile",
+          "type": "Creature Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T13:27:53",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_12215",
+      "name": "Baked Apple Core",
+      "skill": "",
+      "threshold": null,
+      "description": "The core of an apple is removed then baked.",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Baked Apple Core",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T17:08:01",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_12007",
+      "name": "Baked Spattergroit Spore Sacs",
+      "skill": "",
+      "threshold": null,
+      "description": "Baking these spore sacs is an effective way of rendering them inert. This is an illegal, highly valuable delicacy that is usually only served in underground establishments. It's said to be quite delicious.",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Spattergroit Spore Sac",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T16:54:38",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_14150",
+      "name": "Balché Mixture",
+      "skill": "",
+      "threshold": null,
+      "description": "",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Infusion of Greenheart",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T17:17:06",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_21825",
+      "name": "Baneberry Juice",
+      "skill": "",
+      "threshold": 5,
+      "description": "",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Baneberries",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-09T14:40:01",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_28984",
+      "name": "Barley Cereal",
+      "skill": "Herbology",
+      "threshold": 5,
+      "description": "A hearty meal",
+      "raw_effect": "Nutritious",
+      "effect_in_potions": "May greatly enhance the buffing qualities of any potion intending to provide health or protective benefits to the drinker.",
+      "ingredients": [
+        {
+          "name": "Barley Seeds",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-08T04:57:23",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_12084",
+      "name": "Belladonna Powder",
+      "skill": "",
+      "threshold": null,
+      "description": "",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Nightshade Peppers",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T16:57:08",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_13273",
+      "name": "Billywig Sting Slime",
+      "skill": "",
+      "threshold": null,
+      "description": "Extracted from freshly harvested stings. This creates a dried sting as a byproduct as well.",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Moist Billywig Stings",
+          "type": "Creature Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T17:09:53",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_12177",
+      "name": "Bitterroot Syrup",
+      "skill": "",
+      "threshold": null,
+      "description": "Bitterroot Syrup is often added to teas or potions to produce a voice-quality producing effect. Essentially performers and singers drink this to ensure strong, accurate voice.",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Roots of Bitterroot",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T17:06:35",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_12175",
+      "name": "Bloodroot Powder",
+      "skill": "",
+      "threshold": null,
+      "description": "Powder Bloodroots to create a powder. This powder can be burned. The fumes produce romantic effects.",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Bloodroot Roots",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T17:06:07",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_12169",
+      "name": "Boomberry Juice",
+      "skill": "",
+      "threshold": null,
+      "description": "Boomberry juice is an explosive substance that must be handled with care (Potions roll of 10 or higher). Failing this roll will result in taking eruptive-type damage of 1H wound. Critical failures result in permanent magical scarring even after the wound has healed.",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Boomberries",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T17:04:31",
+      "brew_time": "",
+      "required_proficiencies": [
+        "Preparation and Proper Handling of a Boomberry"
+      ],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_20169",
+      "name": "Bulbadox Essence",
+      "skill": "",
+      "threshold": null,
+      "description": "",
+      "raw_effect": "Bulbadox powder is a joke product that caused the victim's skin to break out in boils.",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Bulbadox Juice",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-06T17:43:27",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_12167",
+      "name": "Bulbadox Juice",
+      "skill": "",
+      "threshold": null,
+      "description": "Bulbadox Juice can be macerated from bulbadox leaves. This juice strips away all of the dangerous skin-affecting components of the leaf. As such, using bulbadox juice in potions can create even more potent arithmetic and trace detection effects.\nDrinking straight bulbadox juice provides a +2 bonus to one's next attempt to potioncraft or spellcraft.",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Bulbadox Leaves",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T17:04:04",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_12093",
+      "name": "Bulbadox Powder",
+      "skill": "",
+      "threshold": null,
+      "description": "Bulbadox Powder is more potent than bulbadox leaves themselves. Not only will touching this powder lead the toucher's skin to break out in boils, these boils will be painful (causing 1L wound of depressive damage per hour), and will cause 1M wound of vital damage every hour for three days.",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Bulbadox Powder",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T17:00:00",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_12162",
+      "name": "Bulrush Sugar",
+      "skill": "",
+      "threshold": null,
+      "description": "Drying Bulrush Syrup will produce Bulrush Sugar which is sweet and tasty!",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Bulrush Syrup",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T17:03:43",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_12150",
+      "name": "Bulrush Syrup",
+      "skill": "",
+      "threshold": null,
+      "description": "Adding Bulrush Roots to water can create a sweet and tasty syrup.",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Bulrush Roots",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T17:02:51",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_13366",
+      "name": "Bundimum Solution",
+      "skill": "",
+      "threshold": null,
+      "description": "The ooze needs to be diluted.",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Bundimum Ooze",
+          "type": "Creature Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T17:17:40",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_12189",
+      "name": "Cayenne Powder",
+      "skill": "",
+      "threshold": null,
+      "description": "",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Cayenne Pepper",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T17:07:21",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_21799",
+      "name": "Cornflower Meal",
+      "skill": "",
+      "threshold": 5,
+      "description": "Ground cornflower for use in potions.",
+      "raw_effect": "Ground cornflower for use in potions.",
+      "effect_in_potions": "Ground cornflower for use in potions.",
+      "ingredients": [
+        {
+          "name": "Cornflower Petals",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-09T14:17:13",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_21822",
+      "name": "Cowbane Essence",
+      "skill": "",
+      "threshold": 5,
+      "description": "",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Cowbane Flowers",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-09T14:38:59",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_23208",
+      "name": "Crushed Flint",
+      "skill": "Alchemy",
+      "threshold": 7,
+      "description": "Crushed form of flint",
+      "raw_effect": "None",
+      "effect_in_potions": "Widely used in",
+      "ingredients": [
+        {
+          "name": "Flint",
+          "type": "General Item",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-14T19:31:45",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_20178",
+      "name": "Crystalized Water",
+      "skill": "",
+      "threshold": 15,
+      "description": "A base for many complex potions",
+      "raw_effect": "No raw effects",
+      "effect_in_potions": "Serves as a base for more complex potions",
+      "ingredients": [
+        {
+          "name": "Flouridated Muggle Water",
+          "type": "General Item",
+          "quantity": 1
+        },
+        {
+          "name": "Bonemeal",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Clear Quartz",
+          "type": "General Item",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-06T17:57:26",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_12079",
+      "name": "Diluted Bloodroot",
+      "skill": "",
+      "threshold": null,
+      "description": "Diluted bloodroot is mostly inert. In a potion, it can help with digestion.",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Bloodroot Flower",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T16:58:57",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_12171",
+      "name": "Diluted Bobotuber Pus",
+      "skill": "",
+      "threshold": null,
+      "description": "",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Bobotuber Pus",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T17:05:09",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_21795",
+      "name": "Diluted Bundimum Secretion",
+      "skill": "",
+      "threshold": 5,
+      "description": "Bundimum secretion is first extracted in its pure form then is diluted to be more useful in potions.",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Bundimum Ooze",
+          "type": "Creature Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-09T14:14:26",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_23187",
+      "name": "Dragon Blood Resin",
+      "skill": "Potions",
+      "threshold": 36,
+      "description": "Creation of a resin from Dragon's blood",
+      "raw_effect": "Unknown",
+      "effect_in_potions": "Varied, mostly used in alchemical elixirs.",
+      "ingredients": [
+        {
+          "name": "Dragon's Blood",
+          "type": "Creature Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-14T17:34:30",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_29033",
+      "name": "Dried Beans",
+      "skill": "Herbology",
+      "threshold": 5,
+      "description": "Dried out beans.",
+      "raw_effect": "Edible",
+      "effect_in_potions": "Unknown",
+      "ingredients": [
+        {
+          "name": "Beans",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-05-10T23:27:30",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_21962",
+      "name": "Dried Mistletoe",
+      "skill": "",
+      "threshold": 7,
+      "description": "",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Freshly Hanging Mistletoe",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T16:05:37",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_10047",
+      "name": "Dried Nettles",
+      "skill": "",
+      "threshold": null,
+      "description": "",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Nettle Needles",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T16:53:17",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_9995",
+      "name": "Dried Thyme",
+      "skill": "",
+      "threshold": null,
+      "description": "Safe to ingest. No know effects at even large doses. Consumer may feel slightly queasy.",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Cut Thyme Herb",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-02-19T14:47:47",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_13822",
+      "name": "Erumpent Horn Chalk",
+      "skill": "",
+      "threshold": null,
+      "description": "Can only be extracted safely after the fluid has been removed from the horn first. Erumpent Horn Chalk appears to be a stabilizing agent for potion ingredients that may otherwise be explosive. By increasing the amount of chalk, the volitility of the potion will be decreased. By decreasing or removing it, the potion will become more explosive.",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Erumpent Horn",
+          "type": "Creature Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T17:14:25",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_13824",
+      "name": "Erumpent Horn Fluid",
+      "skill": "",
+      "threshold": null,
+      "description": "It requires a Magical Creatures roll of 15 to extract this fluid—failure to do so results in an explosion which can instantly cause between 6 and 8 heavy wounds.",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Erumpent Horn",
+          "type": "Creature Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T17:14:10",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_21886",
+      "name": "Essence of Daisyroot",
+      "skill": "",
+      "threshold": 10,
+      "description": "",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Daisy Roots",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T13:11:28",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_12141",
+      "name": "Essence of Dittany",
+      "skill": "",
+      "threshold": null,
+      "description": "Essence of Dittany is a concentrated broad (any wound type) healing agent (1M wound per injury). It is particularly effective for splinching specific damage (curing up to 3H wounds of splinching damage).",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Dittany Stems",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T17:02:17",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_21956",
+      "name": "Fermented Apple Cores",
+      "skill": "",
+      "threshold": 7,
+      "description": "Fermented Apple Cores are usually used to make a hooch particularly popular among the ne're-do-wells of Britain",
+      "raw_effect": "Fermented Apple Cores are usually used to make a hooch particularly popular among the ne're-do-wells of Britain",
+      "effect_in_potions": "Fermented Apple Cores are usually used to make a hooch particularly popular among the ne're-do-wells of Britain",
+      "ingredients": [
+        {
+          "name": "Apples",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T16:00:40",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_12123",
+      "name": "Frog Parts Mixture",
+      "skill": "",
+      "threshold": 5,
+      "description": "This is a complex mixture of multiple frog parts.",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Frog Parts",
+          "type": "General Item",
+          "quantity": 1
+        },
+        {
+          "name": "Frog Brains",
+          "type": "Creature Part",
+          "quantity": 1
+        },
+        {
+          "name": "Frog Skin",
+          "type": "Creature Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-09T14:28:56",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_10049",
+      "name": "Grated Horseradish",
+      "skill": "",
+      "threshold": null,
+      "description": "",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Horseradish Roots",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T16:53:44",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_12080",
+      "name": "Ground Basil",
+      "skill": "",
+      "threshold": null,
+      "description": "",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Basil Leaves",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T16:58:36",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_12081",
+      "name": "Ground Cinnamon",
+      "skill": "",
+      "threshold": null,
+      "description": "",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Cinnamon Bark",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T16:58:19",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_12223",
+      "name": "Ground Coffee Bean",
+      "skill": "",
+      "threshold": null,
+      "description": "Ground Coffee Bean smells lovely. If directly ingested, it can increase alertness and anxiety.",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Coffee Bean",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T17:08:25",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_12082",
+      "name": "Ground Moonseeds",
+      "skill": "",
+      "threshold": null,
+      "description": "",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Moonseeds",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T16:57:53",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_12083",
+      "name": "Ground Spikey Bush Thorn",
+      "skill": "",
+      "threshold": null,
+      "description": "",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Spikey Bush Thorns",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T16:57:30",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_21819",
+      "name": "Horklump Juice",
+      "skill": "",
+      "threshold": 7,
+      "description": "Horklump juice is a magical substance extracted from Horklumps. It can be used in a range of healing potions as the primary fluid but is useless on its own.",
+      "raw_effect": "Horklump juice is a magical substance extracted from Horklumps. It can be used in a range of healing potions as the primary fluid but is useless on its own.",
+      "effect_in_potions": "Horklump juice is a magical substance extracted from Horklumps. It can be used in a range of healing potions as the primary fluid but is useless on its own.",
+      "ingredients": [
+        {
+          "name": "Horklump Parts",
+          "type": "General Item",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-09T14:36:57",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_14148",
+      "name": "Infusion of Greenheart",
+      "skill": "",
+      "threshold": null,
+      "description": "",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Greenheart Bark",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Lake Water",
+          "type": "General Item",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T17:13:29",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_12095",
+      "name": "Infusion of Wormwood",
+      "skill": "",
+      "threshold": 5,
+      "description": "",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Wormwood Oil",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Alcohol",
+          "type": "Food/Drink",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-09T14:31:37",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_20194",
+      "name": "Mandrake Stew",
+      "skill": "",
+      "threshold": 10,
+      "description": "This is a stew made from harvested mandrakes that can be used in other potions.",
+      "raw_effect": "",
+      "effect_in_potions": "The exact effect of the stew in potions is unknown. However, it does appear to be an essential part of many brews.",
+      "ingredients": [
+        {
+          "name": "Mandrake Root",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-06T18:08:51",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_12237",
+      "name": "Manjistha Oil",
+      "skill": "",
+      "threshold": null,
+      "description": "Manjistha Oil is a common beauty product used throughout the wizarding world (when applied to the skin). It also can be consumed as a powerful curse containment agent (set value 17). In some cases, the curse may be too powerful to completely cure and manjistha oil can help to contain it (temporarily) in portions of the body (set value 24).",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Manjistha Roots",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T17:09:08",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_14155",
+      "name": "Morning Glory Honey",
+      "skill": "",
+      "threshold": null,
+      "description": "",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Morning Glory Nectar",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Infusion of Greenheart",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2023-12-28T18:23:18",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_13440",
+      "name": "Murtlap Essence",
+      "skill": "",
+      "threshold": null,
+      "description": "A solution of strained and pickled tentacles of Murtlaps. Acts as a healing solution when applied directly onto injuries.",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Murtlap Tentacles",
+          "type": "Creature Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T17:15:43",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_12234",
+      "name": "Neem Oil",
+      "skill": "",
+      "threshold": null,
+      "description": "Neem seeds can be smashed to collect the oil. This oil treats many skin conditions. It also helps heal some magical scars, slightly. Finally, it can be rubbed on some human-form transfigurations to make the transfiguration last a little longer.",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Neem Seeds",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T17:08:44",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_10003",
+      "name": "Parsley Flakes",
+      "skill": "",
+      "threshold": null,
+      "description": "",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Parsley Leaves",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T16:52:27",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_24987",
+      "name": "Peruvian Darkness Powder",
+      "skill": "Potions",
+      "threshold": 20,
+      "description": "This fine powder is jet black and has such intense darkness binding qualities that it absorbs all light.\nTo counteract, a light source must be generated at a higher value than the quality of this preparation.",
+      "raw_effect": "Ingestion of This powder is dangerous. Symptoms of poisoning include convulsions and severe internal pain. Take 3H wounds per day for 2 days. Then 2H wounds per day for 3 days.\nThen 1H wound per day for 5 days.",
+      "effect_in_potions": "Disguises the potions true intent.",
+      "ingredients": [
+        {
+          "name": "Sopophorous Bean Powder",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Powdered Graphorn Horn",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Moonseeds",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Shrivelfig Powder",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Dragon's Blood",
+          "type": "Creature Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2025-02-21T19:19:47",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_23255",
+      "name": "Phoenix Feather Ash",
+      "skill": "Alchemy",
+      "threshold": 10,
+      "description": "Ash from the feathers of a phoenix",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Phoenix Feathers",
+          "type": "Creature Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-14T21:47:36",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_13432",
+      "name": "Pickled Murtlap Tentacles",
+      "skill": "",
+      "threshold": null,
+      "description": "Pickling Murtlap Tentacles, then consuming them provides a temporary resistance to jinxes.",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Murtlap Tentacles",
+          "type": "Creature Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T17:16:01",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_23201",
+      "name": "Powdered Basalt",
+      "skill": "Alchemy",
+      "threshold": 94,
+      "description": "A powdered form of basalt",
+      "raw_effect": "None",
+      "effect_in_potions": "Primarily utilized in Alchemical potions.",
+      "ingredients": [
+        {
+          "name": "Basalt",
+          "type": "General Item",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-14T19:24:28",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_12088",
+      "name": "Powdered Centaury Flower",
+      "skill": "",
+      "threshold": null,
+      "description": "",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Centaury Flower",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T16:55:38",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_20201",
+      "name": "Powdered Common Rue",
+      "skill": "",
+      "threshold": 5,
+      "description": "A simple powder made from common rue cuttings",
+      "raw_effect": "None",
+      "effect_in_potions": "None",
+      "ingredients": [
+        {
+          "name": "Common Rue Cuttings",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-06T18:11:42",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_13271",
+      "name": "Powdered Dry Billywig Stings",
+      "skill": "",
+      "threshold": null,
+      "description": "Grind dried stings into a powder.",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Dried Billywig Stings",
+          "type": "Creature Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T17:09:29",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_12193",
+      "name": "Powdered Garlic",
+      "skill": "",
+      "threshold": null,
+      "description": "Powdered Garlic is tasty in foods. It is mostly inert when directly ingested or touched. However, it will repel vampires or any creature with significant vampiric bloodlines.",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Garlic Clove",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T17:07:42",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_13820",
+      "name": "Powdered Graphorn Horn",
+      "skill": "",
+      "threshold": null,
+      "description": "Grinding down a Graphorn Horn into powder allows it to be used as a powerful healing agent. Alternatively, letting it sit in your mouth on its own will produce 1L wound of healing for any type of wound (up to 2H wounds per horn). It’s somewhat gummy.",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Graphorn Horns",
+          "type": "Creature Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T17:14:49",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_12086",
+      "name": "Powdered Mallowsweet",
+      "skill": "",
+      "threshold": null,
+      "description": "",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Mallowsweet Cuttings",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T16:55:58",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_12092",
+      "name": "Powdered Moondew Flowers",
+      "skill": "",
+      "threshold": null,
+      "description": "",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Moondew Flowers",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T17:00:22",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_23192",
+      "name": "Powdered Moonstone",
+      "skill": "Alchemy",
+      "threshold": 5,
+      "description": "A powdered version of moonstone",
+      "raw_effect": "None",
+      "effect_in_potions": "Varied.",
+      "ingredients": [
+        {
+          "name": "Moonstone",
+          "type": "General Item",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-14T17:36:47",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_12091",
+      "name": "Powdered Root of Asphodel",
+      "skill": "",
+      "threshold": null,
+      "description": "Powdered Root of Asphodel is a weak poison (2L wounds per hour for 3 hours) if ingested. It is safe to touch.",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Asphodel Roots",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T17:00:39",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_12094",
+      "name": "Powdered Wartcap",
+      "skill": "",
+      "threshold": null,
+      "description": "",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Wartcaps",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T16:59:20",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_23225",
+      "name": "Prepared Copper Filings",
+      "skill": "Alchemy",
+      "threshold": 5,
+      "description": "Alchemically prepared copper filings ready for use in alchemical elixirs.",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Copper Filings",
+          "type": "General Item",
+          "quantity": 1
+        },
+        {
+          "name": "Elixir of Material Malleability",
+          "type": "General Item",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-14T21:40:18",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_23230",
+      "name": "Prepared Gold Leaf",
+      "skill": "Alchemy",
+      "threshold": 29,
+      "description": "The alchemically prepared version of gold leaf.",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Gold Leaf",
+          "type": "General Item",
+          "quantity": 1
+        },
+        {
+          "name": "Elixir of Material Malleability",
+          "type": "General Item",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-14T21:40:07",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_23289",
+      "name": "Prepared Gypsum",
+      "skill": "Alchemy",
+      "threshold": 30,
+      "description": "The alchemically prepared form of gypsum",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Elixir of Material Malleability",
+          "type": "General Item",
+          "quantity": 1
+        },
+        {
+          "name": "Gypsum",
+          "type": "General Item",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-15T15:09:57",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_23245",
+      "name": "Prepared Iron Filings",
+      "skill": "Alchemy",
+      "threshold": 5,
+      "description": "Prepared for alchemical use.",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Iron Filings",
+          "type": "General Item",
+          "quantity": 1
+        },
+        {
+          "name": "Potion of Material Malleability",
+          "type": "General Item",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-14T21:38:17",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_23235",
+      "name": "Prepared Quicksilver Droplets",
+      "skill": "Alchemy",
+      "threshold": 27,
+      "description": "Alchemically prepared variant of quicksilver.",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Quicksilver Droplets",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Elixir of Material Malleability",
+          "type": "General Item",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-14T21:40:00",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_21793",
+      "name": "Purifying Concentrate of Spleenwort",
+      "skill": "",
+      "threshold": 5,
+      "description": "A mixture used in potions.",
+      "raw_effect": "A mixture used in potions.",
+      "effect_in_potions": "A mixture used in potions.",
+      "ingredients": [
+        {
+          "name": "Spleenwort Petals",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-09T14:12:35",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_23324",
+      "name": "Quicksilver Droplets",
+      "skill": "Alchemy",
+      "threshold": 5,
+      "description": "Basic Alchemical material",
+      "raw_effect": "Toxic and will cause sanity shaking damage over time if touched by the skin.",
+      "effect_in_potions": "Typically toxic by way of causing sanity-shaking damage.",
+      "ingredients": [
+        {
+          "name": "Cinnabar",
+          "type": "General Item",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-15T19:16:10",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_23116",
+      "name": "Rat Spleen Mixture",
+      "skill": "Magical Creatures",
+      "threshold": 5,
+      "description": "A mixture of rat spleens",
+      "raw_effect": "None, it's just gross",
+      "effect_in_potions": "Unknown",
+      "ingredients": [
+        {
+          "name": "Rat Spleen",
+          "type": "Creature Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-14T13:32:50",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_12089",
+      "name": "Rosemary Dust",
+      "skill": "",
+      "threshold": null,
+      "description": "",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Rosemary Dust",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T17:01:18",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_20206",
+      "name": "Rotted Dirty Cheese Curds",
+      "skill": "",
+      "threshold": 5,
+      "description": "Old rotty dirty ol cheese curds",
+      "raw_effect": "None",
+      "effect_in_potions": "None",
+      "ingredients": [
+        {
+          "name": "Cheese Curds",
+          "type": "Food/Drink",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T17:12:21",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_12104",
+      "name": "Shattered Snarfalump Jawbone",
+      "skill": "",
+      "threshold": null,
+      "description": "",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Snarfalump Jawbone",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T17:01:36",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_20209",
+      "name": "Shrivelfig Paste",
+      "skill": "",
+      "threshold": 7,
+      "description": "A paste made of shrivelfigs",
+      "raw_effect": "None",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Shrivelfigs",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-06T18:18:25",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_12090",
+      "name": "Shrivelfig Powder",
+      "skill": "",
+      "threshold": null,
+      "description": "",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Shrivelfig Powder",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T17:01:01",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_12109",
+      "name": "Silverweed Decoction",
+      "skill": "",
+      "threshold": null,
+      "description": "",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Silverweed Flowers",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T17:01:55",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_10148",
+      "name": "Sliced Bursting Mushrooms",
+      "skill": "",
+      "threshold": null,
+      "description": "Sliced bursting mushrooms, when ingested by themselves, can heal up to 2 heavy wounds of eruptive damage.",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Sliced Bursting Mushrooms",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T16:54:07",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_12085",
+      "name": "Sopophorous Bean Powder",
+      "skill": "",
+      "threshold": null,
+      "description": "",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Sopophorous Bean",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T16:56:18",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_21808",
+      "name": "Standard Ingredient",
+      "skill": "",
+      "threshold": 5,
+      "description": "A concoction used in potions.",
+      "raw_effect": "A concoction used in potions.",
+      "effect_in_potions": "A concoction used in potions.",
+      "ingredients": [
+        {
+          "name": "Ground Basil",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Oregano Leaves",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Ground Cinnamon",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Whole Cloves",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Powdered Garlic",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Cayenne Powder",
+          "type": "Preparation",
+          "quantity": 1
+        },
+        {
+          "name": "Parsley Flakes",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-09T14:23:34",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_20214",
+      "name": "Standard Potioning Water",
+      "skill": "",
+      "threshold": 5,
+      "description": "The most common base in British potion making",
+      "raw_effect": "The most common base in British potion making",
+      "effect_in_potions": "Serves as a base.",
+      "ingredients": [
+        {
+          "name": "Lake Water",
+          "type": "General Item",
+          "quantity": 1
+        },
+        {
+          "name": "Foxglove",
+          "type": "General Item",
+          "quantity": 1
+        },
+        {
+          "name": "Belladonna Powder",
+          "type": "Preparation",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-06T18:29:17",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_20222",
+      "name": "Star Grass Salve",
+      "skill": "",
+      "threshold": 7,
+      "description": "A useful healing salve",
+      "raw_effect": "Heals boils or burns (up to 1 heavy wound) per injury.\nCures anxiety (up to 1 heavy wound) per injury.",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Star Grasses",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-06T18:31:49",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_21816",
+      "name": "Sugar Shrub Solution",
+      "skill": "",
+      "threshold": 5,
+      "description": "",
+      "raw_effect": "Can cure rashes up to 1M wound. Can heal 2L wounds of burn damage once per injury.",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Sugar Shrub Oil",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Leaves of Aloe Vera",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-09T14:35:08",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_21935",
+      "name": "Syrup of Hellebore",
+      "skill": "",
+      "threshold": 17,
+      "description": "",
+      "raw_effect": "A concoction used in potion making that also serves as a moderate (1M wound per day; vital damage) poison.",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Hellebore Sap",
+          "type": "Plant Part",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-10T13:35:29",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    },
+    {
+      "record_id": "preparation_21830",
+      "name": "Vervain Infusion",
+      "skill": "",
+      "threshold": 7,
+      "description": "",
+      "raw_effect": "",
+      "effect_in_potions": "",
+      "ingredients": [
+        {
+          "name": "Vervain Fluid",
+          "type": "Plant Part",
+          "quantity": 1
+        },
+        {
+          "name": "Lake Water",
+          "type": "General Item",
+          "quantity": 1
+        }
+      ],
+      "dbnotes": "",
+      "last_updated": "2024-01-09T14:46:26",
+      "brew_time": "",
+      "required_proficiencies": [],
+      "additional_instructions": ""
+    }
+  ],
   "foods_and_drinks": [
     {
       "record_id": "food_drink_7190",
