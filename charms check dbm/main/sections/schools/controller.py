@@ -13,6 +13,9 @@ class SchoolController:
         "name",
         "location",
         "description",
+        "areas_served",
+        "philosophy_and_practice",
+        "architecture",
         "dbnotes",
     )
 
@@ -35,6 +38,9 @@ class SchoolController:
             "canon": False,
             "wandless": False,
             "description": "",
+            "areas_served": "",
+            "philosophy_and_practice": "",
+            "architecture": "",
             "curriculum": self.empty_curriculum(),
             "course_books": [],
             "dbnotes": "",

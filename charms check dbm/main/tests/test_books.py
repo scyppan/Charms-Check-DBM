@@ -50,26 +50,38 @@ class BookTests(unittest.TestCase):
             "last_updated",
         }
         records_by_id = {record["record_id"]: record for record in records}
+        imported_records = [
+            record
+            for record in records
+            if record["record_id"].startswith("book_")
+        ]
+        imported_records_by_id = {
+            record["record_id"]: record for record in imported_records
+        }
 
-        self.assertEqual(len(records), 608)
-        self.assertEqual(len(records_by_id), 608)
+        self.assertEqual(len(imported_records), 608)
+        self.assertEqual(len(imported_records_by_id), 608)
+        self.assertEqual(len(records), len(records_by_id))
         self.assertTrue(all(set(record) == required_fields for record in records))
         self.assertEqual(
-            sum(len(record["spells"]) for record in records),
+            sum(len(record["spells"]) for record in imported_records),
             288,
         )
         self.assertEqual(
-            sum(len(record["proficiencies"]) for record in records),
+            sum(
+                len(record["proficiencies"])
+                for record in imported_records
+            ),
             122,
         )
         self.assertEqual(
-            sum(len(record["potions"]) for record in records),
+            sum(len(record["potions"]) for record in imported_records),
             109,
         )
         self.assertEqual(
             Counter(
                 category
-                for record in records
+                for record in imported_records
                 for category in record["categories"]
             ),
             Counter(
@@ -89,6 +101,9 @@ class BookTests(unittest.TestCase):
                     "Astronomy": 15,
                     "Alchemy": 14,
                     "Muggles": 13,
+                    "Nganga": 1,
+                    "Mbudye": 1,
+                    "Ubunganga": 1,
                 }
             ),
         )
@@ -306,7 +321,13 @@ class BookTests(unittest.TestCase):
         database = JsonDatabase(DATABASE_PATH)
         database.load()
 
-        self.assertEqual(len(database.get_collection("books")), 608)
+        imported_records = [
+            record
+            for record in database.get_collection("books")
+            if record["record_id"].startswith("book_")
+        ]
+
+        self.assertEqual(len(imported_records), 608)
         self.assertEqual(database.get_collection("bookshelves"), [])
         self.assertFalse(database.has_container("people"))
         self.assertTrue(database.has_container("schools"))

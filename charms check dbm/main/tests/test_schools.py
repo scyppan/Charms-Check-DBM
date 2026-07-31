@@ -22,7 +22,26 @@ class SchoolTests(unittest.TestCase):
         )
         self.assertEqual(
             tuple(signature(SchoolForm.__init__).parameters),
-            ("self", "parent", "database", "change_command"),
+            (
+                "self",
+                "parent",
+                "database",
+                "change_command",
+                "book_navigation_command",
+            ),
+        )
+
+    def test_school_form_retains_the_book_navigation_callback(self):
+        initializer_source = getsource(SchoolForm.__init__)
+        builder_source = getsource(SchoolForm.build_course_books_view)
+
+        self.assertIn(
+            "self.book_navigation_command = book_navigation_command",
+            initializer_source,
+        )
+        self.assertIn(
+            "book_navigation_command=self.book_navigation_command",
+            builder_source,
         )
 
     def test_school_export_imports_only_the_25_requested_records(self):
@@ -43,6 +62,9 @@ class SchoolTests(unittest.TestCase):
             "canon",
             "wandless",
             "description",
+            "areas_served",
+            "philosophy_and_practice",
+            "architecture",
             "curriculum",
             "course_books",
             "dbnotes",
@@ -279,7 +301,14 @@ class SchoolTests(unittest.TestCase):
         self.assertIn("BookPicker", course_books_source)
         self.assertIn('text="+"', course_books_source)
         self.assertIn('value=book_name or "None"', course_books_source)
-        self.assertIn('state="readonly"', course_books_source)
+        self.assertIn("book_navigation_command", course_books_source)
+        self.assertIn('cursor="hand2" if book_record_id else "arrow"', course_books_source)
+        self.assertIn('partial(self.open_book, book_record_id)', course_books_source)
+        self.assertIn(
+            '"PRIMARY_DARK" if book_record_id else "TEXT_DISABLED"',
+            course_books_source,
+        )
+        self.assertNotIn('"underline"', course_books_source)
         self.assertNotIn("subject_select", course_books_source)
         self.assertEqual(len(SCHOOL_COURSES), 18)
 

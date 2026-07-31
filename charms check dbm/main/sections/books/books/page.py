@@ -136,7 +136,10 @@ class BooksPage(tk.Frame):
         self.refresh_records()
 
         if self.records:
-            self.load_record(self.records[0]["record_id"])
+            self.load_record(
+                self.records[0]["record_id"],
+                remember=False,
+            )
         else:
             self.new_record()
 
@@ -147,11 +150,24 @@ class BooksPage(tk.Frame):
             selected_record_id,
         )
 
-    def load_record(self, record_id):
+    def load_record(self, record_id, remember=True):
         record = self.controller.get_record(record_id)
 
         if record is None:
             return False
+
+        if remember:
+            recent_record_ids = [
+                recent_record_id
+                for recent_record_id in getattr(
+                    self.database,
+                    "recent_book_record_ids",
+                    (),
+                )
+                if recent_record_id != record_id
+            ]
+            recent_record_ids.insert(0, record_id)
+            self.database.recent_book_record_ids = recent_record_ids[:5]
 
         self.current_record_id = record_id
         self.record_form.set_record(record)

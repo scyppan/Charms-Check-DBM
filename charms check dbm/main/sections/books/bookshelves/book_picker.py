@@ -28,13 +28,30 @@ BOOK_SEARCH_SCOPES = (
 
 
 class BookPicker(tk.Toplevel):
-    def __init__(self, parent, database, excluded_record_ids):
+    def __init__(
+        self,
+        parent,
+        database,
+        excluded_record_ids,
+        recent_record_ids=(),
+    ):
         super().__init__(parent)
         self.configure(bg=APP_BACKGROUND)
         bind_theme(self, background="APP_BACKGROUND")
 
         self.database = database
         self.excluded_record_ids = set(excluded_record_ids)
+        self.recent_record_ids = tuple(
+            dict.fromkeys(
+                str(record_id).strip()
+                for record_id in recent_record_ids
+                if str(record_id).strip()
+            )
+        )
+        self.recent_positions = {
+            record_id: position
+            for position, record_id in enumerate(self.recent_record_ids)
+        }
         self.entries = self.build_entries()
         self.visible_entries = []
         self.selected_references = []
@@ -467,9 +484,20 @@ class BookPicker(tk.Toplevel):
             if score is None:
                 continue
 
+            recent_position = self.recent_positions.get(entry["record_id"])
+
+            if query or recent_position is None:
+                recent_group = 1
+                recent_order = 0
+            else:
+                recent_group = 0
+                recent_order = recent_position
+
             ranked_entries.append(
                 (
                     score,
+                    recent_group,
+                    recent_order,
                     entry["name"].casefold(),
                     entry["author"].casefold(),
                     entry["record_id"],
@@ -477,21 +505,43 @@ class BookPicker(tk.Toplevel):
                 )
             )
 
-        ranked_entries.sort(key=lambda ranked_entry: ranked_entry[:4])
+        ranked_entries.sort(key=lambda ranked_entry: ranked_entry[:6])
         self.visible_entries = [
-            ranked_entry[4] for ranked_entry in ranked_entries
+            ranked_entry[6] for ranked_entry in ranked_entries
         ]
         self.listbox.delete(0, "end")
 
         if self.visible_entries:
+            visible_labels = [
+                (
+                    f"Recently viewed • {entry['label']}"
+                    if not query
+                    and entry["record_id"] in self.recent_positions
+                    else entry["label"]
+                )
+                for entry in self.visible_entries
+            ]
             self.listbox.insert(
                 "end",
-                *[entry["label"] for entry in self.visible_entries],
+                *visible_labels,
             )
 
-        self.count_value.set(
-            f"{len(self.visible_entries)} of {len(self.entries)} available books"
+        visible_recent_count = sum(
+            1
+            for entry in self.visible_entries
+            if entry["record_id"] in self.recent_positions
         )
+
+        if not query and visible_recent_count:
+            self.count_value.set(
+                f"{visible_recent_count} recently viewed first • "
+                f"{len(self.visible_entries)} available books"
+            )
+        else:
+            self.count_value.set(
+                f"{len(self.visible_entries)} of "
+                f"{len(self.entries)} available books"
+            )
         self.update_add_state()
 
     def flush_scheduled_refresh(self):

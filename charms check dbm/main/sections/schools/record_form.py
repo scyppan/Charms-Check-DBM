@@ -13,12 +13,19 @@ from theme import SURFACE, TEXT_MUTED, app_font
 
 
 class SchoolForm(tk.Frame):
-    def __init__(self, parent, database, change_command):
+    def __init__(
+        self,
+        parent,
+        database,
+        change_command,
+        book_navigation_command=None,
+    ):
         super().__init__(parent, bg=SURFACE)
         bind_theme(self, background="SURFACE")
 
         self.database = database
         self.change_command = change_command
+        self.book_navigation_command = book_navigation_command
         self.loading_record = False
         self.active_view_name = None
         self.views = {}
@@ -35,17 +42,29 @@ class SchoolForm(tk.Frame):
             self.navigation,
             text="Overview",
             command=self.show_overview,
-            width=92,
+            width=86,
             height=36,
         )
         self.overview_button.pack(side="left", padx=(0, 3))
         self.navigation_buttons["overview"] = self.overview_button
 
+        self.philosophy_button = SoftButton(
+            self.navigation,
+            text="Philosophy, Practice & Architecture",
+            command=self.show_philosophy_and_practice,
+            width=232,
+            height=36,
+        )
+        self.philosophy_button.pack(side="left", padx=3)
+        self.navigation_buttons[
+            "philosophy_and_practice"
+        ] = self.philosophy_button
+
         self.curriculum_button = SoftButton(
             self.navigation,
             text="Curriculum",
             command=self.show_curriculum,
-            width=106,
+            width=98,
             height=36,
         )
         self.curriculum_button.pack(side="left", padx=3)
@@ -55,7 +74,7 @@ class SchoolForm(tk.Frame):
             self.navigation,
             text="Course Books",
             command=self.show_course_books,
-            width=122,
+            width=112,
             height=36,
         )
         self.course_books_button.pack(side="left", padx=3)
@@ -86,6 +105,7 @@ class SchoolForm(tk.Frame):
         bind_theme(self.view_container, background="SURFACE")
 
         self.build_overview_view()
+        self.build_philosophy_and_practice_view()
         self.build_curriculum_view()
         self.build_course_books_view()
         self.activate_view("overview")
@@ -167,8 +187,22 @@ class SchoolForm(tk.Frame):
         self.description_field.grid(
             row=2,
             column=0,
-            columnspan=2,
             sticky="nsew",
+            padx=(0, 10),
+            pady=(0, 8),
+        )
+
+        self.areas_served_field = MultilineField(
+            self.overview_view,
+            "Areas Served",
+            self.handle_text_change,
+            height=12,
+        )
+        self.areas_served_field.grid(
+            row=2,
+            column=1,
+            sticky="nsew",
+            padx=(10, 0),
             pady=(0, 8),
         )
 
@@ -184,6 +218,53 @@ class SchoolForm(tk.Frame):
             columnspan=2,
             sticky="nsew",
             pady=(8, 0),
+        )
+
+    def build_philosophy_and_practice_view(self):
+        self.philosophy_and_practice_view = tk.Frame(
+            self.view_container,
+            bg=SURFACE,
+        )
+        self.philosophy_and_practice_view.grid(
+            row=0,
+            column=0,
+            sticky="nsew",
+        )
+        self.philosophy_and_practice_view.grid_rowconfigure(0, weight=1)
+        self.philosophy_and_practice_view.grid_columnconfigure(0, weight=1)
+        self.philosophy_and_practice_view.grid_columnconfigure(1, weight=1)
+        bind_theme(
+            self.philosophy_and_practice_view,
+            background="SURFACE",
+        )
+        self.views[
+            "philosophy_and_practice"
+        ] = self.philosophy_and_practice_view
+
+        self.philosophy_and_practice_field = MultilineField(
+            self.philosophy_and_practice_view,
+            "Philosophy & Practice",
+            self.handle_text_change,
+            height=24,
+        )
+        self.philosophy_and_practice_field.grid(
+            row=0,
+            column=0,
+            sticky="nsew",
+            padx=(0, 10),
+        )
+
+        self.architecture_field = MultilineField(
+            self.philosophy_and_practice_view,
+            "Architecture",
+            self.handle_text_change,
+            height=24,
+        )
+        self.architecture_field.grid(
+            row=0,
+            column=1,
+            sticky="nsew",
+            padx=(10, 0),
         )
 
     def build_curriculum_view(self):
@@ -212,6 +293,7 @@ class SchoolForm(tk.Frame):
             self.course_books_view,
             database=self.database,
             change_command=self.handle_field_change,
+            book_navigation_command=self.book_navigation_command,
         )
         self.course_books_editor.grid(row=0, column=0, sticky="nsew")
 
@@ -225,6 +307,11 @@ class SchoolForm(tk.Frame):
             "Yes" if record.get("wandless") else "No"
         )
         self.description_field.set_value(record.get("description", ""))
+        self.areas_served_field.set_value(record.get("areas_served", ""))
+        self.philosophy_and_practice_field.set_value(
+            record.get("philosophy_and_practice", "")
+        )
+        self.architecture_field.set_value(record.get("architecture", ""))
         self.dbnotes_field.set_value(record.get("dbnotes", ""))
         self.curriculum_editor.set_curriculum(record.get("curriculum", []))
         self.course_books_editor.set_state(
@@ -252,6 +339,11 @@ class SchoolForm(tk.Frame):
             "canon": self.canon_field.get_value(),
             "wandless": self.wandless_field.get_value(),
             "description": self.description_field.get_value(),
+            "areas_served": self.areas_served_field.get_value(),
+            "philosophy_and_practice": (
+                self.philosophy_and_practice_field.get_value()
+            ),
+            "architecture": self.architecture_field.get_value(),
             "curriculum": self.curriculum_editor.get_curriculum(),
             "course_books": self.course_books_editor.get_course_books(),
             "dbnotes": self.dbnotes_field.get_value(),
@@ -259,6 +351,9 @@ class SchoolForm(tk.Frame):
 
     def show_overview(self):
         self.activate_view("overview")
+
+    def show_philosophy_and_practice(self):
+        self.activate_view("philosophy_and_practice")
 
     def show_curriculum(self):
         self.activate_view("curriculum")

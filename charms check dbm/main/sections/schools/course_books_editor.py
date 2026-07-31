@@ -12,6 +12,7 @@ from shared.widgets import SoftButton
 from theme import (
     BORDER_SOFT,
     FIELD_BACKGROUND,
+    PRIMARY_DARK,
     SURFACE,
     TEXT_DARK,
     TEXT_MUTED,
@@ -20,32 +21,50 @@ from theme import (
 
 
 class SchoolBookPicker(BookPicker):
-    def __init__(self, parent, database, excluded_record_ids=()):
+    def __init__(
+        self,
+        parent,
+        database,
+        excluded_record_ids=(),
+        recent_record_ids=(),
+    ):
         super().__init__(
             parent,
             database=database,
             excluded_record_ids=excluded_record_ids,
+            recent_record_ids=recent_record_ids,
         )
         self.title("Choose Course Book")
         self.heading.configure(text="Choose Course Book")
         self.listbox.configure(selectmode="browse")
         self.add_button.set_text("Choose Book")
+        self.cancel_button.pack_forget()
+        self.add_button.pack_forget()
+        self.add_button.pack(side="left", padx=(0, 6))
+        self.cancel_button.pack(side="left")
 
 
 class CourseBooksEditor(tk.Frame):
-    def __init__(self, parent, database, change_command):
+    def __init__(
+        self,
+        parent,
+        database,
+        change_command,
+        book_navigation_command=None,
+    ):
         super().__init__(parent, bg=SURFACE)
         bind_theme(self, background="SURFACE")
 
         self.database = database
         self.change_command = change_command
+        self.book_navigation_command = book_navigation_command
         self.curriculum = self.empty_curriculum()
         self.course_books = []
         self.active_year = 1
         self.year_buttons = {}
         self.book_values = []
 
-        self.grid_rowconfigure(4, weight=1)
+        self.grid_rowconfigure(5, weight=1)
         self.grid_columnconfigure(0, weight=1)
 
         self.title = tk.Label(
@@ -81,8 +100,30 @@ class CourseBooksEditor(tk.Frame):
             foreground="TEXT_MUTED",
         )
 
+        self.active_year_value = tk.StringVar(value="Viewing Year 1")
+        self.active_year_label = tk.Label(
+            self,
+            textvariable=self.active_year_value,
+            bg=SURFACE,
+            fg=TEXT_DARK,
+            font=app_font(10),
+            anchor="center",
+            pady=4,
+        )
+        self.active_year_label.grid(
+            row=2,
+            column=0,
+            sticky="ew",
+            pady=(0, 5),
+        )
+        bind_theme(
+            self.active_year_label,
+            background="SURFACE",
+            foreground="TEXT_DARK",
+        )
+
         self.year_row = tk.Frame(self, bg=SURFACE)
-        self.year_row.grid(row=2, column=0, sticky="ew", pady=(0, 12))
+        self.year_row.grid(row=3, column=0, sticky="ew", pady=(0, 12))
         bind_theme(self.year_row, background="SURFACE")
 
         for year_number in range(1, 8):
@@ -108,7 +149,7 @@ class CourseBooksEditor(tk.Frame):
             self.year_buttons[year_number] = year_button
 
         self.column_headers = tk.Frame(self, bg=SURFACE)
-        self.column_headers.grid(row=3, column=0, sticky="ew", pady=(0, 6))
+        self.column_headers.grid(row=4, column=0, sticky="ew", pady=(0, 6))
         self.column_headers.grid_columnconfigure(0, weight=2)
         self.column_headers.grid_columnconfigure(1, weight=5)
         bind_theme(self.column_headers, background="SURFACE")
@@ -151,7 +192,7 @@ class CourseBooksEditor(tk.Frame):
             highlightthickness=1,
             borderwidth=0,
         )
-        self.scroll_area.grid(row=4, column=0, sticky="nsew", padx=(0, 14))
+        self.scroll_area.grid(row=5, column=0, sticky="nsew", padx=(0, 14))
         self.scroll_area.bind("<Configure>", self.resize_rows_frame)
         self.scroll_area.bind("<MouseWheel>", self.scroll_with_mousewheel)
         bind_theme(
@@ -168,7 +209,7 @@ class CourseBooksEditor(tk.Frame):
             relief="flat",
             borderwidth=0,
         )
-        self.scrollbar.grid(row=4, column=0, sticky="nse")
+        self.scrollbar.grid(row=5, column=0, sticky="nse")
         self.scroll_area.configure(yscrollcommand=self.scrollbar.set)
 
         self.rows_frame = tk.Frame(self.scroll_area, bg=SURFACE)
@@ -227,19 +268,23 @@ class CourseBooksEditor(tk.Frame):
         self.refresh_rows()
 
     def update_year_buttons(self):
+        self.active_year_value.set(f"Viewing Year {self.active_year}")
+
         for year_number, year_button in self.year_buttons.items():
             if year_number == self.active_year:
                 year_button.set_theme_roles(
-                    "PRIMARY",
-                    "PRIMARY_DARK",
-                    "TEXT_DARK",
+                    "SIDEBAR_BACKGROUND",
+                    "SIDEBAR_TILE_HOVER",
+                    "TEXT_LIGHT",
                 )
+                year_button.set_text(f"● Year {year_number}")
             else:
                 year_button.set_theme_roles(
                     "BUTTON_SOFT",
                     "BUTTON_SOFT_HOVER",
                     "TEXT_DARK",
                 )
+                year_button.set_text(f"Year {year_number}")
 
     def get_selected_courses(self, year_number):
         if year_number < 1 or year_number > len(self.curriculum):
@@ -286,6 +331,11 @@ class CourseBooksEditor(tk.Frame):
             self,
             self.database,
             excluded_record_ids=excluded_record_ids,
+            recent_record_ids=getattr(
+                self.database,
+                "recent_book_record_ids",
+                (),
+            ),
         )
         self.wait_window(picker)
 
@@ -384,6 +434,7 @@ class CourseBooksEditor(tk.Frame):
                     None,
                     None,
                     "None",
+                    None,
                 )
                 row_index += 1
                 continue
@@ -404,6 +455,7 @@ class CourseBooksEditor(tk.Frame):
                     course_name,
                     course_book_index,
                     book_name,
+                    course_book.get("record_id"),
                 )
                 row_index += 1
 
@@ -416,6 +468,7 @@ class CourseBooksEditor(tk.Frame):
         assignment_course_name,
         course_book_index,
         book_name,
+        book_record_id,
     ):
         actual_course_name = assignment_course_name or displayed_course_name
         course_label = tk.Label(
@@ -444,21 +497,22 @@ class CourseBooksEditor(tk.Frame):
 
         book_value = tk.StringVar(value=book_name or "None")
         self.book_values.append(book_value)
-        book_entry = tk.Entry(
+        book_title = tk.Label(
             self.rows_frame,
             textvariable=book_value,
-            state="readonly",
-            readonlybackground=FIELD_BACKGROUND,
-            fg=TEXT_DARK,
+            bg=FIELD_BACKGROUND,
+            fg=TEXT_DARK if book_record_id else PRIMARY_DARK,
             relief="flat",
             borderwidth=0,
             highlightbackground=BORDER_SOFT,
             highlightcolor=BORDER_SOFT,
             highlightthickness=1,
             font=app_font(9),
-            cursor="hand2",
+            cursor="hand2" if book_record_id else "arrow",
+            anchor="w",
+            padx=9,
         )
-        book_entry.grid(
+        book_title.grid(
             row=row_index,
             column=1,
             sticky="ew",
@@ -466,18 +520,19 @@ class CourseBooksEditor(tk.Frame):
             pady=5,
             ipady=8,
         )
-        book_entry.bind(
-            "<Double-Button-1>",
-            partial(
-                self.choose_book,
-                actual_course_name,
-                course_book_index,
-            ),
-        )
+
+        if book_record_id:
+            book_title.bind(
+                "<Button-1>",
+                partial(self.open_book, book_record_id),
+            )
+
         bind_theme(
-            book_entry,
-            readonlybackground="FIELD_BACKGROUND",
-            foreground="TEXT_DARK",
+            book_title,
+            background="FIELD_BACKGROUND",
+            foreground=(
+                "TEXT_DARK" if book_record_id else "PRIMARY_DARK"
+            ),
             highlightbackground="BORDER_SOFT",
             highlightcolor="BORDER_SOFT",
         )
@@ -525,9 +580,15 @@ class CourseBooksEditor(tk.Frame):
             self.bind_scroll(add_button)
 
         self.bind_scroll(course_label)
-        self.bind_scroll(book_entry)
+        self.bind_scroll(book_title)
         self.bind_scroll(controls)
         self.bind_scroll(choose_button)
+
+    def open_book(self, record_id, event=None):
+        if self.book_navigation_command is not None:
+            self.book_navigation_command(record_id)
+
+        return "break"
 
     def bind_scroll(self, widget):
         widget.bind("<MouseWheel>", self.scroll_with_mousewheel)

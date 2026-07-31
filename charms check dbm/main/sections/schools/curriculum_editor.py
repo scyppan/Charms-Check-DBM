@@ -1,8 +1,9 @@
 import tkinter as tk
+import weakref
 from copy import deepcopy
 from functools import partial
 
-from runtime_theme import bind_theme
+from runtime_theme import bind_theme, runtime_theme
 from sections.schools.constants import (
     SCHOOL_COURSE_DISPLAY_NAMES,
     SCHOOL_COURSES,
@@ -18,6 +19,39 @@ from theme import (
 )
 
 
+CHECKED_COURSE_BACKGROUND = "#E2F1DF"
+
+
+class CourseCheckboxThemeBinding:
+    def __init__(self, checkbox, variable):
+        self.checkbox_reference = weakref.ref(checkbox)
+        self.variable = variable
+
+    def apply_theme(self, theme_values):
+        checkbox = self.checkbox_reference()
+
+        if checkbox is None:
+            return
+
+        checked = self.variable.get()
+        background = (
+            CHECKED_COURSE_BACKGROUND
+            if checked
+            else theme_values["SURFACE"]
+        )
+        checkbox.configure(
+            background=background,
+            foreground=theme_values["TEXT_DARK"],
+            activebackground=background,
+            activeforeground=theme_values["TEXT_DARK"],
+            selectcolor=(
+                CHECKED_COURSE_BACKGROUND
+                if checked
+                else theme_values["PRIMARY_LIGHT"]
+            ),
+        )
+
+
 class CurriculumEditor(tk.Frame):
     def __init__(self, parent, change_command):
         super().__init__(parent, bg=SURFACE)
@@ -30,9 +64,11 @@ class CurriculumEditor(tk.Frame):
         self.year_buttons = {}
         self.core_variables = {}
         self.elective_variables = {}
+        self.core_checkbox_bindings = {}
+        self.elective_checkbox_bindings = {}
 
         self.grid_columnconfigure(0, weight=1)
-        self.grid_rowconfigure(3, weight=1)
+        self.grid_rowconfigure(4, weight=1)
 
         self.title = tk.Label(
             self,
@@ -66,8 +102,30 @@ class CurriculumEditor(tk.Frame):
             foreground="TEXT_MUTED",
         )
 
+        self.active_year_value = tk.StringVar(value="Viewing Year 1")
+        self.active_year_label = tk.Label(
+            self,
+            textvariable=self.active_year_value,
+            bg=SURFACE,
+            fg=TEXT_DARK,
+            font=app_font(10),
+            anchor="center",
+            pady=4,
+        )
+        self.active_year_label.grid(
+            row=2,
+            column=0,
+            sticky="ew",
+            pady=(0, 5),
+        )
+        bind_theme(
+            self.active_year_label,
+            background="SURFACE",
+            foreground="TEXT_DARK",
+        )
+
         self.year_row = tk.Frame(self, bg=SURFACE)
-        self.year_row.grid(row=2, column=0, sticky="ew", pady=(0, 12))
+        self.year_row.grid(row=3, column=0, sticky="ew", pady=(0, 12))
         bind_theme(self.year_row, background="SURFACE")
 
         for year_number in range(1, 8):
@@ -93,7 +151,7 @@ class CurriculumEditor(tk.Frame):
             self.year_buttons[year_number] = year_button
 
         self.course_panels = tk.Frame(self, bg=SURFACE)
-        self.course_panels.grid(row=3, column=0, sticky="nsew")
+        self.course_panels.grid(row=4, column=0, sticky="nsew")
         self.course_panels.grid_columnconfigure(
             0,
             weight=1,
@@ -160,7 +218,7 @@ class CurriculumEditor(tk.Frame):
         )
 
         self.limit_row = tk.Frame(self, bg=SURFACE)
-        self.limit_row.grid(row=4, column=0, sticky="ew", pady=(12, 0))
+        self.limit_row.grid(row=5, column=0, sticky="ew", pady=(12, 0))
         self.limit_row.grid_columnconfigure(1, weight=1)
         bind_theme(self.limit_row, background="SURFACE")
 
@@ -199,6 +257,12 @@ class CurriculumEditor(tk.Frame):
         self.update_year_display()
 
     def build_course_checkboxes(self, parent, course_type, variables):
+        checkbox_bindings = (
+            self.core_checkbox_bindings
+            if course_type == "core"
+            else self.elective_checkbox_bindings
+        )
+
         for column_index in range(3):
             parent.grid_columnconfigure(
                 column_index,
@@ -235,19 +299,18 @@ class CurriculumEditor(tk.Frame):
                 padx=3,
                 pady=4,
             )
+            checkbox_binding = CourseCheckboxThemeBinding(
+                course_checkbox,
+                course_variable,
+            )
+            course_checkbox.course_theme_binding = checkbox_binding
+            checkbox_bindings[course_name] = checkbox_binding
+            runtime_theme.register(checkbox_binding)
             course_checkbox.grid(
                 row=course_index // 3,
                 column=course_index % 3,
                 sticky="ew",
                 padx=(0, 4),
-            )
-            bind_theme(
-                course_checkbox,
-                background="SURFACE",
-                foreground="TEXT_DARK",
-                activebackground="SURFACE",
-                activeforeground="TEXT_DARK",
-                selectcolor="PRIMARY_LIGHT",
             )
 
     def select_year(self, year_number):
@@ -268,25 +331,34 @@ class CurriculumEditor(tk.Frame):
             self.elective_variables[course_name].set(
                 course_name in elective_courses
             )
+            self.core_checkbox_bindings[course_name].apply_theme(
+                runtime_theme.get_values()
+            )
+            self.elective_checkbox_bindings[course_name].apply_theme(
+                runtime_theme.get_values()
+            )
 
         self.limit_value.set(
             str(year_record.get("elective_limit", 0) or 0)
         )
         self.loading_curriculum = False
+        self.active_year_value.set(f"Viewing Year {self.active_year}")
 
         for year_number, year_button in self.year_buttons.items():
             if year_number == self.active_year:
                 year_button.set_theme_roles(
-                    "PRIMARY",
-                    "PRIMARY_DARK",
-                    "TEXT_DARK",
+                    "SIDEBAR_BACKGROUND",
+                    "SIDEBAR_TILE_HOVER",
+                    "TEXT_LIGHT",
                 )
+                year_button.set_text(f"● Year {year_number}")
             else:
                 year_button.set_theme_roles(
                     "BUTTON_SOFT",
                     "BUTTON_SOFT_HOVER",
                     "TEXT_DARK",
                 )
+                year_button.set_text(f"Year {year_number}")
 
     def handle_course_toggle(self, course_type, course_name):
         if self.loading_curriculum:
@@ -306,6 +378,15 @@ class CurriculumEditor(tk.Frame):
                 target_courses.sort(key=SCHOOL_COURSES.index)
         elif course_name in target_courses:
             target_courses.remove(course_name)
+
+        checkbox_bindings = (
+            self.core_checkbox_bindings
+            if course_type == "core"
+            else self.elective_checkbox_bindings
+        )
+        checkbox_bindings[course_name].apply_theme(
+            runtime_theme.get_values()
+        )
 
         elective_count = len(year_record["electives"])
 

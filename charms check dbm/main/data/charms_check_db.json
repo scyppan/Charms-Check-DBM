@@ -1,8 +1,8 @@
 {
   "_database": {
     "schema_version": 1,
-    "database_version": "26.7.22.001",
-    "last_saved": "2026-07-22T06:12:03.601763+00:00"
+    "database_version": "1.0",
+    "last_saved": "2026-07-31T01:55:44.703836+00:00"
   },
   "wand_woods": [
     {
@@ -38555,17 +38555,17 @@
     },
     {
       "record_id": "book_27060",
-      "name": "Binding the Blow: Intermediate Protective Bundles",
+      "name": "Nganga Practice",
       "author": "",
       "categories": [
         "Defense"
       ],
-      "description": "Stronger shields and counter‑hex work, adding more complex nkisi components.",
+      "description": "Nganga practice focuses on identifying and assessing harm in a thoughtful, preventitive manner as an approach to ensuring peace and harmony.",
       "spells": [],
       "proficiencies": [],
       "potions": [],
       "dbnotes": "",
-      "last_updated": "2025-04-13T00:01:31"
+      "last_updated": "2026-07-31T00:33:48.074363+00:00"
     },
     {
       "record_id": "book_1339",
@@ -38651,17 +38651,18 @@
     },
     {
       "record_id": "book_27061",
-      "name": "Bridges of Respect: Understanding Non‑Magical Societies",
+      "name": "Observing Non-Magical Peoples and Cultures",
       "author": "",
       "categories": [
-        "Muggles"
+        "Muggles",
+        "Nganga"
       ],
-      "description": "Local history, customs, and safe ways for wizards to help without exposure.",
+      "description": "Nganga approaches to observing non-magical peoples and cultures through disciplined perception, cultural understanding, and spiritual insight.",
       "spells": [],
       "proficiencies": [],
       "potions": [],
       "dbnotes": "",
-      "last_updated": "2025-04-13T00:02:02"
+      "last_updated": "2026-07-31T01:22:00.887390+00:00"
     },
     {
       "record_id": "book_1266",
@@ -38710,17 +38711,18 @@
     },
     {
       "record_id": "book_27070",
-      "name": "Bundles & Blades: Nkisi Through the Ages",
+      "name": "Mbudye Record",
       "author": "",
       "categories": [
-        "History"
+        "History",
+        "Mbudye"
       ],
-      "description": "How nkisi and similar charms evolved for justice, healing, and defense.",
+      "description": "Mbudye approaches to history preserve inherited knowledge through disciplined memory, lineage, and historical tradition.",
       "spells": [],
       "proficiencies": [],
       "potions": [],
       "dbnotes": "",
-      "last_updated": "2025-04-13T00:09:20"
+      "last_updated": "2026-07-31T01:19:09.583847+00:00"
     },
     {
       "record_id": "book_27284",
@@ -41896,17 +41898,17 @@
     },
     {
       "record_id": "book_27059",
-      "name": "Iron & Spirit: Foundations of Nkisi Defense",
+      "name": "Kimia Foundations: Shielding and Calm Response",
       "author": "",
       "categories": [
         "Defense"
       ],
-      "description": "Basic protective spells and the first steps in crafting nkisi‑style wards.",
+      "description": "Kimia Foundations teaches shielding and calm grounding for beginners. These approaches are utilized to achieve deescalation and prophylactic harmony.",
       "spells": [],
       "proficiencies": [],
       "potions": [],
       "dbnotes": "",
-      "last_updated": "2025-04-13T00:00:57"
+      "last_updated": "2026-07-31T00:31:50.243898+00:00"
     },
     {
       "record_id": "book_26901",
@@ -43236,17 +43238,17 @@
     },
     {
       "record_id": "book_27064",
-      "name": "Moonlit Waters: Fundamentals of Lake Divination",
+      "name": "Nganga for Divination",
       "author": "",
       "categories": [
         "Divination"
       ],
-      "description": "Reading ripples, fish movement, and moon phases for simple omens.",
+      "description": "An approach for deeply seeing through ritual and spiritual diagnosis.",
       "spells": [],
       "proficiencies": [],
       "potions": [],
       "dbnotes": "",
-      "last_updated": "2025-04-13T00:04:51"
+      "last_updated": "2026-07-31T00:37:40.519055+00:00"
     },
     {
       "record_id": "book_1240",
@@ -44485,17 +44487,18 @@
     },
     {
       "record_id": "book_27067",
-      "name": "Ritual Harvest Basics",
+      "name": "Ubunganga Herbology",
       "author": "",
       "categories": [
-        "Herbology"
+        "Herbology",
+        "Ubunganga"
       ],
-      "description": "Identifying key plants and proper, respectful harvest methods..",
+      "description": "Ubunganga approaches to herbological practice involve discerning a plant's true essense and state.",
       "spells": [],
       "proficiencies": [],
       "potions": [],
       "dbnotes": "",
-      "last_updated": "2025-04-13T00:07:19"
+      "last_updated": "2026-07-31T00:44:20.401010+00:00"
     },
     {
       "record_id": "book_26944",
@@ -47413,6 +47416,21 @@
       "potions": [],
       "dbnotes": "",
       "last_updated": "2025-04-23T21:29:30"
+    },
+    {
+      "name": "Harmony & Restorative Practice with the Ngoma Approach",
+      "author": "",
+      "categories": [
+        "Herbology",
+        "Ngoma"
+      ],
+      "description": "A thoughtful imagining of herbology aimed at restoring balance and harmony through deep relationship and communing with plants and nature.",
+      "spells": [],
+      "proficiencies": [],
+      "potions": [],
+      "dbnotes": "",
+      "record_id": "0f7fcee0-f8e4-450f-8f45-60d9b2531999",
+      "last_updated": "2026-07-31T00:44:05.276383+00:00"
     }
   ],
   "bookshelves": [],
@@ -63600,7 +63618,7 @@
       "location": "Kabobo Massif along Lake Tanganyika",
       "canon": false,
       "wandless": false,
-      "description": "Overview\nAiccokrea is Central Africa’s most respected wizarding academy. Cut into the sheer cliffs of the Kabobo Massif and linked by vine‑hung bridges to terraces above Lake Tanganyika, the school teaches disciplined wand‑casting anchored in regional ritual practice. Early study is broad—students master protective nkisi enchantments, lunar divination, and ritual herb‑harvest—before narrowing to advanced scholarship in Years 4‑7.\nPhilosophy\n• Nkisi Craft & Defensive Duty – Wizards are guardians; they learn to bind iron, wood, and herb charges into nkisi bundles that protect communities and punish wrongdoing.\n•\nSacred‑Mountain & Lake Ethics – The massif’s forests and Tanganyika’s depths are taboo zones; harvesting or creature work follows strict ritual etiquette to keep natural and spirit worlds in balance.\nArchitecture\nAiccokrea is perched high in the Kabobo Massif’s montane forest, its entire campus built into the canopy of towering red mahogany and African yellow‑wood trees. Three sturdy, railed walkways form concentric rings around the trunks, linked by simple lifts and ladders. Iron‑rune collars secure platforms without harming the living wood, keeping classrooms, dorms, greenhouses, and a small forge deck safely suspended above the forest floor.\nAreas Served\nAiccokrea admits students from the DRC, Rwanda, Burundi, Tanzania, Zambia, and Malawi, with a small cohort from wider Central Africa drawn by its reputation for iron‑hard defensive magic and rigorous history scholarship.",
+      "description": "Overview\nAiccokrea is Central Africa’s most respected wizarding academy. Cut into the sheer cliffs of the Kabobo Massif and linked by vine‑hung bridges to terraces above Lake Tanganyika, the school teaches disciplined wand‑casting anchored in regional ritual practice. Early study is broad—students master protective nkisi enchantments, lunar divination, and ritual herb‑harvest—before narrowing to advanced scholarship in Years 4‑7.",
       "curriculum": [
         {
           "year": 1,
@@ -63717,13 +63735,13 @@
           "year": 1,
           "course": "Defense",
           "record_id": "book_27059",
-          "name": "Iron & Spirit: Foundations of Nkisi Defense"
+          "name": "Kimia Foundations: Shielding and Calm Response"
         },
         {
           "year": 1,
           "course": "Muggles",
           "record_id": "book_27061",
-          "name": "Bridges of Respect: Understanding Non‑Magical Societies"
+          "name": "Observing Non-Magical Peoples and Cultures"
         },
         {
           "year": 1,
@@ -63735,7 +63753,7 @@
           "year": 1,
           "course": "Divination",
           "record_id": "book_27064",
-          "name": "Moonlit Waters: Fundamentals of Lake Divination"
+          "name": "Nganga for Divination"
         },
         {
           "year": 1,
@@ -63747,25 +63765,25 @@
           "year": 1,
           "course": "Herbology",
           "record_id": "book_27067",
-          "name": "Ritual Harvest Basics"
+          "name": "Ubunganga Herbology"
         },
         {
           "year": 1,
           "course": "History",
           "record_id": "book_27070",
-          "name": "Bundles & Blades: Nkisi Through the Ages"
+          "name": "Mbudye Record"
         },
         {
           "year": 2,
           "course": "Defense",
           "record_id": "book_27059",
-          "name": "Iron & Spirit: Foundations of Nkisi Defense"
+          "name": "Kimia Foundations: Shielding and Calm Response"
         },
         {
           "year": 2,
           "course": "Muggles",
           "record_id": "book_27061",
-          "name": "Bridges of Respect: Understanding Non‑Magical Societies"
+          "name": "Observing Non-Magical Peoples and Cultures"
         },
         {
           "year": 2,
@@ -63777,7 +63795,7 @@
           "year": 2,
           "course": "Divination",
           "record_id": "book_27064",
-          "name": "Moonlit Waters: Fundamentals of Lake Divination"
+          "name": "Nganga for Divination"
         },
         {
           "year": 2,
@@ -63789,25 +63807,25 @@
           "year": 2,
           "course": "Herbology",
           "record_id": "book_27067",
-          "name": "Ritual Harvest Basics"
+          "name": "Ubunganga Herbology"
         },
         {
           "year": 2,
           "course": "History",
           "record_id": "book_27070",
-          "name": "Bundles & Blades: Nkisi Through the Ages"
+          "name": "Mbudye Record"
         },
         {
           "year": 3,
           "course": "Defense",
           "record_id": "book_27060",
-          "name": "Binding the Blow: Intermediate Protective Bundles"
+          "name": "Nganga Practice"
         },
         {
           "year": 3,
           "course": "Muggles",
           "record_id": "book_27061",
-          "name": "Bridges of Respect: Understanding Non‑Magical Societies"
+          "name": "Observing Non-Magical Peoples and Cultures"
         },
         {
           "year": 3,
@@ -63819,7 +63837,7 @@
           "year": 3,
           "course": "Divination",
           "record_id": "book_27064",
-          "name": "Moonlit Waters: Fundamentals of Lake Divination"
+          "name": "Nganga for Divination"
         },
         {
           "year": 3,
@@ -63830,20 +63848,20 @@
         {
           "year": 3,
           "course": "Herbology",
-          "record_id": "book_27067",
-          "name": "Ritual Harvest Basics"
+          "record_id": "0f7fcee0-f8e4-450f-8f45-60d9b2531999",
+          "name": "Harmony & Restorative Practice with the Ngoma Approach"
         },
         {
           "year": 3,
           "course": "History",
           "record_id": "book_27070",
-          "name": "Bundles & Blades: Nkisi Through the Ages"
+          "name": "Mbudye Record"
         },
         {
           "year": 4,
           "course": "Muggles",
           "record_id": "book_27061",
-          "name": "Bridges of Respect: Understanding Non‑Magical Societies"
+          "name": "Observing Non-Magical Peoples and Cultures"
         },
         {
           "year": 4,
@@ -63855,7 +63873,7 @@
           "year": 4,
           "course": "Divination",
           "record_id": "book_27064",
-          "name": "Moonlit Waters: Fundamentals of Lake Divination"
+          "name": "Nganga for Divination"
         },
         {
           "year": 4,
@@ -63873,7 +63891,7 @@
           "year": 4,
           "course": "History",
           "record_id": "book_27070",
-          "name": "Bundles & Blades: Nkisi Through the Ages"
+          "name": "Mbudye Record"
         },
         {
           "year": 4,
@@ -63884,8 +63902,8 @@
         {
           "year": 5,
           "course": "Muggles",
-          "record_id": "book_27062",
-          "name": "Custodians of Two Worlds: Advanced Engagement"
+          "record_id": "book_27061",
+          "name": "Observing Non-Magical Peoples and Cultures"
         },
         {
           "year": 5,
@@ -63897,7 +63915,7 @@
           "year": 5,
           "course": "Divination",
           "record_id": "book_27064",
-          "name": "Moonlit Waters: Fundamentals of Lake Divination"
+          "name": "Nganga for Divination"
         },
         {
           "year": 5,
@@ -63915,7 +63933,7 @@
           "year": 5,
           "course": "History",
           "record_id": "book_27070",
-          "name": "Bundles & Blades: Nkisi Through the Ages"
+          "name": "Mbudye Record"
         },
         {
           "year": 5,
@@ -63933,7 +63951,7 @@
           "year": 6,
           "course": "Divination",
           "record_id": "book_27064",
-          "name": "Moonlit Waters: Fundamentals of Lake Divination"
+          "name": "Nganga for Divination"
         },
         {
           "year": 6,
@@ -63951,7 +63969,7 @@
           "year": 6,
           "course": "History",
           "record_id": "book_27070",
-          "name": "Bundles & Blades: Nkisi Through the Ages"
+          "name": "Mbudye Record"
         },
         {
           "year": 6,
@@ -63962,8 +63980,8 @@
         {
           "year": 7,
           "course": "Muggles",
-          "record_id": "book_27062",
-          "name": "Custodians of Two Worlds: Advanced Engagement"
+          "record_id": "book_27061",
+          "name": "Observing Non-Magical Peoples and Cultures"
         },
         {
           "year": 7,
@@ -63975,7 +63993,7 @@
           "year": 7,
           "course": "Divination",
           "record_id": "book_27064",
-          "name": "Moonlit Waters: Fundamentals of Lake Divination"
+          "name": "Nganga for Divination"
         },
         {
           "year": 7,
@@ -63993,7 +64011,7 @@
           "year": 7,
           "course": "History",
           "record_id": "book_27070",
-          "name": "Bundles & Blades: Nkisi Through the Ages"
+          "name": "Mbudye Record"
         },
         {
           "year": 7,
@@ -64004,12 +64022,15 @@
         {
           "year": 6,
           "course": "Muggles",
-          "record_id": "book_27062",
-          "name": "Custodians of Two Worlds: Advanced Engagement"
+          "record_id": "book_27061",
+          "name": "Observing Non-Magical Peoples and Cultures"
         }
       ],
       "dbnotes": "",
-      "last_updated": "2026-07-22T06:11:36.478928+00:00"
+      "last_updated": "2026-07-31T01:55:44.703761+00:00",
+      "areas_served": "Aiccokrea admits students from the DRC, Rwanda, Burundi, Tanzania, Zambia, and Malawi, with a small cohort from wider Central Africa drawn by its reputation for iron‑hard defensive magic and rigorous history scholarship.",
+      "philosophy_and_practice": "• Ngoma - healing and herbology historical healing and some elements of creatures\n• Ubunganda - A disciplined approach to deeply understanding the essence of things utilized as a foundation for Transfiguration, Herbology, Perception, and Runes\n• Mbudye - A disciplined preservation of memory and inherited knowledge as a foundation for History.\n• Kimia Disciplines - Disciplined preservation of peace through protection and harmony. Precursory tranquility to guide Defense.\n• Nganga Traditions seek out evil and wrongdoers. Also has some diviniation and herbological restoration of harmony. Deep understanding of communities including the muggle community.\n• Wuyanga - a discipline associated with detailed tracking and effective mastery of magical creatures.",
+      "architecture": "Aiccokrea is perched high in the Kabobo Massif’s montane forest, its entire campus built into the canopy of towering red mahogany and African yellow‑wood trees. Three sturdy, railed walkways form concentric rings around the trunks, linked by simple lifts and ladders. Iron‑rune collars secure platforms without harming the living wood, keeping classrooms, dorms, greenhouses, and a small forge deck safely suspended above the forest floor.\nAreas Served"
     },
     {
       "record_id": "school_77",
@@ -64017,7 +64038,7 @@
       "location": "French Pyrenees",
       "canon": true,
       "wandless": false,
-      "description": "1 ▪ School Introduction\nBeauxbatons straddles a limestone saddle high above the spa town of Barèges, its pale galleries half‑grown from warm travertine, half‑carved into the mountain itself. Mist rising from sulphur springs keeps unwary hikers away, while optical veils redirect GPS satellites into harmless loops. The academy’s creed is simple: grâce par le rite – grace through ritual. Students are expected to move as easily between ballroom etiquette and goat‑haunted meadows as between lecture hall and night sky.\n2 ▪ Historical Note\nFounded in 1465 by Gascon alchemists under the patronage of Queen Eleanor of Navarre, Beauxbatons began as a finishing college for daughters of Pyrenean nobility. Within a century it absorbed Basque sorginak, Catalan herb‑women, and Occitan fire‑keepers, growing into a bilingual stronghold of mountain lore. The school narrowly escaped destruction during the 1609 Labourd witch purges by sheltering inquisitors in its baths – a calculated act of hospitality that secured lasting autonomy.\n3 ▪ Academic Structure\nCore instruction for every student, all seven years:\nCharms\nDefense\nTransfiguration\nHistory\nSocial\nElectives available from Year 3 onward:\nAlchemy · Flying · Muggles · Runes · Divination · Arithmancy · Astronomy\n4 ▪ Local Traditions (concise)\nHalha — Solstice torch‑runs that draw down the sun for community renewal.\nAkelarre — Basque storm‑dance sabbaths led by goat‑spirit mediators.\nTrementinaire — Catalan itinerant herbalism; fir‑sap balms and moon‑cut alpine plants.\nEguzkilore — Sun‑thistle amulets nailed to doors to keep spirits counting till dawn.\nDona d’Aigua — Lake‑bound water women; pact magic for healing and rain‑calling.\nBasajaun — Forest giant, teacher of grain and iron; warder of flocks.\nFête de l’Ours — Spring bear‑masque where winter’s wildness is hunted, shaved, and danced into civility.",
+      "description": "Beauxbatons straddles a limestone saddle high above the spa town of Barèges, its pale galleries half‑grown from warm travertine, half‑carved into the mountain itself. Mist rising from sulphur springs keeps unwary hikers away, while optical veils redirect GPS satellites into harmless loops. The academy’s creed is simple: grâce par le rite – grace through ritual. Students are expected to move as easily between ballroom etiquette and goat‑haunted meadows as between lecture hall and night sky.",
       "curriculum": [
         {
           "year": 1,
@@ -64582,8 +64603,11 @@
           "name": "Eguzki Path Almanac"
         }
       ],
-      "dbnotes": "",
-      "last_updated": "2025-05-02T13:42:56"
+      "dbnotes": "Founded in 1465 by Gascon alchemists under the patronage of Queen Eleanor of Navarre, Beauxbatons began as a finishing college for daughters of Pyrenean nobility. Within a century it absorbed Basque sorginak, Catalan herb‑women, and Occitan fire‑keepers, growing into a bilingual stronghold of mountain lore. The school narrowly escaped destruction during the 1609 Labourd witch purges by sheltering inquisitors in its baths – a calculated act of hospitality that secured lasting autonomy.",
+      "last_updated": "2026-07-30T23:55:35.811180+00:00",
+      "areas_served": "",
+      "philosophy_and_practice": "Halha — Solstice torch‑runs that draw down the sun for community renewal.\nAkelarre — Basque storm‑dance sabbaths led by goat‑spirit mediators.\nTrementinaire — Catalan itinerant herbalism; fir‑sap balms and moon‑cut alpine plants.\nEguzkilore — Sun‑thistle amulets nailed to doors to keep spirits counting till dawn.\nDona d’Aigua — Lake‑bound water women; pact magic for healing and rain‑calling.\nBasajaun — Forest giant, teacher of grain and iron; warder of flocks.\nFête de l’Ours — Spring bear‑masque where winter’s wildness is hunted, shaved, and danced into civility.",
+      "architecture": ""
     },
     {
       "record_id": "school_159",
@@ -65143,7 +65167,10 @@
         }
       ],
       "dbnotes": "",
-      "last_updated": "2025-05-02T13:44:49"
+      "last_updated": "2025-05-02T13:44:49",
+      "areas_served": "",
+      "philosophy_and_practice": "",
+      "architecture": ""
     },
     {
       "record_id": "school_334",
@@ -65472,7 +65499,10 @@
         }
       ],
       "dbnotes": "",
-      "last_updated": "2026-01-10T23:59:15"
+      "last_updated": "2026-01-10T23:59:15",
+      "areas_served": "",
+      "philosophy_and_practice": "",
+      "architecture": ""
     },
     {
       "record_id": "school_425",
@@ -65829,7 +65859,10 @@
         }
       ],
       "dbnotes": "",
-      "last_updated": "2025-05-02T13:44:57"
+      "last_updated": "2025-05-02T13:44:57",
+      "areas_served": "",
+      "philosophy_and_practice": "",
+      "architecture": ""
     },
     {
       "record_id": "school_295",
@@ -66235,7 +66268,10 @@
         }
       ],
       "dbnotes": "",
-      "last_updated": "2025-05-02T13:42:35"
+      "last_updated": "2025-05-02T13:42:35",
+      "areas_served": "",
+      "philosophy_and_practice": "",
+      "architecture": ""
     },
     {
       "record_id": "school_121",
@@ -66501,7 +66537,10 @@
         }
       ],
       "dbnotes": "",
-      "last_updated": "2025-05-02T13:43:41"
+      "last_updated": "2025-05-02T13:43:41",
+      "areas_served": "",
+      "philosophy_and_practice": "",
+      "architecture": ""
     },
     {
       "record_id": "school_438",
@@ -66858,7 +66897,10 @@
         }
       ],
       "dbnotes": "",
-      "last_updated": "2025-05-02T13:45:15"
+      "last_updated": "2025-05-02T13:45:15",
+      "areas_served": "",
+      "philosophy_and_practice": "",
+      "architecture": ""
     },
     {
       "record_id": "school_242",
@@ -67269,7 +67311,10 @@
         }
       ],
       "dbnotes": "",
-      "last_updated": "2025-05-02T13:46:04"
+      "last_updated": "2025-05-02T13:46:04",
+      "areas_served": "",
+      "philosophy_and_practice": "",
+      "architecture": ""
     },
     {
       "record_id": "school_369",
@@ -67645,7 +67690,10 @@
         }
       ],
       "dbnotes": "",
-      "last_updated": "2025-05-02T13:43:29"
+      "last_updated": "2025-05-02T13:43:29",
+      "areas_served": "",
+      "philosophy_and_practice": "",
+      "architecture": ""
     },
     {
       "record_id": "school_104",
@@ -68324,7 +68372,10 @@
         }
       ],
       "dbnotes": "",
-      "last_updated": "2026-01-11T00:41:02"
+      "last_updated": "2026-01-11T00:41:02",
+      "areas_served": "",
+      "philosophy_and_practice": "",
+      "architecture": ""
     },
     {
       "record_id": "school_349",
@@ -68730,7 +68781,10 @@
         }
       ],
       "dbnotes": "",
-      "last_updated": "2025-05-02T13:43:10"
+      "last_updated": "2025-05-02T13:43:10",
+      "areas_served": "",
+      "philosophy_and_practice": "",
+      "architecture": ""
     },
     {
       "record_id": "school_220",
@@ -69248,7 +69302,10 @@
         }
       ],
       "dbnotes": "",
-      "last_updated": "2025-05-02T13:45:38"
+      "last_updated": "2025-05-02T13:45:38",
+      "areas_served": "",
+      "philosophy_and_practice": "",
+      "architecture": ""
     },
     {
       "record_id": "school_308",
@@ -69605,7 +69662,10 @@
         }
       ],
       "dbnotes": "",
-      "last_updated": "2026-01-10T23:05:29"
+      "last_updated": "2026-01-10T23:05:29",
+      "areas_served": "",
+      "philosophy_and_practice": "",
+      "architecture": ""
     },
     {
       "record_id": "school_474",
@@ -69927,7 +69987,10 @@
         }
       ],
       "dbnotes": "",
-      "last_updated": "2025-05-02T13:45:30"
+      "last_updated": "2025-05-02T13:45:30",
+      "areas_served": "",
+      "philosophy_and_practice": "",
+      "architecture": ""
     },
     {
       "record_id": "school_381",
@@ -70259,7 +70322,10 @@
         }
       ],
       "dbnotes": "",
-      "last_updated": "2025-05-02T13:43:47"
+      "last_updated": "2025-05-02T13:43:47",
+      "areas_served": "",
+      "philosophy_and_practice": "",
+      "architecture": ""
     },
     {
       "record_id": "school_200",
@@ -70770,7 +70836,10 @@
         }
       ],
       "dbnotes": "",
-      "last_updated": "2026-01-13T03:00:03"
+      "last_updated": "2026-01-13T03:00:03",
+      "areas_served": "",
+      "philosophy_and_practice": "",
+      "architecture": ""
     },
     {
       "record_id": "school_255",
@@ -71111,7 +71180,10 @@
         }
       ],
       "dbnotes": "",
-      "last_updated": "2025-05-02T13:46:11"
+      "last_updated": "2025-05-02T13:46:11",
+      "areas_served": "",
+      "philosophy_and_practice": "",
+      "architecture": ""
     },
     {
       "record_id": "school_140",
@@ -71521,7 +71593,10 @@
         }
       ],
       "dbnotes": "",
-      "last_updated": "2025-05-02T13:43:55"
+      "last_updated": "2025-05-02T13:43:55",
+      "areas_served": "",
+      "philosophy_and_practice": "",
+      "architecture": ""
     },
     {
       "record_id": "school_484",
@@ -71934,7 +72009,10 @@
         }
       ],
       "dbnotes": "",
-      "last_updated": "2026-01-13T14:36:36"
+      "last_updated": "2026-01-13T14:36:36",
+      "areas_served": "",
+      "philosophy_and_practice": "",
+      "architecture": ""
     },
     {
       "record_id": "school_319",
@@ -72242,7 +72320,10 @@
         }
       ],
       "dbnotes": "",
-      "last_updated": "2025-05-02T13:42:48"
+      "last_updated": "2025-05-02T13:42:48",
+      "areas_served": "",
+      "philosophy_and_practice": "",
+      "architecture": ""
     },
     {
       "record_id": "school_495",
@@ -72550,7 +72631,10 @@
         }
       ],
       "dbnotes": "",
-      "last_updated": "2026-01-13T14:46:09"
+      "last_updated": "2026-01-13T14:46:09",
+      "areas_served": "",
+      "philosophy_and_practice": "",
+      "architecture": ""
     },
     {
       "record_id": "school_181",
@@ -73110,7 +73194,10 @@
         }
       ],
       "dbnotes": "",
-      "last_updated": "2026-01-11T22:15:10"
+      "last_updated": "2026-01-11T22:15:10",
+      "areas_served": "",
+      "philosophy_and_practice": "",
+      "architecture": ""
     },
     {
       "record_id": "school_412",
@@ -73571,7 +73658,10 @@
         }
       ],
       "dbnotes": "",
-      "last_updated": "2025-05-02T13:44:37"
+      "last_updated": "2025-05-02T13:44:37",
+      "areas_served": "",
+      "philosophy_and_practice": "",
+      "architecture": ""
     },
     {
       "record_id": "school_396",
@@ -73980,7 +74070,10 @@
         }
       ],
       "dbnotes": "",
-      "last_updated": "2026-01-11T20:51:12"
+      "last_updated": "2026-01-11T20:51:12",
+      "areas_served": "",
+      "philosophy_and_practice": "",
+      "architecture": ""
     }
   ]
 }

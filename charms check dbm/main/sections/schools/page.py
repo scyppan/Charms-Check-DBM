@@ -22,6 +22,7 @@ class SchoolsPage(tk.Frame):
         bind_theme(self, background="APP_BACKGROUND")
 
         self.database = database
+        self.content_host = parent
         self.controller = SchoolController(database)
         self.records = []
         self.current_record_id = None
@@ -96,6 +97,7 @@ class SchoolsPage(tk.Frame):
             self.form_card,
             database=database,
             change_command=self.mark_form_dirty,
+            book_navigation_command=self.open_book_record,
         )
         self.record_form.grid(
             row=0,
@@ -294,3 +296,22 @@ class SchoolsPage(tk.Frame):
 
     def can_leave(self):
         return self.confirm_unsaved_changes()
+
+    def open_book_record(self, record_id):
+        application = self.winfo_toplevel()
+        sidebar = getattr(application, "sidebar", None)
+
+        if sidebar is not None:
+            section_opened = sidebar.select_section("books")
+        else:
+            section_opened = self.content_host.show_section("books")
+
+        if section_opened is False:
+            return False
+
+        books_page = self.content_host.section_pages.get("books")
+
+        if books_page is None:
+            return False
+
+        return books_page.load_record(record_id)

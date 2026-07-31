@@ -345,9 +345,10 @@ class ProficiencyTests(unittest.TestCase):
 
         self.assertEqual(
             {record["skill"] for record in records},
-            set(PROFICIENCY_SKILLS) - {"Alchemy"},
+            set(PROFICIENCY_SKILLS) - {"Alchemy", "Flying"},
         )
         self.assertIn("Alchemy", PROFICIENCY_SKILLS)
+        self.assertIn("Flying", PROFICIENCY_SKILLS)
         self.assertTrue(
             {
                 record["tradition"]

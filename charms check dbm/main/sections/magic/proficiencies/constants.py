@@ -5,6 +5,7 @@ PROFICIENCY_SKILLS = (
     "Artificing",
     "Astronomy",
     "Divination",
+    "Flying",
     "Herbology",
     "History",
     "Magical Creatures",
