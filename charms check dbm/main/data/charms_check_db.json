@@ -2,7 +2,7 @@
   "_database": {
     "schema_version": 1,
     "database_version": "1.0",
-    "last_saved": "2026-07-31T01:55:44.703836+00:00"
+    "last_saved": "2026-07-31T03:36:06.664328+00:00"
   },
   "wand_woods": [
     {
@@ -39447,17 +39447,18 @@
     },
     {
       "record_id": "book_27071",
-      "name": "Creatures of Lake Tanganyika",
+      "name": "The Wuyanga Manual of Creature Mastery",
       "author": "",
       "categories": [
-        "Creatures"
+        "Creatures",
+        "Wuyanga"
       ],
-      "description": "Guide to notable lake beings and safe interaction protocols.",
+      "description": "Wuyanga approaches to understanding, tracking, and mastering magical creatures through disciplined observation and respect for the natural world.",
       "spells": [],
       "proficiencies": [],
       "potions": [],
       "dbnotes": "",
-      "last_updated": "2025-04-13T00:09:44"
+      "last_updated": "2026-07-31T03:29:17.035980+00:00"
     },
     {
       "record_id": "book_28205",
@@ -40497,12 +40498,12 @@
       "categories": [
         "Creatures"
       ],
-      "description": "Field manual on rare mountain spirits and their conservation wards.",
+      "description": "Field manual on the creatures of this region.",
       "spells": [],
       "proficiencies": [],
       "potions": [],
       "dbnotes": "",
-      "last_updated": "2025-04-13T00:10:18"
+      "last_updated": "2026-07-31T03:29:50.792787+00:00"
     },
     {
       "record_id": "book_27282",
@@ -42322,17 +42323,18 @@
     },
     {
       "record_id": "book_27063",
-      "name": "Lines of Iron: Introduction to East African Runes",
+      "name": "The Ubunganga Interpretation of Runic Magic",
       "author": "",
       "categories": [
-        "Runes"
+        "Runes",
+        "Ubunganga"
       ],
-      "description": "The alphabet and interpretation of local runes and their potencies.",
+      "description": "Ubunganga approaches to understanding, crafting, modifying, and disrupting magical formulae through the discernment of their underlying structure and essence.",
       "spells": [],
       "proficiencies": [],
       "potions": [],
       "dbnotes": "",
-      "last_updated": "2025-04-13T00:03:59"
+      "last_updated": "2026-07-31T03:36:06.664312+00:00"
     },
     {
       "record_id": "book_27125",
@@ -43529,17 +43531,18 @@
     },
     {
       "record_id": "book_27066",
-      "name": "Nkisi Transformation",
+      "name": "On the Nature of Things",
       "author": "",
       "categories": [
-        "Transfiguration"
+        "Transfiguration",
+        "Ubunganga"
       ],
-      "description": "Core text on steady, controlled transformations.",
+      "description": "Ubunganga approaches to discerning the true nature of objects before magical transformation.",
       "spells": [],
       "proficiencies": [],
       "potions": [],
       "dbnotes": "",
-      "last_updated": "2025-04-13T00:06:43"
+      "last_updated": "2026-07-31T03:27:47.991441+00:00"
     },
     {
       "record_id": "book_27723",
